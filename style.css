@@ -79,9 +79,9 @@ body {
 
 .about {
     background-color: #ffffff;
-    height: 100vh;
+    height: 660px;
     width: 100%;
-    padding-top: 100px;
+    padding-top: 135px;
 }
 
 .about-content h2 {
@@ -122,7 +122,36 @@ body {
     }
 }
 
-
-/* .about-img {
+.suggest {
+    background-color: #ffffff;
+    height: 85vh;
+    width: 100%;
     border: 1px solid red;
-} */
+}
+
+.suggest .row {
+    margin-right: 0;
+    overflow-x: hidden;
+}
+
+.suggest-image {
+    width: 90%;
+    background-color: #174076;
+}
+
+.suggest-info {
+    padding-right: 120px;
+    color: rgb(0, 0, 0);
+}
+
+.suggest-info h2 {
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+.suggest-info p{
+    line-height: 30px;
+}
+
