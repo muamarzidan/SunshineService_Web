@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Sunshine Services</title>
+</head>
+
+<body>
+    <div class="back">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/img/SUNSHINE-removebg-preview 1.png" alt="Logo" width="50" height="50">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item mr-5">
+                                <a class="nav-link text-white" href="#home">Beranda</a>
+                            </li>
+                            <li class="nav-item mr-5">
+                                <a class="nav-link text-white" href="#about">Tentang Kami</a>
+                            </li>
+                            <li class="nav-item mr-5">
+                                <a class="nav-link text-white" href="#service">Jasa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#contact">Kontak</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    
+        <main class="hero">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 mt-5">
+                            <div class="pt-5 hero-content">
+                                <h1>Kami Menawarkan Kualitas Terbaik untuk Pelanggan</h1>
+                                <p class="mt-3">Buat kesan yang tak terlupakan dengan website dan aplikasi kustom dari jasa pembuatan terpercaya kami.</p>
+                                <div class="hero-button mt-4">
+                                    Lihat Karya Kami
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </main>
+    </div>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="about-content">
+                        <h2>Tentang Kami</h2>
+                        <p class="mt-4">Sunshine.id adalah sebuah startup yang bergerak di bidang pengembangan teknologi dan masyarakat dengan fokus pada pembuatan iklan dan jasa untuk UMKM (Usaha Mikro, Kecil, dan Menengah).</p>
+                        <div class="row mt-4 visimisi">
+                            <div class="col-md-6 col-sm-6 col-6">
+                                <div class="about-title-visi">
+                                    <iconify-icon id="iconify-icon-1" icon="iconamoon:like-light" style="color: #174076;"></iconify-icon>
+                                    <h3 class="ml-2">Visi Kita</h3>
+                                </div>
+                                <p class="mt-1">Menjadi mitra yang terpercaya dan terdepan dalam mengembangkan teknologi dan digitalisasi masyarakat.</p>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-6">
+                                <div class="about-title-visi">
+                                    <iconify-icon id="iconify-icon-2" icon="ci:trending-up" style="color: #174076;"></iconify-icon>
+                                    <h3 class="ml-2">Misi Kita</h3>
+                                </div>
+                                <p class="mt-1">Menyediakan layanan konsultasi dan pendampingan yang praktis untuk merencanakan dan mengimplementasikan strategi digitalisasi yang efektif.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-img">
+                        <img src="./assets/img/watching-somthing-really-funny 1.png" alt="About Image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function updateIconSize() {
+            const width = window.innerWidth || document.documentElement.clientWidth;
+            const icon1 = document.getElementById("iconify-icon-1");
+            const icon2 = document.getElementById("iconify-icon-2");
+    
+            if (width <= 768) {
+                icon1.style.display = "block";
+                icon1.setAttribute("width", "24");
+                icon2.style.display = "block";
+                icon2.setAttribute("width", "24");
+            } else {
+                icon1.style.display = "block";
+                icon2.style.display = "block";
+                icon1.setAttribute("width", "48");
+                icon2.setAttribute("width", "48");
+            }
+        }
+        window.addEventListener("DOMContentLoaded", updateIconSize);
+        window.addEventListener("resize", updateIconSize);
+    </script>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+

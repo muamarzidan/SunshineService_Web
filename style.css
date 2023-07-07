@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.back::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(./assets/img/front-view-young-hardworking-clerical-workers-discussing-one-issue-documents-office\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.7;
+} 
+
+.hero {
+    height: 100vh;
+    width: 100%;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-content h1 {
+    font-family: 'PT Serif', serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: medium;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+.hero-button {
+    width: 180px;
+    padding: 15px 15px;
+    background-color: #174076;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #FAFAFA;
+    font-weight: 500;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.hero-button:hover {
+    background-color: #0F2B5B;
+    transition: 0.7s;
+    cursor: pointer;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+}
+
+.about {
+    background-color: #ffffff;
+    height: 100vh;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.about-content h2 {
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+.about-content p {
+    font-size: medium;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+.about-title-visi {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.about-title-visi h3{
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .about-content h2 {
+        font-size: 24px;
+    }
+    .about-title-visi h3{
+        font-size: 16px;
+    }
+    .visimisi p{
+        font-size: 12px;
+    }
+}
+
+
+/* .about-img {
+    border: 1px solid red;
+} */
