@@ -11,14 +11,182 @@
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <title>Sunshine Services</title>
+    <style>
+        .wavessss {
+            height: 60vh;
+            width: 100%;
+        }
+
+        .headerr {
+            position: relative;
+            text-align: center;
+            background-color: #174076;
+            color: white;
+            border: 1px solid rgb(255, 255, 255);
+        }
+
+        .logo {
+            width: 50px;
+            fill: white;
+            padding-right: 15px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .inner-headerr {
+            height: 65vh;
+            width: 100%;
+            margin: 80px 0 0 0;
+            padding: 0 300px 0 300px;
+            /* padding: 0; */
+        }
+
+        .flexx {
+            /*flexxbox for containers*/
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 25vh;
+        }
+
+        .waves {
+            position: relative;
+            width: 100%;
+            height: 30vh;
+            margin-bottom: -7px;
+            /*Fix for safari gap*/
+            min-height: 100px;
+            max-height: 150px;
+        }
+
+        .content {
+            position: relative;
+            height: 20vh;
+            text-align: center;
+            background-color: white;
+        }
+
+        /* Animation */
+
+        .parallax>use {
+            animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+        }
+
+        .parallax>use:nth-child(1) {
+            animation-delay: -2s;
+            animation-duration: 7s;
+        }
+
+        .parallax>use:nth-child(2) {
+            animation-delay: -3s;
+            animation-duration: 10s;
+        }
+
+        .parallax>use:nth-child(3) {
+            animation-delay: -4s;
+            animation-duration: 13s;
+        }
+
+        .parallax>use:nth-child(4) {
+            animation-delay: -5s;
+            animation-duration: 20s;
+        }
+
+        .waves-button {
+            background-color: #0E294D;
+            padding: 16px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .waves-button a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .flexx h3 {
+            font-family: 'PT Serif', serif;
+        }
+
+        @keyframes move-forever {
+            0% {
+                transform: translate3d(-90px, 0, 0);
+            }
+
+            100% {
+                transform: translate3d(85px, 0, 0);
+            }
+        }
+
+        /*Shrinking for mobile*/
+        @media (max-width: 768px) {
+            .waves {
+                height: 90px;
+                min-height: 40px;
+            }
+
+            .content {
+                height: 30vh;
+            }
+
+            .flexx h3 {
+                font-size: 18px;
+            }
+
+            .waves-button {
+                background-color: #0E294D;
+                padding: 8px 18px;
+                border-radius: 5px;
+                text-decoration: none;
+                font-size: 12px;
+                font-weight: 500;
+                transition: 0.3s;
+            }
+
+            .wavessss {
+                height: 100%;
+            }
+
+            .inner-headerr {
+                height: 14vh;
+                width: 100%;
+                margin: 50px 0 0 0;
+                padding: 0 100px 0 100px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .flexx h3 {
+                font-size: 18px;
+            }
+
+            .waves-button {
+                background-color: #0E294D;
+                padding: 6px 16px;
+                border-radius: 5px;
+                text-decoration: none;
+                font-size: 10px;
+                font-weight: 500;
+                transition: 0.3s;
+            }
+
+            .inner-headerr {
+                padding: 0 20px 0 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-shadow" id="navv">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="./assets/img/SUNSHINE-removebg-preview 1.png" alt="Logo" width="50" height="50">
+                    <img src="./assets/img/vv.png" alt="Logo" width="100" height="100" class="img-fluid">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -187,13 +355,14 @@
                 <div class="card service-card"">
                         <div class=" card-icon">
                     <div class="circle" style="background-color: #5B72EE;"></div>
-                    <iconify-icon icon="ic:outline-laptop" id="iconify-icon-service-4"
+                    <iconify-icon icon="ri:instagram-fill" id="iconify-icon-service-4"
                         style="color: white;"></iconify-icon>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title text-center">Pengembangan Aplikasi dan Web</h5>
-                    <p class="card-text text-center mt-2">mtMenyediakan layanan pengembangan situs web yang responsif dan
-                        menarik, serta pembuatan aplikasi mobile yang sesuai dengan kebutuhan bisnis Anda</p>
+                    <h5 class="card-title text-center">Pengelolaan Media Sosial</h5>
+                    <p class="card-text text-center mt-2">Kami dapat membantu mengelola akun media sosial Anda dengan
+                        mengembangkan konten yang menarik, merencanakan jadwal posting, dll untuk meningkatkan
+                        keterlibatan dengan audiens Anda</p>
                 </div>
             </div>
         </div>
@@ -201,12 +370,13 @@
             <div class="card service-card"">
                         <div class=" card-icon">
                 <div class="circle" style="background-color: #00CBB8;"></div>
-                <iconify-icon icon="bi:cart-fill" id="iconify-icon-service-5" style="color: white;"></iconify-icon>
+                <iconify-icon icon="ion:book-sharp" id="iconify-icon-service-5" style="color: white;"></iconify-icon>
             </div>
             <div class="card-body">
-                <h5 class="card-title text-center">Pembuatan Platform E-commerce</h5>
-                <p class="card-tex text-center mt-2">Kami dapat membantu Anda membangun toko online yang dapat diakses
-                    oleh pelanggan dari mana saja</p>
+                <h5 class="card-title text-center">Pelatihan dan Edukasi</h5>
+                <p class="card-tex text-center mt-2">Menyediakan pelatihan dan sumber daya edukatif dalam bentuk
+                    webinar, seminar, dan modul pelatihan online untuk memberikan pengetahuan tentang digitalisasi dalam
+                    teknologi yang relevan untuk UMKM dan bisnis.</p>
             </div>
         </div>
         </div>
@@ -214,19 +384,53 @@
             <div class="card service-card"">
                         <div class=" card-icon">
                 <div class="circle" style="background-color: #29B9E7;"></div>
-                <iconify-icon icon="solar:money-bag-bold" id="iconify-icon-service-6"
+                <iconify-icon icon="icon-park-outline:ad-product" id="iconify-icon-service-6"
                     style="color: white;"></iconify-icon>
             </div>
             <div class="card-body">
-                <h5 class="card-title text-center">Strategi Pemasaran Digital</h5>
-                <p class="card-text text-center mt-2">Menyediakan layanan konsultasi dan implementasi strategi pemasaran
-                    digital yang efektif untuk meningkatkan visibilitas dan pertumbuhan bisnis Anda</p>
+                <h5 class="card-title text-center">Desain Produk dan Foto Produk</h5>
+                <p class="card-text text-center mt-2">Menyediakan layanan pembuatan desain produk dan foto produk sesuai
+                    dengan konsep Anda.</p>
             </div>
         </div>
         </div>
         </div>
         </div>
     </section>
+
+    <div class="wavessss">
+        <div class="headerr">
+
+            <!--Content before waves-->
+            <div class="inner-headerr flexx">
+                <h3 class="text-center">Bergabung Bersama Kami untuk Menuangkan Ide Anda dan Jadilah Anak Muda yang
+                    Bertalenta</h3>
+                <div class="waves-button">
+                    <a href="./karya.html">Lihat Karya Kami</a>
+                </div>
+            </div>
+
+            <!--Waves Container-->
+            <div>
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                        <path id="gentle-wave"
+                            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g class="parallax">
+                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                    </g>
+                </svg>
+            </div>
+            <!--Waves end-->
+
+        </div>
+    </div>
+
 
     <section id="testimoni" class="testimonials">
         <div class="container">
@@ -240,133 +444,181 @@
                 <ul class="carousell">
                     <li class="cardd">
                         <h5>Blanche Pearson</h5>
-                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor mi vitae varius feugiat. Sed interdum varius justo eget egestas. Morbi id metus cursus, pretium lectus id, accumsan nisl.</p>
+                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor
+                            mi vitae varius feugiat. Sed interdum varius justo eget egestas. Morbi id metus cursus,
+                            pretium lectus id, accumsan nisl.</p>
                         <div class="cardd-contentt">
-                          <div class="cardd-imggg">
-                            <img src="./assets/img/watching-somthing-really-funny 1.png" alt="img" draggable="false">
-                            <div class="cardd-name">
-                              <p>Blanche Pearson</p>
-                              <p>Sales Manager</p>
+                            <div class="cardd-imggg">
+                                <img src="./assets/img/watching-somthing-really-funny 1.png" alt="img"
+                                    draggable="false">
+                                <div class="cardd-name">
+                                    <p>Blanche Pearson</p>
+                                    <p>Sales Manager</p>
+                                </div>
                             </div>
-                          </div>
-                          <div class="icon">
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                          </div>
+                            <div class="icon">
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                            </div>
                         </div>
                         <!-- <div class="imgg"><img src="./assets/img/watching-somthing-really-funny 1.png" alt="img" draggable="false"></div> -->
-                      </li>
-                      <li class="cardd">
+                    </li>
+                    <li class="cardd">
                         <h5>Blanche Pearson</h5>
-                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor mi vitae varius feugiat. Sed interdum varius justo eget egestas. Morbi id metus cursus, pretium lectus id, accumsan nisl.</p>
+                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor
+                            mi vitae varius feugiat. Sed interdum varius justo eget egestas. Morbi id metus cursus,
+                            pretium lectus id, accumsan nisl.</p>
                         <div class="cardd-contentt">
-                          <div class="cardd-imggg">
-                            <img src="./assets/img/watching-somthing-really-funny 1.png" alt="img" draggable="false">
-                            <div class="cardd-name">
-                              <p>Blanche Pearson</p>
-                              <p>Sales Manager</p>
+                            <div class="cardd-imggg">
+                                <img src="./assets/img/watching-somthing-really-funny 1.png" alt="img"
+                                    draggable="false">
+                                <div class="cardd-name">
+                                    <p>Blanche Pearson</p>
+                                    <p>Sales Manager</p>
+                                </div>
                             </div>
-                          </div>
-                          <div class="icon">
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                          </div>
+                            <div class="icon">
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                            </div>
                         </div>
                         <!-- <div class="imgg"><img src="./assets/img/watching-somthing-really-funny 1.png" alt="img" draggable="false"></div> -->
-                      </li>
-                      <li class="cardd">
+                    </li>
+                    <li class="cardd">
                         <h5>Blanche Pearson</h5>
-                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor mi vitae varius feugiat. Sed interdum varius justo eget egestas. Morbi id metus cursus, pretium lectus id, accumsan nisl.</p>
+                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor
+                            mi vitae varius feugiat. Sed interdum varius justo eget egestas. Morbi id metus cursus,
+                            pretium lectus id, accumsan nisl.</p>
                         <div class="cardd-contentt">
-                          <div class="cardd-imggg">
-                            <img src="./assets/img/watching-somthing-really-funny 1.png" alt="img" draggable="false">
-                            <div class="cardd-name">
-                              <p>Blanche Pearson</p>
-                              <p>Sales Manager</p>
+                            <div class="cardd-imggg">
+                                <img src="./assets/img/watching-somthing-really-funny 1.png" alt="img"
+                                    draggable="false">
+                                <div class="cardd-name">
+                                    <p>Blanche Pearson</p>
+                                    <p>Sales Manager</p>
+                                </div>
                             </div>
-                          </div>
-                          <div class="icon">
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                          </div>
+                            <div class="icon">
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                            </div>
                         </div>
                         <!-- <div class="imgg"><img src="./assets/img/watching-somthing-really-funny 1.png" alt="img" draggable="false"></div> -->
-                      </li>
-                      <li class="cardd">
+                    </li>
+                    <li class="cardd">
                         <h5>Blanche Pearson</h5>
-                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor mi vitae varius feugiat. Sed interdum varius justo eget egestas. Morbi id metus cursus, pretium lectus id, accumsan nisl.</p>
+                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor
+                            mi vitae varius feugiat. Sed interdum varius justo eget egestas. Morbi id metus cursus,
+                            pretium lectus id, accumsan nisl.</p>
                         <div class="cardd-contentt">
-                          <div class="cardd-imggg">
-                            <img src="./assets/img/watching-somthing-really-funny 1.png" alt="img" draggable="false">
-                            <div class="cardd-name">
-                              <p>Blanche Pearson</p>
-                              <p>Sales Manager</p>
+                            <div class="cardd-imggg">
+                                <img src="./assets/img/watching-somthing-really-funny 1.png" alt="img"
+                                    draggable="false">
+                                <div class="cardd-name">
+                                    <p>Blanche Pearson</p>
+                                    <p>Sales Manager</p>
+                                </div>
                             </div>
-                          </div>
-                          <div class="icon">
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                          </div>
+                            <div class="icon">
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                            </div>
                         </div>
                         <!-- <div class="imgg"><img src="./assets/img/watching-somthing-really-funny 1.png" alt="img" draggable="false"></div> -->
-                      </li>
-                      <li class="cardd">
+                    </li>
+                    <li class="cardd">
                         <h5>Blanche Pearson</h5>
-                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor mi vitae varius feugiat. Sed interdum varius justo eget egestas. Morbi id metus cursus, pretium lectus id, accumsan nisl.</p>
+                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor
+                            mi vitae varius feugiat. Sed interdum varius justo eget egestas. Morbi id metus cursus,
+                            pretium lectus id, accumsan nisl.</p>
                         <div class="cardd-contentt">
-                          <div class="cardd-imggg">
-                            <img src="./assets/img/watching-somthing-really-funny 1.png" alt="img" draggable="false">
-                            <div class="cardd-name">
-                              <p>Blanche Pearson</p>
-                              <p>Sales Manager</p>
+                            <div class="cardd-imggg">
+                                <img src="./assets/img/watching-somthing-really-funny 1.png" alt="img"
+                                    draggable="false">
+                                <div class="cardd-name">
+                                    <p>Blanche Pearson</p>
+                                    <p>Sales Manager</p>
+                                </div>
                             </div>
-                          </div>
-                          <div class="icon">
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                          </div>
+                            <div class="icon">
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                            </div>
                         </div>
                         <!-- <div class="imgg"><img src="./assets/img/watching-somthing-really-funny 1.png" alt="img" draggable="false"></div> -->
-                      </li>
-                      <li class="cardd">
+                    </li>
+                    <li class="cardd">
                         <h5>Blanche Pearson</h5>
-                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor mi vitae varius feugiat. Sed interdum varius justo eget egestas. Morbi id metus cursus, pretium lectus id, accumsan nisl.</p>
+                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor
+                            mi vitae varius feugiat. Sed interdum varius justo eget egestas. Morbi id metus cursus,
+                            pretium lectus id, accumsan nisl.</p>
                         <div class="cardd-contentt">
-                          <div class="cardd-imggg">
-                            <img src="./assets/img/watching-somthing-really-funny 1.png" alt="img" draggable="false">
-                            <div class="cardd-name">
-                              <p>Blanche Pearson</p>
-                              <p>Sales Manager</p>
+                            <div class="cardd-imggg">
+                                <img src="./assets/img/watching-somthing-really-funny 1.png" alt="img"
+                                    draggable="false">
+                                <div class="cardd-name">
+                                    <p>Blanche Pearson</p>
+                                    <p>Sales Manager</p>
+                                </div>
                             </div>
-                          </div>
-                          <div class="icon">
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15" height="15"></iconify-icon>
-                          </div>
+                            <div class="icon">
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                            </div>
                         </div>
                         <!-- <div class="imgg"><img src="./assets/img/watching-somthing-really-funny 1.png" alt="img" draggable="false"></div> -->
-                      </li>
+                    </li>
                 </ul>
                 <i id="right" class="fa-solid fa-angle-right"></i>
-              </div>
+            </div>
         </div>
     </section>
     <script>
@@ -426,11 +678,11 @@
             if (!wrapper.matches(":hover")) autoPlay();
         }
 
-        // const autoPlay = () => {
-        //     if (window.innerWidth < 800 || !isAutoPlay) return;
-        //     timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
-        // }
-        // autoPlay();
+        const autoPlay = () => {
+            if (window.innerWidth < 800 || !isAutoPlay) return;
+            timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
+        }
+        autoPlay();
 
         carousel.addEventListener("mousedown", dragStart);
         carousel.addEventListener("mousemove", dragging);
@@ -438,7 +690,7 @@
         carousel.addEventListener("scroll", infiniteScroll);
         wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
         wrapper.addEventListener("mouseleave", autoPlay);
-    </script> 
+    </script>
 
     <section class="sponsor">
         <div class="container">
@@ -460,10 +712,10 @@
     <section class="contact" id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-md-6" style="border: 1px solid red;">
+                <div class="col-md-6">
                     <div class="row">
-                        <div class="col-md-5 col-6" style="border: 1px solid red;">
-                            <img src="./assets/img/vv.png" alt="">
+                        <div class="col-md-5 col-6">
+                            <img src="./assets/img/vv.png" alt="" class="img-fluid">
                         </div>
                         <div class="col-md-7 col-6">
                             <p>Sunshine Creative Digital Media</p>
@@ -472,41 +724,47 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6" style="border: 1px solid red;">
+                <div class="col-md-6">
                     <div class="row d-md-flex justify-content-between">
-                        <div class="col-md-5 ml-md-5 col-6 col-sm-6" style="border: 1px solid rgb(26, 255, 0);">
+                        <div class="col-md-5 ml-md-5 col-6 col-sm-6">
                             <h4 class="fw-bold">Produk</h4>
                             <p>Desa Digital</p>
                             <p>Aplikasi dan Web</p>
                             <p>Desain Produk</p>
                         </div>
-                        <div class="col-md-5 col-6 col-sm-6" style="border: 1px solid rgb(93, 0, 255);">
+                        <div id="link" class="col-md-5 col-6 col-sm-6">
                             <h4 class="fw-bold">Info Kontak</h4>
                             <div class="row">
-                                <div class="col-md-2 col-2">
-                                    <iconify-icon icon="ic:outline-email" width="30" height="30"></iconify-icon>
+                                <div class="col-xl-2 col-md-3 col-2">
+                                    <iconify-icon icon="ic:outline-email" id="icon-1"></iconify-icon>
                                 </div>
-                                <div class="col-md-10 col-10">
-                                    <p>sunshine@gmail.com</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-2 col-2 ">
-                                    <iconify-icon icon="ic:outline-email" width="30" height="30"></iconify-icon>
-                                </div>
-                                <div class="col-md-10 col-10">
-                                    <p>0895 3349 67287</p>
+                                <div class="col-xl-10 col-md-9 col-10 d-flex align-items-center">
+                                    <p id="smallone">sunshine@gmail.com</p>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-2 col-2">
-                                    <iconify-icon icon="ic:outline-email" width="30" height="30"></iconify-icon>
+                                <div class="col-xl-2 col-md-3 col-2">
+                                    <iconify-icon icon="ic:outline-whatsapp" id="icon-2"></iconify-icon>
                                 </div>
-                                <div class="col-md-10 col-sm-10">
-                                    <p>@sunshinestartupcompany.id@gmail.com</p>
+                                <div class="col-xl-10 col-md-9 col-10 d-flex align-items-center">
+                                    <p><a href="https://wa.me/62895334967287?text=Halo%20kak,%0ASaya%20mau%20order%20joki%20mlbb"
+                                            target="_blank">
+                                            0895 3349 67287
+                                        </a></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-2 col-md-3 col-2">
+                                    <iconify-icon icon="ri:instagram-line" id="icon-3"></iconify-icon>
+                                </div>
+                                <div id="smalltwo" class="col-xl-10 col-md-9 col-10 d-flex align-items-center">
+                                    <p><a href="https://www.instagram.com/sunshine.id.official/" target="_blank">
+                                            @sunshine.id
+                                          </a></p>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -521,16 +779,14 @@
                         Copyright 2023 Sunshine, All Right Reserved
                     </p>
                 </div>
-                <div class="col-md-6">
-                    <div class="mbuh">
-                        <p>Privacy Policy</p>
-                        <p>Terms & Conditions</p>
-                    </div>
+                <div class="col-md-6 footer-desc">
+                    <p id="left">Privacy Policy</p>
+                    <p id="right">Terms & Conditions</p>
                 </div>
             </div>
         </div>
     </footer>
-    
+
 
     <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
