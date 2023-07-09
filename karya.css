@@ -198,6 +198,9 @@ nav li a {
     .footer #right {
         padding-left: 20px;
     }
+    .creation-link p{
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 428px) {
