@@ -12,7 +12,7 @@ body {
     padding: 0;
 }
 
-.back::before {
+body::before {
     content: '';
     position: fixed;
     top: 0;
@@ -25,7 +25,23 @@ body {
     background-position: center;
     z-index: -1;
     opacity: 0.7;
-} 
+}
+
+.navbar {
+    transition: background-color 0.3s ease;
+    /* Setel properti transisi agar perubahan latar belakang navbar halus */
+}
+
+.navbar-light.scrolled {
+    background-color: white;
+    /* Atur latar belakang navbar menjadi putih saat navbar memiliki kelas "scrolled" */
+}
+
+.navbar-light.scrolled .navbar-nav .nav-link {
+    color: #174076 !important;
+    /* Atur warna teks tautan menjadi biru saat navbar memiliki kelas "scrolled" */
+}
+
 
 .hero {
     height: 100vh;
@@ -49,6 +65,11 @@ body {
     font-size: medium;
     color: rgb(0, 0, 0);
     margin: 0;
+}
+
+.hero a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .hero-button {
@@ -103,30 +124,18 @@ body {
     align-items: center;
 }
 
-.about-title-visi h3{
+.about-title-visi h3 {
     font-family: 'PT Serif', serif;
     font-weight: bold;
     color: rgb(0, 0, 0);
     margin: 0;
 }
 
-@media screen and (max-width: 768px) {
-    .about-content h2 {
-        font-size: 24px;
-    }
-    .about-title-visi h3{
-        font-size: 16px;
-    }
-    .visimisi p{
-        font-size: 12px;
-    }
-}
-
 .suggest {
     background-color: #ffffff;
     height: 85vh;
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .suggest .row {
@@ -151,7 +160,540 @@ body {
     margin: 0;
 }
 
-.suggest-info p{
+.suggest-info p {
     line-height: 30px;
 }
 
+.service {
+    background-color: #ffffff;
+    height: 150vh;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.service h2 {
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+.service .text-center p {
+    font-size: medium;
+    color: #5C5C5C;
+    margin: 0;
+}
+
+.service-list-card {
+    margin-top: 80px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    height: 320px;
+    max-height: 320px;
+}
+
+.service-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 0px 10px 20px 0px rgba(38, 45, 118, 0.10);
+    /* box-shadow: -8px 10px 10px rgba(0, 0, 0, 0.1), 8px 10px 10px rgba(0, 0, 0, 0.1); */
+    z-index: 1;
+}
+
+.card-body {
+    padding: 2.5rem;
+}
+
+.card-body h5 {
+    font-size: 25px;
+    color: #2F327D;
+    margin: 0;
+}
+
+.card-body p {
+    color: #696984;
+    margin: 0;
+}
+
+.card-icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.circle {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: 1;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.card-icon iconify-icon {
+    position: relative;
+    color: white;
+    z-index: 2;
+    top: -10px;
+}
+
+.sponsor {
+    background-color: #ffffff;
+    height: 40vh;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.sponsor h3 {
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+.sponsor-image {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsor-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.contact {
+    background-color: #ffffff;
+    height: 70vh;
+    width: 100%;
+    padding-top: 120px;
+}
+
+.contact h4 {
+    font-family: 'PT Serif', serif;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+.footer {
+    background-color: #174076;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.footer .container {
+    text-align: center;
+}
+
+.footer .container p {
+    margin: 0;
+}
+
+.footer .mbuh {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.testimonials {
+    background-color: #ffffff;
+    height: 100vh;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrappe {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+}
+
+.wrappe i {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+}
+
+.wrappe i:active {
+    transform: translateY(-50%) scale(0.85);
+}
+
+.wrappe i:first-child {
+    left: -22px;
+}
+
+.wrappe i:last-child {
+    right: -22px;
+}
+
+.wrappe .carousell {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 70px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    height: 400px;
+    align-content: center;
+}
+
+/* .carousell > .cardd {
+    margin-left: 20px;
+} */
+
+.carousell::-webkit-scrollbar {
+    display: none;
+}
+
+.carousell.no-transition {
+    scroll-behavior: auto;
+}
+
+.carousell.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carousell.dragging .cardd {
+    cursor: grab;
+    user-select: none;
+}
+
+.carousell :where(.cardd, .imgg) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousell .cardd {
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 300px;
+    list-style: none;
+    background: #fff;
+    /* cursor: pointer; */
+    /* padding-bottom: 15px; */
+    border-radius: 8px;
+    padding: 0 20px;
+    /* border: 1px solid #c71a1a; */
+    box-shadow: 0px 11px 10px 10px rgba(164, 164, 164, 0.1);
+}
+
+.cardd .cardd-contentt {
+    /* border: 1px solid #c71a1a; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cardd-contentt .cardd-imggg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #c71a1a; */
+    padding-right: 15px;
+}
+
+.cardd-imggg img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.cardd-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cardd-contentt .icon {
+    /* border: 1px solid #c71a1a; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 15px;
+}
+
+.carousell .cardd .imgg {
+    background: #8B53FF;
+    height: 148px;
+    width: 148px;
+    border-radius: 50%;
+}
+
+.cardd .imgg img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+}
+
+.carousell .cardd h5 {
+    font-weight: 500;
+}
+
+.carousell .cardd p {
+    font-size: 14px;
+    color: #6A6D78;
+    margin: 0;
+}
+
+/*
+.testimonials .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid red;
+}
+
+.testimonials .container .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.testimonials .container .swiper-slide {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 15px;
+    text-align: start;
+    box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+
+}
+
+.testimonials .container .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+.testimonials .container .swiper-slide .card-descriptionn {
+    padding: 1rem 1rem;
+}
+
+.testimonials .container .swiper-slide .card-titlee,
+.testimonials .container .swiper-slide .card-textt {
+    margin-bottom: .5rem;
+}
+
+.swiper-button-next {
+    right: 26px !important;
+}
+
+.swiper-button-prev {
+    left: 26px !important;
+} */
+
+@media screen and (max-width: 1115px) {
+    .wrappe .carousell {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .about {
+        height: 100%;
+        padding-top: 90px;
+    }
+
+    .suggest {
+        padding-top: 90px;
+    }
+
+    .suggest .row {
+        margin-left: 0;
+    }
+
+    .suggest-info {
+        padding-right: 90px;
+    }
+
+    .suggest p {
+        line-height: normal;
+        font-size: 14px;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .card-body h5 {
+        font-size: 20px;
+        color: #2F327D;
+        margin: 0;
+    }
+
+    .card-body p {
+        font-size: 14px;
+        color: #696984;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        height: 100%;
+        padding-top: 50px;
+    }
+
+    .about-content h2 {
+        font-size: 24px;
+    }
+
+    .about-img {
+        margin-top: 30px;
+    }
+
+    .about-title-visi h3 {
+        font-size: 16px;
+    }
+
+    .visimisi p {
+        font-size: 14px;
+    }
+
+    .suggest {
+        height: 100%;
+        padding: 50px 10px 0 10px;
+    }
+
+    .suggest p {
+        padding-right: 0;
+        font-size: 16px;
+    }
+
+    .suggest-info {
+        padding-right: 0;
+    }
+
+    .suggest-image {
+        width: 100%;
+    }
+
+    .service {
+        height: 100%;
+        padding-bottom: 70px
+    }
+
+    .card {
+        margin-top: 40px;
+    }
+
+    .card-body {
+        padding: 2.75rem;
+    }
+
+    .card-body h5 {
+        font-size: 25px;
+        color: #2F327D;
+        margin: 0;
+    }
+
+    .card-body p {
+        font-size: 18px;
+        color: #696984;
+        margin: 0;
+    }
+
+    .sponsor {
+        height: 100%;
+        padding-bottom: 80px;
+    }
+
+    .wrappe .carousell {
+        grid-auto-columns: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrappe .carousell {
+        grid-auto-columns: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .suggest p {
+        font-size: 14px;
+    }
+
+    .card-body h5 {
+        font-size: 20px;
+        color: #2F327D;
+        margin: 0;
+    }
+
+    .card-body p {
+        font-size: 15px;
+        color: #696984;
+        margin: 0;
+    }
+
+    .circle {
+        position: absolute;
+        top: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        z-index: 1;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+}
