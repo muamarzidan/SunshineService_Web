@@ -10,50 +10,55 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #ffffff;
 }
 
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url(./assets/img/front-view-young-hardworking-clerical-workers-discussing-one-issue-documents-office\ 1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: -1;
-    opacity: 0.7;
+nav {
+    background-color: #ffffff;
 }
 
-.navbar {
-    transition: background-color 0.3s ease;
-    /* Setel properti transisi agar perubahan latar belakang navbar halus */
-}
-
-.navbar-light.scrolled {
-    background-color: white;
-    /* Atur latar belakang navbar menjadi putih saat navbar memiliki kelas "scrolled" */
-}
-
-.navbar-light.scrolled .navbar-nav .nav-link {
-    color: #174076 !important;
-    /* Atur warna teks tautan menjadi biru saat navbar memiliki kelas "scrolled" */
-}
-
-
-.hero {
-    height: 100vh;
+.creation {
+    height: 100%;
     width: 100%;
 }
 
-.hero-content {
+.creation .col {
+    padding:  0 0;
+}
+
+.creation-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.creation-link .creation-link-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 170px;
+    border: 1px solid #000000;
+}
+
+.creation-link-content .row {
+    margin: 0 0;
+}
+
+
+.creation-link p{
+    font-family: 'PT Serif', serif;
+    font-size: 24px;
+    color: #000000;
+    margin: 0;
+}
+
+.creation-content {
     display: flex;
     flex-direction: column;
 }
 
-.hero-content h1 {
+.creation-content h1 {
     font-family: 'PT Serif', serif;
     font-size: 3rem;
     font-weight: bold;
@@ -61,18 +66,18 @@ body::before {
     margin: 0;
 }
 
-.hero-content p {
+.creation-content p {
     font-size: medium;
     color: rgb(0, 0, 0);
     margin: 0;
 }
 
-.hero a {
+.creation a {
     text-decoration: none;
     color: #ffffff;
 }
 
-.hero-button {
+.creation-button {
     width: 180px;
     padding: 15px 15px;
     background-color: #174076;
@@ -88,7 +93,7 @@ body::before {
     -o-border-radius: 10px;
 }
 
-.hero-button:hover {
+.creation-button:hover {
     background-color: #0F2B5B;
     transition: 0.7s;
     cursor: pointer;

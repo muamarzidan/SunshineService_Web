@@ -1,16 +1,3 @@
-document.addEventListener('DOMContentLoaded', function () {
-    var navbar = document.querySelector('.navbar');
-
-    window.addEventListener('scroll', function () {
-        if (window.scrollY > 550) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
-});
-
-
 function updateIconSize() {
     const width = window.innerWidth || document.documentElement.clientWidth;
     const iconA1 = document.getElementById("iconify-icon-about-1");
