@@ -74,17 +74,17 @@ function updateIconSize() {
 
     if (width <= 576) {
         iconS1.style.display = "block";
-        iconS1.setAttribute("width", "30");
+        iconS1.setAttribute("width", "26");
         iconS2.style.display = "block";
-        iconS2.setAttribute("width", "30");
+        iconS2.setAttribute("width", "26");
         iconS3.style.display = "block";
-        iconS3.setAttribute("width", "30");
+        iconS3.setAttribute("width", "26");
         iconS4.style.display = "block";
-        iconS4.setAttribute("width", "30");
+        iconS4.setAttribute("width", "26");
         iconS5.style.display = "block";
-        iconS5.setAttribute("width", "30");
+        iconS5.setAttribute("width", "26");
         iconS6.style.display = "block";
-        iconS6.setAttribute("width", "30");
+        iconS6.setAttribute("width", "26");
     } else if (width <= 768) {
         iconA1.style.display = "block";
         iconA1.setAttribute("width", "24");

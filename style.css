@@ -687,6 +687,13 @@ body::before {
 }
 
 @media screen and (max-width: 1115px) {
+    .card {
+        height: 400px;
+        max-height: 400px;
+    }
+    .service {
+        height: 170vh;
+    }
     .suggest-info {
         padding-right: 30px;
     }
@@ -719,6 +726,13 @@ body::before {
         margin-top: 0;
         line-height: normal;
         font-size: 14px;
+    }
+    .card {
+        height: 320px;
+        max-height: 400px;
+    }
+    .service {
+        height: 150vh;
     }
     .card-body {
         padding: 0 1rem 1rem 1rem;
@@ -828,17 +842,18 @@ body::before {
     }
 }
 
-@media screen and (max-width: 600px) {
-    .wrappe .carousell {
-        grid-auto-columns: 100%;
-    }
-}
 @media screen and (max-width: 853px) {
     #link p {
         white-space: wrap;
         overflow: hidden;
         text-overflow: ellipsis;
       }
+}
+
+@media screen and (max-width: 600px) {
+    .wrappe .carousell {
+        grid-auto-columns: 100%;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -849,7 +864,7 @@ body::before {
         padding-right: 0;
     }
     .card-body {
-        padding: 2.75rem 2.5rem;
+        padding: 1rem 2.5rem;
     }
 
     .card-body h5 {
@@ -882,15 +897,15 @@ body::before {
         -ms-border-radius: 10%;
         -o-border-radius: 10%;
     }
-    
+
     .card-icon iconify-icon {
         position: relative;
         color: white;
         z-index: 2;
-        top: 7px;
-        left: 15px;
+        top: 30px;
+        left: 20px;
     }
-
+    
     .cardd-contentt .cardd-imggg {
         display: flex;
         justify-content: center;
@@ -904,5 +919,12 @@ body::before {
         justify-content: center;
         align-items: center;
         flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        height: 350px;
+        max-height: 400px;
     }
 }
