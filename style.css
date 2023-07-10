@@ -830,6 +830,13 @@ body::before {
         grid-auto-columns: 100%;
     }
 }
+@media screen and (max-width: 853px) {
+    #link p {
+        white-space: wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+}
 
 @media screen and (max-width: 576px) {
     .suggest p {
