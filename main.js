@@ -92,17 +92,17 @@ function updateIconSize() {
         iconA2.setAttribute("width", "24");
 
         iconS1.style.display = "block";
-        iconS1.setAttribute("width", "40");
+        iconS1.setAttribute("width", "36");
         iconS2.style.display = "block";
-        iconS2.setAttribute("width", "40");
+        iconS2.setAttribute("width", "36");
         iconS3.style.display = "block";
-        iconS3.setAttribute("width", "40");
+        iconS3.setAttribute("width", "36");
         iconS4.style.display = "block";
-        iconS4.setAttribute("width", "40");
+        iconS4.setAttribute("width", "36");
         iconS5.style.display = "block";
-        iconS5.setAttribute("width", "40");
+        iconS5.setAttribute("width", "36");
         iconS6.style.display = "block";
-        iconS6.setAttribute("width", "40");
+        iconS6.setAttribute("width", "36");
     } else {
         iconA1.style.display = "block";
         iconA2.style.display = "block";
@@ -110,17 +110,17 @@ function updateIconSize() {
         iconA2.setAttribute("width", "48");
 
         iconS1.style.display = "block";
-        iconS1.setAttribute("width", "40");
+        iconS1.setAttribute("width", "34");
         iconS2.style.display = "block";
-        iconS2.setAttribute("width", "40");
+        iconS2.setAttribute("width", "34");
         iconS3.style.display = "block";
-        iconS3.setAttribute("width", "40");
+        iconS3.setAttribute("width", "34");
         iconS4.style.display = "block";
-        iconS4.setAttribute("width", "40");
+        iconS4.setAttribute("width", "34");
         iconS5.style.display = "block";
-        iconS5.setAttribute("width", "40");
+        iconS5.setAttribute("width", "34");
         iconS6.style.display = "block";
-        iconS6.setAttribute("width", "40");
+        iconS6.setAttribute("width", "34");
     }
 }
 window.addEventListener("DOMContentLoaded", updateIconSize);
