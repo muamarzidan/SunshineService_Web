@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Profile Sunshine Service</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            background-color: #ffffff;
+        }
+
+        nav li a {
+            color: #000000 !important;
+        }
+
+        .profile {
+            width: 100%;
+        }
+
+        .profile img {
+            max-height: 300px;
+            border-radius: 30px;
+            padding: 1em;
+        }
+
+        .profile h5 {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .profile p {
+            color: #696984;
+        }
+
+        .profile .img-fluid {
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .profile .card {
+            border: none;
+            width: 330px;
+            background-color: #fff;
+            border-radius: 15px;
+            /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
+        }
+
+        .profile .card-body {
+            padding: 0 1rem 1rem 1rem;
+        }
+
+        @media screen and (max-width: 992px) {
+            .profile .card {
+                width: 200px;
+
+            }
+
+            .profile .img-fluid {
+                height: 150px;
+                object-fit: cover;
+            }
+
+            .profile h5 {
+                font-size: 14px;
+                margin: 0;
+            }
+
+            .profile p {
+                font-size: 12px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .profile img {
+                padding: 1.5em 1.5em 0.8em 1.5em;
+                border-radius: 40px;
+            }
+
+            .profile .img-fluid {
+                height: 290px;
+                object-fit: cover;
+            }
+
+            .profile .card {
+                width: 100%;
+                border: 1px solid #000000;
+                border-radius: 20px;
+                height: 360px;
+            }
+
+            .profile h5 {
+                font-size: 20px;
+            }
+
+            .profile p {
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .profile img {
+                max-height: 250px;
+                border-radius: 40px;
+            }
+
+            .profile .card {
+                height: 315px;
+            }
+        }
+
+        .contact {
+            background-color: #ffffff;
+            height: 70vh;
+            width: 100%;
+            padding-top: 120px;
+            margin-top: 70px;
+        }
+
+        .contact h4 {
+            font-family: 'PT Serif', serif;
+            padding-bottom: 10px;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            margin: 0;
+        }
+
+        .contact a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .footer {
+            background-color: #174076;
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .footer .container {
+            text-align: center;
+        }
+
+        .footer .footer-desc {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .footer .mbuh {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .footer .container p {
+            margin: 0;
+        }
+
+
+
+        @media screen and (max-width: 992px) {
+            .contact h4 {
+                font-size: 1.3rem;
+            }
+
+            .contact p {
+                font-size: 0.9rem;
+            }
+
+        }
+
+        @media screen and (max-width: 768px) {
+            .contact {
+                height: 75vh;
+            }
+
+            .footer .footer-desc {
+                justify-content: center;
+            }
+
+            .footer p {
+                font-size: 0.9rem;
+            }
+
+            .footer #left {
+                padding-right: 20px;
+            }
+
+            .footer #right {
+                padding-left: 20px;
+            }
+
+            .creation-link p {
+                font-size: 18px;
+            }
+        }
+
+        @media screen and (max-width: 428px) {
+
+            .footer,
+            .col,
+            .col-1,
+            .col-10,
+            .col-11,
+            .col-12,
+            .col-2,
+            .col-3,
+            .col-4,
+            .col-5,
+            .col-6,
+            .col-7,
+            .col-8,
+            .col-9,
+            .col-auto,
+            .col-lg,
+            .col-lg-1,
+            .col-lg-10,
+            .col-lg-11,
+            .col-lg-12,
+            .col-lg-2,
+            .col-lg-3,
+            .col-lg-4,
+            .col-lg-5,
+            .col-lg-6,
+            .col-lg-7,
+            .col-lg-8,
+            .col-lg-9,
+            .col-lg-auto,
+            .col-md,
+            .col-md-1,
+            .col-md-10,
+            .col-md-11,
+            .col-md-12,
+            .col-md-2,
+            .col-md-3,
+            .col-md-4,
+            .col-md-5,
+            .col-md-6,
+            .col-md-7,
+            .col-md-8,
+            .col-md-9,
+            .col-md-auto,
+            .col-sm,
+            .col-sm-1,
+            .col-sm-10,
+            .col-sm-11,
+            .col-sm-12,
+            .col-sm-2,
+            .col-sm-3,
+            .col-sm-4,
+            .col-sm-5,
+            .col-sm-6,
+            .col-sm-7,
+            .col-sm-8,
+            .col-sm-9,
+            .col-sm-auto,
+            .col-xl,
+            .col-xl-1,
+            .col-xl-10,
+            .col-xl-11,
+            .col-xl-12,
+            .col-xl-2,
+            .col-xl-3,
+            .col-xl-4,
+            .col-xl-5,
+            .col-xl-6,
+            .col-xl-7,
+            .col-xl-8,
+            .col-xl-9,
+            .col-xl-auto {
+                padding-left: 9px;
+            }
+        }
+
+        @media screen and (max-width: 395px) {
+
+            .footer,
+            .col-xl-10,
+            .col-md-9,
+            .col-10 {
+                padding-left: 1px;
+            }
+        }
+
+        @media screen and (max-width: 382px) {
+            .contact {
+                height: 85vh;
+            }
+
+            .contact p {
+                font-size: 0.8rem;
+            }
+
+            .footer {
+                height: 15vh;
+            }
+
+            .footer-desc p {
+                font-size: 0.8rem;
+            }
+
+            /* .footer,.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+        padding-left: 9px;
+    } */
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar-shadow navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/vv.png" alt="Logo" class="img-fluid" width="100" height="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mr-5">
+                            <a class="nav-link" href="/">Beranda</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link" href="./index.html#about">Tentang Kami</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link" href="./index.html#service">Jasa</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link" href="./index.html#testimoni">Testimoni</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Kontak</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="profile">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-4 mt-5">
+                    <div class="card">
+                        <img src="./assets/img/zidan.jpeg" class=" img-fluid " alt="..." ">
+                        <div class=" card-body">
+                        <h5 class="card-title text-center">Card title</h5>
+                        <p class="card-text text-center">Sunshine</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="card">
+                        <img src="./assets/img/zidan.jpeg" class=" img-fluid " alt="..." ">
+                        <div class=" card-body">
+                        <h5 class="card-title text-center">Card title</h5>
+                        <p class="card-text text-center">Sunshine</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="card">
+                        <img src="./assets/img/zidan.jpeg" class=" img-fluid " alt="..." ">
+                        <div class=" card-body">
+                        <h5 class="card-title text-center">Card title</h5>
+                        <p class="card-text text-center">Sunshine</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="card">
+                        <img src="./assets/img/zidan.jpeg" class=" img-fluid " alt="..." ">
+                        <div class=" card-body">
+                        <h5 class="card-title text-center">Card title</h5>
+                        <p class="card-text text-center">Sunshine</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="card">
+                        <img src="./assets/img/zidan.jpeg" class=" img-fluid " alt="..." ">
+                        <div class=" card-body">
+                        <h5 class="card-title text-center">Card title</h5>
+                        <p class="card-text text-center">Sunshine</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-5 col-6">
+                            <img src="./assets/img/vv.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-7 col-6">
+                            <p>Sunshine Creative Digital Media</p>
+                            <p>Rumah BUMN</p>
+                            <p>Jl. Ahmad Yani No.28 Rumah BUMN Banyumas, Jawa Tengah, Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row d-md-flex justify-content-between">
+                        <div class="col-md-5 ml-md-5 col-6 col-sm-6">
+                            <h4 class="fw-bold">Produk</h4>
+                            <p>Desa Digital</p>
+                            <p>Aplikasi dan Web</p>
+                            <p>Desain Produk</p>
+                        </div>
+                        <div id="link" class="col-md-5 col-6 col-sm-6">
+                            <h4 class="fw-bold">Info Kontak</h4>
+                            <div class="row">
+                                <div class="col-xl-2 col-md-3 col-2">
+                                    <iconify-icon icon="ic:outline-email" id="icon-1"></iconify-icon>
+                                </div>
+                                <div class="col-xl-10 col-md-9 col-10 d-flex align-items-center">
+                                    <p id="smallone">sunshine@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-2 col-md-3 col-2">
+                                    <iconify-icon icon="ic:outline-whatsapp" id="icon-2"></iconify-icon>
+                                </div>
+                                <div class="col-xl-10 col-md-9 col-10 d-flex align-items-center">
+                                    <p><a href="https://wa.me/62895334967287?text=Halo%20kak,%0ASaya%20mau%20order%20joki%20mlbb"
+                                            target="_blank">
+                                            0895 3349 67287
+                                        </a></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-2 col-md-3 col-2">
+                                    <iconify-icon icon="ri:instagram-line" id="icon-3"></iconify-icon>
+                                </div>
+                                <div id="smalltwoq" class="col-xl-10 col-md-9 col-10 d-flex align-items-center">
+                                    <p><a href="https://www.instagram.com/sunshine.id.official/" target="_blank">
+                                            @sunshine.id
+                                        </a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <p class="text-center ">
+                        Copyright 2023 Sunshine, All Right Reserved
+                    </p>
+                </div>
+                <div class="col-md-6 footer-desc">
+                    <p id="left">Privacy Policy</p>
+                    <p id="right">Terms & Conditions</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

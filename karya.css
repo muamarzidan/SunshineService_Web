@@ -138,6 +138,11 @@ nav li a {
     margin-top: 70px;
 }
 
+.contact a {
+    text-decoration: none;
+    color: #000000;
+}
+
 .contact h4 {
     font-family: 'PT Serif', serif;
     padding-bottom: 10px;
