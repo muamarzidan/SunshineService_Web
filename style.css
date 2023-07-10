@@ -196,6 +196,12 @@ body::before {
     -o-border-radius: 10px;
 }
 
+.suggest .suggest-button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
 .service {
     background-color: #ffffff;
     height: 150vh;
