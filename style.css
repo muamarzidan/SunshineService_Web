@@ -151,7 +151,6 @@ body::before {
     background-color: #ffffff;
     height: 85vh;
     width: 100%;
-    /* border: 1px solid red; */
 }
 
 .suggest .row {
@@ -178,6 +177,23 @@ body::before {
 
 .suggest-info p {
     line-height: 30px;
+    margin-top: 1rem;
+}
+
+.suggest .suggest-button {
+    width: 100%;
+    padding: 15px 15px;
+    background-color: #174076;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #FAFAFA;
+    font-weight: 500;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .service {
@@ -385,8 +401,7 @@ body::before {
 }
 
 @media screen and (max-width: 428px) {
-
-    .footer,
+    .contact .container .row,
     .col,
     .col-1,
     .col-10,
@@ -669,6 +684,18 @@ body::before {
 }
 
 @media screen and (max-width: 1115px) {
+    .suggest-info {
+        padding-right: 30px;
+    }
+    .suggest-info p {
+        font-size: 16px;
+    }
+    .suggest .suggest-button {
+        padding: 10px 15px;
+        border-radius: 8px;
+        font-size: 15px;
+        font-weight: thin;
+    }
     .wrappe .carousell {
         grid-auto-columns: calc((100% / 2) - 9px);
     }
@@ -679,34 +706,25 @@ body::before {
         height: 100%;
         padding-top: 90px;
     }
-
     .suggest {
         padding-top: 90px;
     }
-
-    .suggest .row {
-        margin-left: 0;
-    }
-
     .suggest-info {
-        padding-right: 90px;
+        padding-right: 20px;
     }
-
-    .suggest p {
+    .suggest .suggest-info p {
+        margin-top: 0;
         line-height: normal;
         font-size: 14px;
     }
-
     .card-body {
         padding: 0 1rem 1rem 1rem;
     }
-
     .card-body h5 {
         font-size: 16px;
         color: #2F327D;
         margin: 0;
     }
-
     .card-body p {
         font-size: 12px;
         color: #696984;
@@ -745,15 +763,29 @@ body::before {
         padding-right: 0;
         font-size: 16px;
     }
-
     .suggest-info {
         padding-right: 0;
+        padding-bottom: 40px;
+
+    }
+    .suggest .suggest-info p {
+        padding-right: 20px;
+        margin-top: 10px;
     }
 
     .suggest-image {
         width: 100%;
     }
-
+    .suggest .suggest-button {
+        margin-top: 20px;
+        padding: 12px 15px;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: thin;
+    }
+    .suggest  .col-md-6 {
+        padding-right: 0;
+    }
     .service {
         height: 100%;
         padding-bottom: 70px
@@ -803,7 +835,9 @@ body::before {
     .suggest p {
         font-size: 14px;
     }
-
+    .suggest .suggest-info p {
+        padding-right: 0;
+    }
     .card-body {
         padding: 2.75rem 2.5rem;
     }
