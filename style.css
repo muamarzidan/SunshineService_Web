@@ -623,6 +623,8 @@ body::before {
     justify-content: center;
 }
 
+
+
 .cardd-contentt .icon {
     /* border: 1px solid #c71a1a; */
     display: flex;
@@ -655,6 +657,12 @@ body::before {
     font-size: 14px;
     color: #6A6D78;
     margin: 0;
+}
+
+.carousell .cardd-name #smallone, #smalltwo, #smallthree, #smallfour, #smallfive, #smallsix {
+    font-size: 12px;
+    color: #174076;
+    font-weight: thin;
 }
 
 @media screen and (max-width: 1115px) {
@@ -822,5 +830,20 @@ body::before {
         -moz-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
         -o-transform: translateX(-50%);
+    }
+
+    .cardd-contentt .cardd-imggg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid #c71a1a; */
+        padding-right: 0;
+    }
+    .cardd-contentt .icon {
+        /* border: 1px solid #c71a1a; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
     }
 }
