@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-function updateIconSizeKarya() {
+function updateIconSizeFooter() {
     const width = window.innerWidth || document.documentElement.clientWidth;
     const iconEmail = document.getElementById("icon-1");
     const iconNumber = document.getElementById("icon-2");
@@ -56,11 +56,11 @@ function updateIconSizeKarya() {
         iconInstagram.setAttribute("width", "30");
     }
 }
-window.addEventListener("DOMContentLoaded", updateIconSizeKarya);
-window.addEventListener("resize", updateIconSizeKarya);
+window.addEventListener("DOMContentLoaded", updateIconSizeFooter);
+window.addEventListener("resize", updateIconSizeFooter);
 
 
-function updateIconSize() {
+function updateIconSizeMain() {
     const width = window.innerWidth || document.documentElement.clientWidth;
     const iconA1 = document.getElementById("iconify-icon-about-1");
     const iconA2 = document.getElementById("iconify-icon-about-2");
@@ -128,5 +128,5 @@ function updateIconSize() {
         iconS6.setAttribute("width", "34");
     }
 }
-window.addEventListener("DOMContentLoaded", updateIconSize);
-window.addEventListener("resize", updateIconSize);
+window.addEventListener("DOMContentLoaded", updateIconSizeMain);
+window.addEventListener("resize", updateIconSizeMain);

@@ -13,7 +13,7 @@ function updateIconSize() {
 
         iconInstagram.style.display = "block";
         iconInstagram.setAttribute("width", "16");
-    }else if (width <= 768) {
+    } else if (width <= 768) {
         iconEmail.style.display = "block";
         iconEmail.setAttribute("width", "24");
 
@@ -44,3 +44,32 @@ function updateIconSize() {
 }
 window.addEventListener("DOMContentLoaded", updateIconSize);
 window.addEventListener("resize", updateIconSize);
+
+function updateIconSizeKarya() {
+    const width = window.innerWidth || document.documentElement.clientWidth;
+    const icons = document.getElementsByClassName("iconarrow");
+
+    if (width <= 576) {
+        for (let i = 0; i < icons.length; i++) {
+            icons[i].style.display = "block";
+            icons[i].setAttribute("width", "10");
+        }
+    }else if (width <= 768) {
+        for (let i = 0; i < icons.length; i++) {
+            icons[i].style.display = "block";
+            icons[i].setAttribute("width", "18");
+        }
+    } else if (width <= 992) {
+        for (let i = 0; i < icons.length; i++) {
+            icons[i].style.display = "block";
+            icons[i].setAttribute("width", "16");
+        }
+    } else {
+        for (let i = 0; i < icons.length; i++) {
+            icons[i].style.display = "block";
+            icons[i].setAttribute("width", "20");
+        }
+    }
+}
+window.addEventListener("DOMContentLoaded", updateIconSizeKarya);
+window.addEventListener("resize", updateIconSizeKarya);
