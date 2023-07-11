@@ -54,6 +54,15 @@ body::before {
     color: #000000 !important;
 }
 
+@media (max-width: 576px) {
+    #navv {
+      background-color: white !important;
+    }
+    #navv .navbar-nav .nav-link {
+      color: #000000 !important;
+    }
+  }
+
 
 .hero {
     height: 100vh;
@@ -389,7 +398,7 @@ body::before {
 
 @media screen and (max-width: 768px) {
     .contact {
-        height: 65vh;
+        height: 75vh;
     }
 
     .footer .footer-desc {
@@ -722,6 +731,12 @@ body::before {
         height: 100%;
         padding-top: 90px;
     }
+    .about-title-visi h3 {
+        font-size: 22px;
+    }
+    .visimisi p {
+        font-size: 14px;
+    }
     .suggest {
         padding-top: 90px;
     }
@@ -770,11 +785,11 @@ body::before {
     }
 
     .about-title-visi h3 {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .visimisi p {
-        font-size: 14px;
+        font-size: medium;
     }
 
     .suggest {
@@ -862,6 +877,13 @@ body::before {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .card {
+        height: 350px;
+        max-height: 400px;
+    }
+}
+
 @media screen and (max-width: 576px) {
     .suggest p {
         font-size: 14px;
@@ -872,19 +894,16 @@ body::before {
     .card-body {
         padding: 1rem 2.5rem;
     }
-
     .card-body h5 {
         font-size: 20px;
         color: #2F327D;
         margin: 0;
     }
-
     .card-body p {
         font-size: 15px;
         color: #696984;
         margin: 0;
     }
-
     .circle {
         /* position: absolute;
         top: -20px;
@@ -911,7 +930,6 @@ body::before {
         top: 30px;
         left: 20px;
     }
-    
     .cardd-contentt .cardd-imggg {
         display: flex;
         justify-content: center;
@@ -926,11 +944,14 @@ body::before {
         align-items: center;
         flex-direction: row;
     }
+    .suggest .suggest-button {
+        padding: 10px 15px;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: thin;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
 }
-
-@media screen and (max-width: 600px) {
-    .card {
-        height: 350px;
-        max-height: 400px;
-    }
 }

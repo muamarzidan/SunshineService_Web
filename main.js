@@ -73,6 +73,11 @@ function updateIconSize() {
 
 
     if (width <= 576) {
+        iconA1.style.display = "block";
+        iconA2.style.display = "block";
+        iconA1.setAttribute("width", "26");
+        iconA2.setAttribute("width", "26");
+
         iconS1.style.display = "block";
         iconS1.setAttribute("width", "26");
         iconS2.style.display = "block";
@@ -106,8 +111,8 @@ function updateIconSize() {
     } else {
         iconA1.style.display = "block";
         iconA2.style.display = "block";
-        iconA1.setAttribute("width", "48");
-        iconA2.setAttribute("width", "48");
+        iconA1.setAttribute("width", "36");
+        iconA2.setAttribute("width", "36");
 
         iconS1.style.display = "block";
         iconS1.setAttribute("width", "34");
