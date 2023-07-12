@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    border: red 1px solid;
 }
 
 a {
@@ -142,6 +143,23 @@ body::before {
     color: rgb(0, 0, 0);
     margin: 0;
 }
+
+.about-content .visi-misi p {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+                            
+.about #smalltree {
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* .about .row .col-md-6 {
+    height: 30px;
+} */
 
 .about-title-visi {
     display: flex;
@@ -789,7 +807,7 @@ body::before {
     }
 
     .visimisi p {
-        font-size: medium;
+        font-size: 15px;
     }
 
     .suggest {
