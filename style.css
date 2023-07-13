@@ -177,12 +177,13 @@ body::before {
     background-color: #ffffff;
     height: 85vh;
     width: 100%;
+    max-width: 100%;
 }
 
-/* .suggest .row {
+.suggest .row {
     margin-right: 0;
     overflow-x: hidden;
-} */
+}
 
 .suggest-image {
     width: 90%;
