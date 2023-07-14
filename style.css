@@ -9,11 +9,13 @@ a {
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    background-color: #fff;
 }
 
 body::before {
@@ -31,6 +33,21 @@ body::before {
     opacity: 0.8;
 }
 
+.notfound {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notfound .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
 .navbar {
     transition: background-color 0.3s ease;
 }
@@ -42,9 +59,10 @@ body::before {
     -ms-transition: box-shadow 0.s ease;
     -o-transition: box-shadow 0.s ease;
 }
-  .navbar-shadow.shadow-on-scroll {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+
+.navbar-shadow.shadow-on-scroll {
+    box-shadow: 0 0 10px 5px rgba(136, 136, 136, 0.1);
+}
 
 .navbar-light.scrolled {
     background-color: white;
@@ -56,13 +74,13 @@ body::before {
 
 @media (max-width: 576px) {
     #navv {
-      background-color: white !important;
+        background-color: white !important;
     }
-    #navv .navbar-nav .nav-link {
-      color: #000000 !important;
-    }
-  }
 
+    #navv .navbar-nav .nav-link {
+        color: #000000 !important;
+    }
+}
 
 .hero {
     height: 100vh;
@@ -149,7 +167,7 @@ body::before {
     margin: 0;
 }
 
-                            
+
 .about #smalltree {
     white-space: wrap;
     overflow: hidden;
@@ -404,6 +422,7 @@ body::before {
     .contact {
         height: 65vh;
     }
+
     .contact h4 {
         font-size: 1.3rem;
     }
@@ -437,6 +456,7 @@ body::before {
 }
 
 @media screen and (max-width: 428px) {
+
     .contact .col-2,
     .contact .col-6,
     .contact .col-10,
@@ -447,12 +467,13 @@ body::before {
     .contact .col-md-9,
     .contact .col-sm-6,
     .contact .col-xl-2,
-    .contact .col-xl-10    {
+    .contact .col-xl-10 {
         padding-left: 9px;
     }
 }
 
 @media screen and (max-width: 395px) {
+
     .footer,
     .col-xl-10,
     .col-md-9,
@@ -652,7 +673,12 @@ body::before {
     margin: 0;
 }
 
-.carousell .cardd-name #smallone, #smalltwo, #smallthree, #smallfour, #smallfive, #smallsix {
+.carousell .cardd-name #smallone,
+#smalltwo,
+#smallthree,
+#smallfour,
+#smallfive,
+#smallsix {
     font-size: 12px;
     color: #174076;
     font-weight: thin;
@@ -663,21 +689,26 @@ body::before {
         height: 400px;
         max-height: 400px;
     }
+
     .service {
         height: 170vh;
     }
+
     .suggest-info {
         padding-right: 30px;
     }
+
     .suggest-info p {
         font-size: 16px;
     }
+
     .suggest .suggest-button {
         padding: 10px 15px;
         border-radius: 8px;
         font-size: 15px;
         font-weight: thin;
     }
+
     .wrappe .carousell {
         grid-auto-columns: calc((100% / 2) - 9px);
     }
@@ -688,38 +719,48 @@ body::before {
         height: 100%;
         padding-top: 90px;
     }
+
     .about-title-visi h3 {
         font-size: 22px;
     }
+
     .visimisi p {
         font-size: 14px;
     }
+
     .suggest {
         padding-top: 90px;
     }
+
     .suggest-info {
         padding-right: 20px;
     }
+
     .suggest .suggest-info p {
         margin-top: 0;
         line-height: normal;
         font-size: 14px;
     }
+
     .card {
         height: 320px;
         max-height: 400px;
     }
+
     .service {
         height: 150vh;
     }
+
     .card-body {
         padding: 0 1rem 1rem 1rem;
     }
+
     .card-body h5 {
         font-size: 16px;
         color: #2F327D;
         margin: 0;
     }
+
     .card-body p {
         font-size: 12px;
         color: #696984;
@@ -764,11 +805,13 @@ body::before {
         padding-right: 0;
         font-size: 16px;
     }
+
     .suggest-info {
         padding-right: 0;
         padding-bottom: 40px;
 
     }
+
     .suggest .suggest-info p {
         padding-right: 20px;
         margin-top: 10px;
@@ -777,6 +820,7 @@ body::before {
     .suggest-image {
         width: 100%;
     }
+
     .suggest .suggest-button {
         margin-top: 20px;
         padding: 12px 15px;
@@ -784,6 +828,7 @@ body::before {
         font-size: 14px;
         font-weight: thin;
     }
+
     /* .suggest  .col-md-6 {
         padding-right: 0;
     } */
@@ -831,7 +876,7 @@ body::before {
         white-space: wrap;
         overflow: hidden;
         text-overflow: ellipsis;
-      }
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -851,22 +896,27 @@ body::before {
     .suggest p {
         font-size: 14px;
     }
+
     .suggest .suggest-info p {
         padding-right: 0;
     }
+
     .card-body {
         padding: 1rem 2.5rem;
     }
+
     .card-body h5 {
         font-size: 20px;
         color: #2F327D;
         margin: 0;
     }
+
     .card-body p {
         font-size: 15px;
         color: #696984;
         margin: 0;
     }
+
     .circle {
         /* position: absolute;
         top: -20px;
@@ -893,6 +943,7 @@ body::before {
         top: 30px;
         left: 20px;
     }
+
     .cardd-contentt .cardd-imggg {
         display: flex;
         justify-content: center;
@@ -900,6 +951,7 @@ body::before {
         /* border: 1px solid #c71a1a; */
         padding-right: 0;
     }
+
     .cardd-contentt .icon {
         /* border: 1px solid #c71a1a; */
         display: flex;
@@ -907,6 +959,7 @@ body::before {
         align-items: center;
         flex-direction: row;
     }
+
     .suggest .suggest-button {
         padding: 10px 15px;
         border-radius: 6px;
@@ -916,7 +969,7 @@ body::before {
         -moz-border-radius: 6px;
         -ms-border-radius: 6px;
         -o-border-radius: 6px;
-}
+    }
 }
 
 @media screen and (max-width: 487px) {
