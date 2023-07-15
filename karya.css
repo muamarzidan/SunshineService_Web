@@ -52,7 +52,6 @@ nav li a {
     padding:  0 0;
 }
 
-
 .creation-link {
     display: flex;
     justify-content: center;
@@ -65,7 +64,6 @@ nav li a {
     justify-content: space-evenly;
     align-items: center;
     width: 170px;
-    /* border: 1px solid #000000; */
 }
 
 .creation-link-content .row {
@@ -236,7 +234,7 @@ nav li a {
 
 @media screen and (max-width: 382px) {
     .contact {
-        height: 85vh;
+        height: 80vh;
     }
     .contact p {
         font-size: 0.8rem;
