@@ -115,17 +115,17 @@ function updateIconSizeMain() {
         iconA2.setAttribute("width", "36");
 
         iconS1.style.display = "block";
-        iconS1.setAttribute("width", "34");
+        iconS1.setAttribute("width", "28");
         iconS2.style.display = "block";
-        iconS2.setAttribute("width", "34");
+        iconS2.setAttribute("width", "28");
         iconS3.style.display = "block";
-        iconS3.setAttribute("width", "34");
+        iconS3.setAttribute("width", "28");
         iconS4.style.display = "block";
-        iconS4.setAttribute("width", "34");
+        iconS4.setAttribute("width", "28");
         iconS5.style.display = "block";
-        iconS5.setAttribute("width", "34");
+        iconS5.setAttribute("width", "28");
         iconS6.style.display = "block";
-        iconS6.setAttribute("width", "34");
+        iconS6.setAttribute("width", "28");
     }
 }
 window.addEventListener("DOMContentLoaded", updateIconSizeMain);
