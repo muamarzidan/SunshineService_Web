@@ -1060,14 +1060,6 @@ body::before {
     }
 }
 
-@media screen and (max-width: 395px) {
-    .footer,
-    .col-xl-10,
-    .col-md-9,
-    .col-10 {
-        padding-left: 1px;
-    }
-}
 
 @media screen and (max-width: 382px) {
     .footer {
