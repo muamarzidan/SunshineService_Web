@@ -249,14 +249,15 @@ body::before {
 
 .suggest .suggest-button {
     width: 100%;
-    padding: 15px 15px;
     background-color: #174076;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 15px 15px;
     border-radius: 10px;
     color: #FAFAFA;
     font-weight: 500;
+    cursor: pointer;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
