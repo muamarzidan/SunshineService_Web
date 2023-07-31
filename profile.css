@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+
+
+nav {
+    background-color: #ffffff;
+}
+
+nav li a {
+    font-weight: 500;
+    color: #000000 !important;
+}
+
+.navbar-shadow {
+    box-shadow: 0 0 10px 5px rgba(136, 136, 136, 0.1);
+}
+
+
+
+
+.div {
+    margin-top: 130px;
+}
+
+.profile {
+    width: 100%;
+}
+
+.profile img {
+    max-height: 300px;
+    border-radius: 30px;
+    padding: 1em;
+}
+
+.profile h2 {
+    font-family: 'PT Serif', serif;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+.profile h5 {
+    color: #000000  ;
+    text-transform: uppercase;
+    font-weight: medium;
+}
+
+.profile .div p {
+    font-size: normal;
+    font-weight: 300;
+    color: #5C5C5C;
+}
+
+.profile .card {
+    font-size: normal;
+    font-weight: 300;
+    color: #696984;
+}
+
+.profile .img-fluid {
+    height: 230px;
+    object-fit: cover;
+}
+
+.profile .card {
+    border: none;
+    width: 330px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile .card-body {
+    padding: 0 1rem 1rem 1rem;
+}
+
+@media screen and (max-width: 992px) {
+    .profile .card {
+        width: 200px;
+    }
+
+    .profile .img-fluid {
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .profile h5 {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .profile p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 853px) {
+    #link p {
+        white-space: wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .profile img {
+        padding: 1.5em 1.5em 0.8em 1.5em;
+        border-radius: 40px;
+    }
+
+    .profile .img-fluid {
+        height: 290px;
+        object-fit: cover;
+    }
+
+    .profile .card {
+        width: 100%;
+        border-radius: 20px;
+        height: 360px;
+    }
+
+    .profile h5 {
+        font-size: 20px;
+    }
+
+    .profile p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .profile img {
+        max-height: 250px;
+        border-radius: 40px;
+    }
+
+    .profile .card {
+        height: 315px;
+    }
+}
+
+
+
+.contact {
+    background-color: #ffffff;
+    height: 60vh;
+    width: 100%;
+    padding-top: 120px;
+    margin-top: 70px;
+}
+
+.contact h4 {
+    font-family: 'PT Serif', serif;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+.contact p {
+    font-size: normal;
+    font-weight: 300;
+    color: #1E1E1E;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #1E1E1E;
+}
+
+
+
+.footer {
+    background-color: #174076;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.footer .container {
+    text-align: center;
+}
+
+.footer .footer-desc {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer .mbuh {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.footer .container p {
+    margin: 0;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .contact h4 {
+        font-size: 1.3rem;
+    }
+    .contact p {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        height: 75vh;
+    }
+    .footer .footer-desc {
+        justify-content: center;
+    }
+    .footer p {
+        font-size: 0.9rem;
+    }
+    .footer #left {
+        padding-right: 20px;
+    }
+    .footer #right {
+        padding-left: 20px;
+    }
+    .creation-link p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .contact .col-2,
+    .contact .col-6,
+    .contact .col-10,
+    .contact .col-md-3,
+    .contact .col-md-5,
+    .contact .col-md-6,
+    .contact .col-md-7,
+    .contact .col-md-9,
+    .contact .col-sm-6,
+    .contact .col-xl-2,
+    .contact .col-xl-10 {
+        padding-left: 9px;
+    }
+    .contact {
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 382px) {
+    .contact {
+        height: 70vh;
+    }
+    .contact p {
+        font-size: 0.8rem;
+    }
+    .footer {
+        height: 15vh;
+    }
+    .footer-desc p {
+        font-size: 0.8rem;
+    }
+}
