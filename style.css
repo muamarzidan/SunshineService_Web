@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -37,6 +39,10 @@ body::before {
 
 .navbar {
     transition: background-color 0.3s ease;
+}
+
+.navbar a {
+    font-weight: 500;
 }
 
 .navbar-shadow {
@@ -142,22 +148,16 @@ body::before {
 .about-content h2 {
     font-family: 'PT Serif', serif;
     font-weight: bold;
-    color: #0D0D0D;
+    color: #000000;
     margin: 0;
 }
 
 .about-content p {
-    font-size: medium;
-    color: #0D0D0D;
+    font-size: normal;
+    font-weight: 300;
+    color: #1E1E1E;
     margin: 0;
 }
-
-.about-content .visi-misi p {
-    font-size: 14px;
-    color: rgb(0, 0, 0);
-    margin: 0;
-}
-
 
 .about #smalltree {
     white-space: wrap;
@@ -230,19 +230,20 @@ body::before {
 }
 
 .suggest-info {
-    padding-right: 120px;
-    color: rgb(0, 0, 0);
+    padding-right: 220px;
 }
 
 .suggest-info h2 {
     font-family: 'PT Serif', serif;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: #000000;
     margin: 0;
 }
 
 .suggest-info p {
-    color: #0D0D0D;
+    font-size: normal;
+    font-weight: 300;
+    color: #1E1E1E;
     line-height: 30px;
     margin-top: 1rem;
 }
