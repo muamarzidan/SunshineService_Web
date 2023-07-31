@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -25,6 +26,7 @@ nav {
 }
 
 nav li a {
+    font-weight: 500;
     color: #000000 !important;
 }
 
@@ -49,6 +51,7 @@ nav li a {
 
 .creation p {
     font-size: medium;
+    font-weight: 300;
     color: #5C5C5C;
     margin: 0;
 }
@@ -146,6 +149,12 @@ nav li a {
     width: 100%;
     padding-top: 120px;
     margin-top: 70px;
+}
+
+.contact p {
+    font-size: normal;
+    font-weight: 300;
+    color: #1E1E1E;
 }
 
 .contact a {

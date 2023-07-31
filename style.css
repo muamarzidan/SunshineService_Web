@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
 * {
     box-sizing: border-box;
@@ -374,15 +373,16 @@ body::before {
 .service h2 {
     font-family: 'PT Serif', serif;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: #000000; 
     margin: 0;
 }
 
 .service .text-center p {
-    font-size: medium;
-    color: #5C5C5C;
     margin: 0;
-}
+    font-size: normal;
+    font-weight: 300;
+    color: #1E1E1E;
+}   
 
 .service-list-card {
     margin-top: 80px;
@@ -412,13 +412,17 @@ body::before {
 }
 
 .card-body h5 {
-    font-size: 20px;
+    font-size: large;
+    font-weight: 800;
     color: #2F327D;
     margin: 0;
 }
 
 .card-body p {
-    color: #696984;
+    margin: 0;
+    font-size: normal;
+    font-weight: 300;
+    color: #5C5C5C;
     margin: 0;
 }
 
@@ -983,6 +987,12 @@ body::before {
     font-weight: bold;
     color: rgb(0, 0, 0);
     margin: 0;
+}
+
+.contact p {
+    font-size: normal;
+    font-weight: 300;
+    color: #1E1E1E;
 }
 
 .contact a {
