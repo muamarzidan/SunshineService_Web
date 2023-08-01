@@ -209,6 +209,12 @@ body::before {
     }
 }
 
+@media screen and (max-width: 576px) {
+    #about-title-misi {
+        margin-top: 25px;
+    }
+}
+
 
 
 .suggest {
