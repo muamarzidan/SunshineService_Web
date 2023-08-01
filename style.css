@@ -57,20 +57,20 @@ body::before {
 }
 
 .navbar-light.scrolled {
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .navbar-light.scrolled .navbar-nav .nav-link {
-    color: #000000 !important;
+    color: #1E1E1E !important;
 }
 
 @media (max-width: 576px) {
     #navv {
-        background-color: white !important;
+        background-color: #ffffff !important;
     }
 
     #navv .navbar-nav .nav-link {
-        color: #000000 !important;
+        color: #1E1E1E !important;
     }
 }
 
@@ -94,13 +94,13 @@ body::before {
     font-family: 'PT Serif', serif;
     font-size: 3rem;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: #1E1E1E;
     margin: 0;
 }
 
 .hero-content p {
     font-size: medium;
-    color: rgb(0, 0, 0);
+    color: #1E1E1E;
     margin: 0;
 }
 
@@ -147,7 +147,7 @@ body::before {
 .about-content h2 {
     font-family: 'PT Serif', serif;
     font-weight: bold;
-    color: #000000;
+    color: #1E1E1E;
     margin: 0;
 }
 
@@ -173,7 +173,7 @@ body::before {
 .about-title-visi h3 {
     font-family: 'PT Serif', serif;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: 1E1E1E;
     margin: 0;
 }
 
@@ -241,7 +241,7 @@ body::before {
 .suggest-info h2 {
     font-family: 'PT Serif', serif;
     font-weight: bold;
-    color: #000000;
+    color: #1E1E1E;
     margin: 0;
 }
 
@@ -379,7 +379,7 @@ body::before {
 .service h2 {
     font-family: 'PT Serif', serif;
     font-weight: bold;
-    color: #000000; 
+    color: #1E1E1E; 
     margin: 0;
 }
 
@@ -428,7 +428,7 @@ body::before {
     margin: 0;
     font-size: normal;
     font-weight: 300;
-    color: #5C5C5C;
+    color: #1E1E1E;
     margin: 0;
 }
 
@@ -462,7 +462,7 @@ body::before {
 
 .card-icon iconify-icon {
     position: relative;
-    color: white;
+    color: #ffffff;
     z-index: 2;
     top: 28px;
     left: 22px;
@@ -596,13 +596,13 @@ body::before {
     position: relative;
     text-align: center;
     background-color: #174076;
-    color: white;
+    color: #ffffff;
     border: 1px solid rgb(255, 255, 255);
 }
 
 .wavessss .logo {
     width: 50px;
-    fill: white;
+    fill: #ffffff;
     padding-right: 15px;
     display: inline-block;
     vertical-align: middle;
@@ -637,12 +637,12 @@ body::before {
     position: relative;
     height: 20vh;
     text-align: center;
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .wavessss .flexx h3 {
     font-family: 'PT Serif', serif;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     margin: 0;
     letter-spacing: 1px;
 }
@@ -658,7 +658,7 @@ body::before {
 }
 
 .wavessss .waves-button a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -784,14 +784,14 @@ body::before {
 .testimonials .text-center h2 {
     font-family: 'PT Serif', serif;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: #1E1E1E;
     margin: 0;
 }
 
 .testimonials .text-center h2 {
     font-family: 'PT Serif', serif;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: #1E1E1E;
     margin: 0;
 }
 
@@ -816,11 +816,15 @@ body::before {
     position: absolute;
     text-align: center;
     line-height: 50px;
-    background: #fff;
+    background: #ffffff;
     border-radius: 50%;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
     transform: translateY(-50%);
     transition: transform 0.1s linear;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
 .wrappe i:active {
@@ -879,7 +883,7 @@ body::before {
     flex-direction: column;
     height: 300px;
     list-style: none;
-    background: #fff;
+    background: #ffffff;
     border-radius: 8px;
     padding: 0 20px;
     box-shadow: 0px 11px 10px 10px rgba(164, 164, 164, 0.1);
@@ -904,7 +908,7 @@ body::before {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 4px solid #fff;
+    border: 4px solid #ffffff;
 }
 
 .cardd-name {
@@ -933,7 +937,7 @@ body::before {
     height: 140px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #fff;
+    border: 4px solid #ffffff;
 }
 
 .carousell .cardd h5 {
@@ -991,7 +995,7 @@ body::before {
     font-family: 'PT Serif', serif;
     padding-bottom: 10px;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: #1E1E1E;
     margin: 0;
 }
 
@@ -1003,7 +1007,7 @@ body::before {
 
 .contact a {
     text-decoration: none;
-    color: #000000;
+    color: #1E1E1E;
 }
 
 .contact #link .col-xl-10 {

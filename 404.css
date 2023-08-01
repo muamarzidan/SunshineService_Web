@@ -25,7 +25,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-top: 150px; */
 }
 
 .notfound .container {
@@ -51,20 +50,20 @@ body {
 }
 
 .navbar-light.scrolled {
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .navbar-light.scrolled .navbar-nav .nav-link {
-    color: #000000 !important;
+    color: #1E1E1E !important;
 }
 
 @media (max-width: 576px) {
     #navv {
-        background-color: white !important;
+        background-color: #ffffff !important;
     }
 
     #navv .navbar-nav .nav-link {
-        color: #000000 !important;
+        color: #1E1E1E !important;
     }
 }
 
@@ -73,7 +72,6 @@ body {
     height: 70vh;
     width: 100%;
     padding-top: 120px;
-    /* margin-top: 70px; */
 }
 
 .contact h4 {
@@ -86,7 +84,7 @@ body {
 
 .contact a {
     text-decoration: none;
-    color: #000000;
+    color: #1E1E1E;
 }
 
 .footer {
@@ -95,7 +93,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #ffffff;
 }
 
 .footer .container {
@@ -261,7 +259,7 @@ body {
 
     .card-icon iconify-icon {
         position: relative;
-        color: white;
+        color: #ffffff;
         z-index: 2;
         top: 30px;
         left: 20px;
@@ -271,12 +269,10 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        /* border: 1px solid #c71a1a; */
         padding-right: 0;
     }
 
     .cardd-contentt .icon {
-        /* border: 1px solid #c71a1a; */
         display: flex;
         justify-content: center;
         align-items: center;

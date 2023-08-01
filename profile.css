@@ -27,7 +27,7 @@ nav {
 
 nav li a {
     font-weight: 500;
-    color: #000000 !important;
+    color: #1E1E1E !important;
 }
 
 .navbar-shadow {
@@ -55,12 +55,12 @@ nav li a {
     font-family: 'PT Serif', serif;
     padding-bottom: 10px;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: 1E1E1E;
     margin: 0;
 }
 
 .profile h5 {
-    color: #000000  ;
+    color: #1E1E1E  ;
     text-transform: uppercase;
     font-weight: medium;
 }
@@ -173,7 +173,7 @@ nav li a {
     font-family: 'PT Serif', serif;
     padding-bottom: 10px;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: 1E1E1E;
     margin: 0;
 }
 .contact p {
@@ -195,7 +195,7 @@ nav li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #ffffff;
 }
 
 .footer .container {

@@ -27,7 +27,7 @@ nav {
 
 nav li a {
     font-weight: 500;
-    color: #000000 !important;
+    color: #1E1E1E !important;
 }
 
 .navbar-shadow {
@@ -45,7 +45,7 @@ nav li a {
 .creation h2 {
     font-family: 'PT Serif', serif;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: #1E1E1E;
     margin: 0;
 }
 
@@ -87,7 +87,7 @@ nav li a {
 .creation-link p {
     font-family: 'PT Serif', serif;
     font-size: 24px;
-    color: #000000;
+    color: #1E1E1E;
     margin: 0;
 }
 
@@ -100,19 +100,19 @@ nav li a {
     font-family: 'PT Serif', serif;
     font-size: 3rem;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: #1E1E1E;
     margin: 0;
 }
 
 .creation-content p {
     font-size: medium;
-    color: rgb(0, 0, 0);
+    color: #1E1E1E;
     margin: 0;
 }
 
 .creation a {
     text-decoration: none;
-    color: #040404;
+    color: #1E1E1E;
 }
 
 .creation-button {
@@ -166,7 +166,7 @@ nav li a {
     font-family: 'PT Serif', serif;
     padding-bottom: 10px;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: #1E1E1E;
     margin: 0;
 }
 
