@@ -547,28 +547,29 @@ body::before {
         margin: 0;
     }
     .circle {
-        /* position: absolute;
+        /*position: absolute;
         top: -20px;
-        left: 50%; */
+        left: 50%;
+        */margin-top: 50px;
         transform: translateX(-50%);
-        width: 45px;
-        height: 45px;
-        border-radius: 10%;
+        width: 50px;
+        height: 50px;
+        border-radius: 25%;
         z-index: 1;
         -webkit-transform: translateX(-50%);
         -moz-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
         -o-transform: translateX(-50%);
-        -webkit-border-radius: 10%;
-        -moz-border-radius: 10%;
-        -ms-border-radius: 10%;
-        -o-border-radius: 10%;
-    }
+        -webkit-border-radius: 25%;
+        -moz-border-radius: 25%;
+        -ms-border-radius: 25%;
+        -o-border-radius: 25%;
+}
     .card-icon iconify-icon {
         position: relative;
         color: white;
         z-index: 2;
-        top: 30px;
+        top: 42px;
         left: 20px;
     }
     .cardd-contentt .cardd-imggg {
