@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -78,13 +79,86 @@ body {
     font-family: 'PT Serif', serif;
     padding-bottom: 10px;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: #1E1E1E;
     margin: 0;
+}
+
+.contact p {
+    font-size: normal;
+    font-weight: 300;
+    color: #1E1E1E;
 }
 
 .contact a {
     text-decoration: none;
     color: #1E1E1E;
+}
+
+.contact #link .col-xl-10 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+@media screen and (max-width: 1078px) {
+    .contact .smallone p {
+        word-wrap: break-word;
+        height: auto;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contact .smallone p {
+        word-wrap: break-word;
+        height: auto;
+        overflow: hidden;
+    }
+    .contact {
+        height: 65vh;
+    }
+    .contact h4 {
+        font-size: 1.3rem;
+    }
+    .contact p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 853px) {
+    #link p {
+        white-space: wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        height: 75vh;
+    }
+    .contact .smallone p {
+        word-wrap: break-word;
+        height: auto;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .contact .smallone p {
+        word-wrap: break-word;
+        height: auto;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 382px) {
+    .contact {
+        height: 75vh;
+    }
+    .contact p {
+        font-size: 0.8rem;
+    }
 }
 
 .footer {
@@ -119,24 +193,7 @@ body {
     margin: 0;
 }
 
-
-@media screen and (max-width: 992px) {
-    .contact {
-        height: 65vh;
-    }
-    .contact h4 {
-        font-size: 1.3rem;
-    }
-    .contact p {
-        font-size: 0.9rem;
-    }
-
-}
-
 @media screen and (max-width: 768px) {
-    .contact {
-        height: 75vh;
-    }
     .footer .footer-desc {
         justify-content: center;
     }
@@ -151,38 +208,16 @@ body {
     }
 }
 
-@media screen and (max-width: 428px) {
-    .contact .col-2,
-    .contact .col-6,
-    .contact .col-10,
-    .contact .col-md-3,
-    .contact .col-md-5,
-    .contact .col-md-6,
-    .contact .col-md-7,
-    .contact .col-md-9,
-    .contact .col-sm-6,
-    .contact .col-xl-2,
-    .contact .col-xl-10 {
-        padding-left: 9px;
-    }
-}
-
 @media screen and (max-width: 395px) {
     .footer,
     .col-xl-10,
-    .col-md-9,
-    .col-10 {
+    .footer .col-md-9,
+    .footer .col-10 {
         padding-left: 1px;
     }
 }
 
 @media screen and (max-width: 382px) {
-    .contact {
-        height: 75vh;
-    }
-    .contact p {
-        font-size: 0.8rem;
-    }
     .footer {
         height: 15vh;
     }
@@ -190,115 +225,4 @@ body {
         font-size: 0.8rem;
     }
 
-}
-
-@media screen and (max-width: 853px) {
-    #link p {
-        white-space: wrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .wrappe .carousell {
-        grid-auto-columns: 100%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .card {
-        height: 350px;
-        max-height: 400px;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .suggest p {
-        font-size: 14px;
-    }
-
-    .suggest .suggest-info p {
-        padding-right: 0;
-    }
-
-    .card-body {
-        padding: 1rem 2.5rem;
-    }
-
-    .card-body h5 {
-        font-size: 20px;
-        color: #2F327D;
-        margin: 0;
-    }
-
-    .card-body p {
-        font-size: 15px;
-        color: #696984;
-        margin: 0;
-    }
-
-    .circle {
-        /* position: absolute;
-        top: -20px;
-        left: 50%; */
-        transform: translateX(-50%);
-        width: 45px;
-        height: 45px;
-        border-radius: 10%;
-        z-index: 1;
-        -webkit-transform: translateX(-50%);
-        -moz-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        -o-transform: translateX(-50%);
-        -webkit-border-radius: 10%;
-        -moz-border-radius: 10%;
-        -ms-border-radius: 10%;
-        -o-border-radius: 10%;
-    }
-
-    .card-icon iconify-icon {
-        position: relative;
-        color: #ffffff;
-        z-index: 2;
-        top: 30px;
-        left: 20px;
-    }
-
-    .cardd-contentt .cardd-imggg {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-right: 0;
-    }
-
-    .cardd-contentt .icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-    }
-
-    .suggest .suggest-button {
-        padding: 10px 15px;
-        border-radius: 6px;
-        font-size: 14px;
-        font-weight: thin;
-        -webkit-border-radius: 6px;
-        -moz-border-radius: 6px;
-        -ms-border-radius: 6px;
-        -o-border-radius: 6px;
-    }
-}
-
-@media screen and (max-width: 487px) {
-    .suggest .trial {
-        width: 500px;
-        border: 1px solid red;
-        position: relative;
-        z-index: 1;
-        left: -15px;
-        margin-right: -29px !important;
-
-    }
 }
