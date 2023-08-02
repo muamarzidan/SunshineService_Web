@@ -443,7 +443,7 @@ body::before {
     /*position: absolute;
     top: -20px;
     left: 50%;
-    */margin-top: 35px;
+    */margin-top: 50px;
     transform: translateX(-50%);
     rotate: 45deg;
     width: 50px;
@@ -464,7 +464,7 @@ body::before {
     position: relative;
     color: #ffffff;
     z-index: 2;
-    top: 28px;
+    top: 43px;
     left: 22px;
 }
 
@@ -521,6 +521,13 @@ body::before {
         font-size: 18px;
         color: #696984;
         margin: 0;
+    }
+    .card-icon iconify-icon {
+        position: relative;
+        color: #ffffff;
+        z-index: 2;
+        top: 42px;
+        left: 23px;
     }
 }
 

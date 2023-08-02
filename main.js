@@ -97,17 +97,17 @@ function updateIconSizeMain() {
         iconA2.setAttribute("width", "24");
 
         iconS1.style.display = "block";
-        iconS1.setAttribute("width", "36");
+        iconS1.setAttribute("width", "32");
         iconS2.style.display = "block";
-        iconS2.setAttribute("width", "36");
+        iconS2.setAttribute("width", "32");
         iconS3.style.display = "block";
-        iconS3.setAttribute("width", "36");
+        iconS3.setAttribute("width", "32");
         iconS4.style.display = "block";
-        iconS4.setAttribute("width", "36");
+        iconS4.setAttribute("width", "32");
         iconS5.style.display = "block";
-        iconS5.setAttribute("width", "36");
+        iconS5.setAttribute("width", "32");
         iconS6.style.display = "block";
-        iconS6.setAttribute("width", "36");
+        iconS6.setAttribute("width", "32");
     } else {
         iconA1.style.display = "block";
         iconA2.style.display = "block";
