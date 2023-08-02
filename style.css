@@ -948,9 +948,18 @@ body::before {
 
 .carousell .cardd p {
     font-size: 14px;
+    font-weight: 300;
     color: #1E1E1E;
     margin: 0;
 }
+
+.carousell .cardd-name p {
+    font-size: 14px;
+    font-weight: normal;
+    color: #1E1E1E;
+    margin: 0;
+}
+
 
 .carousell .cardd-name #smallone,
 #smalltwo,
