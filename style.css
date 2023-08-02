@@ -730,7 +730,7 @@ body::before {
 
 @media (max-width: 768px) {
     .wavessss .waves {
-        height: 90px;
+        height: 60px;
         min-height: 40px;
     }
     .wavessss .content {
@@ -766,7 +766,8 @@ body::before {
     }
     .wavessss .waves-button {
         background-color: #0E294D;
-        padding: 6px 16px;
+        margin-top: 10px;
+        padding: 8px 16px;
         border-radius: 5px;
         text-decoration: none;
         font-size: 10px;
