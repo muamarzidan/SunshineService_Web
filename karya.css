@@ -145,9 +145,9 @@ nav li a {
 
 .contact {
     background-color: #ffffff;
-    height: 70vh;
+    height: 80vh;
     width: 100%;
-    padding-top: 120px;
+    padding-top: 180px;
 }
 
 .contact h4 {
@@ -190,7 +190,7 @@ nav li a {
         overflow: hidden;
     }
     .contact {
-        height: 65vh;
+        height: 76vh;
     }
     .contact h4 {
         font-size: 1.3rem;
@@ -210,7 +210,8 @@ nav li a {
 
 @media screen and (max-width: 768px) {
     .contact {
-        height: 75vh;
+        height: 80vh;
+        padding-top: 200px;
     }
     .contact .smallone p {
         word-wrap: break-word;
