@@ -491,12 +491,6 @@
             if (!wrapper.matches(":hover")) autoPlay();
         }
 
-        // const autoPlay = () => {
-        //     if (window.innerWidth < 800 || !isAutoPlay) return;
-        //     timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
-        // }
-        // autoPlay();
-
         carousel.addEventListener("mousedown", dragStart);
         carousel.addEventListener("mousemove", dragging);
         document.addEventListener("mouseup", dragStop);
@@ -585,7 +579,6 @@
     <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 
