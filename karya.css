@@ -226,19 +226,6 @@ nav li a {
         height: auto;
         overflow: hidden;
     }
-    /* .contact .col-2,
-    .contact .col-6,
-    .contact .col-10,
-    .contact .col-md-3,
-    .contact .col-md-5,
-    .contact .col-md-6,
-    .contact .col-md-7,
-    .contact .col-md-9,
-    .contact .col-sm-6,
-    .contact .col-xl-2,
-    .contact .col-xl-10 {
-        padding-left: 9px;
-    } */
 }
 
 @media screen and (max-width: 382px) {

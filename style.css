@@ -444,10 +444,7 @@ body::before {
 }
 
 .circle {
-    /*position: absolute;
-    top: -20px;
-    left: 50%;
-    */margin-top: 50px;
+    margin-top: 50px;
     transform: translateX(-50%);
     rotate: 45deg;
     width: 50px;
@@ -558,10 +555,7 @@ body::before {
         margin: 0;
     }
     .circle {
-        /*position: absolute;
-        top: -20px;
-        left: 50%;
-        */margin-top: 50px;
+        margin-top: 50px;
         transform: translateX(-50%);
         width: 50px;
         height: 50px;
@@ -1082,19 +1076,6 @@ body::before {
         height: auto;
         overflow: hidden;
     }
-    /* .contact .col-2,
-    .contact .col-6,
-    .contact .col-10,
-    .contact .col-md-3,
-    .contact .col-md-5,
-    .contact .col-md-6,
-    .contact .col-md-7,
-    .contact .col-md-9,
-    .contact .col-sm-6,
-    .contact .col-xl-2,
-    .contact .col-xl-10 {
-        padding-left: 9px;
-    } */
 }
 
 @media screen and (max-width: 382px) {
