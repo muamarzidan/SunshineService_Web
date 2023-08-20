@@ -19,20 +19,14 @@ body {
     background-color: #fff;
 }
 
-.notfound {
-    width: 100%;
-    height: 100vh;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+nav {
+    background-color: #ffffff;
 }
 
-.notfound .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}   
+nav li a {
+    color: #000000 !important;
+}
 
 .navbar {
     transition: background-color 0.3s ease;
@@ -67,6 +61,49 @@ body {
         color: #1E1E1E !important;
     }
 }
+
+
+
+.notfound {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notfound .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+.notfound p {
+    color: #174076;
+    font-size: 2rem;
+}
+
+.notfound h1 {
+    font-size: 10rem;
+    font-weight: bold;
+    margin: 0;
+    background: linear-gradient(#174076, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.notfound .btn-primary {
+    background-color: #174076 !important;
+    padding: 15px 50px;
+    border-radius: 10px !important;
+    -webkit-border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -ms-border-radius: 10px ;
+    -o-border-radius: 10px ;
+}
+
+
 
 .contact {
     background-color: #ffffff;
