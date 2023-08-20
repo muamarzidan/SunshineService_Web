@@ -79,13 +79,28 @@ nav li a {
     align-items: center;
 }  
 
+.notfound-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .notfound p {
     color: #174076;
     font-size: 2rem;
+    margin: 0 !important;
+}
+
+.notfound #description {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
 }
 
 .notfound h1 {
-    font-size: 10rem;
+    font-family: 'Lilita One', cursive;;
+    font-size: 20rem;
     font-weight: bold;
     margin: 0;
     background: linear-gradient(#174076, white);
@@ -95,12 +110,38 @@ nav li a {
 
 .notfound .btn-primary {
     background-color: #174076 !important;
+    margin-top: 20px;
     padding: 15px 50px;
     border-radius: 10px !important;
     -webkit-border-radius: 10px ;
     -moz-border-radius: 10px ;
     -ms-border-radius: 10px ;
     -o-border-radius: 10px ;
+}
+
+@media screen and (max-width: 768px) {
+    .notfound h1 {
+        font-size: 15rem;
+    }
+}
+@media screen and (max-width: 576px) {
+    .notfound h1 {
+        font-size: 10rem;
+    }
+    .notfound p {
+        font-size: 1.5rem;
+    }
+    .notfound .btn-primary {
+        background-color: #174076 !important;
+        font-size: 0.9rem;
+        padding: 10px 30px;
+    }
+    
+}
+@media screen and (max-width: 382px) {
+    .notfound p, .notfound #description {
+        font-size: 1.2rem;
+    }
 }
 
 
