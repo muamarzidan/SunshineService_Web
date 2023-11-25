@@ -64,6 +64,28 @@ body::before {
     color: #1E1E1E !important;
 }
 
+.navbar #navbarNavigation .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+}
+
+.navbar #button-daftar {
+    width: 160px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.navbar #button-daftar a {
+    font-size: 15px;
+    color: #000000;
+}
+
 @media (max-width: 576px) {
     #navv {
         background-color: #ffffff !important;

@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var navbar = document.querySelector('.navbar');
 
     window.addEventListener('scroll', function () {
-        if (window.scrollY > 550) {
+        if (window.scrollY > 750) {
             navbar.classList.add('scrolled');
             navbar.classList.add('shadow-on-scroll');
         } else {
@@ -11,6 +11,30 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+window.addEventListener('scroll', function() {
+    var buttonDaftarLink = document.querySelector('#button-daftar a');
+    var scrollPosition = window.scrollY;
+
+    if (scrollPosition > 750) {
+        buttonDaftarLink.style.color = '#ffffff';
+    } else {
+        buttonDaftarLink.style.color = '#000000';
+    }
+});
+
+window.addEventListener('scroll', function() {
+    var buttonDaftar = document.getElementById('button-daftar');
+    var buttonDaftarLink = document.querySelector('#button-daftar a');
+    var scrollPosition = window.scrollY;
+
+    if (scrollPosition > 750) {
+        buttonDaftar.style.backgroundColor = '#000000';
+    } else {
+        buttonDaftar.style.backgroundColor = '#ffffff';
+    }
+});
+
 
 function updateIconSizeFooter() {
     const width = window.innerWidth || document.documentElement.clientWidth;
