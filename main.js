@@ -12,30 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-window.addEventListener('scroll', function() {
-    var buttonDaftarLink = document.querySelector('#button-daftar a');
-    var scrollPosition = window.scrollY;
-
-    if (scrollPosition > 750) {
-        buttonDaftarLink.style.color = '#ffffff';
-    } else {
-        buttonDaftarLink.style.color = '#000000';
-    }
-});
-
-window.addEventListener('scroll', function() {
-    var buttonDaftar = document.getElementById('button-daftar');
-    var buttonDaftarLink = document.querySelector('#button-daftar a');
-    var scrollPosition = window.scrollY;
-
-    if (scrollPosition > 750) {
-        buttonDaftar.style.backgroundColor = '#000000';
-    } else {
-        buttonDaftar.style.backgroundColor = '#ffffff';
-    }
-});
-
-
 function updateIconSizeFooter() {
     const width = window.innerWidth || document.documentElement.clientWidth;
     const iconEmail = document.getElementById("icon-1");

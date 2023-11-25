@@ -61,7 +61,7 @@ body::before {
 }
 
 .navbar-light.scrolled .navbar-nav .nav-link {
-    color: #1E1E1E !important;
+    color: #000000 !important;
 }
 
 .navbar #navbarNavigation .nav-item {
@@ -424,7 +424,7 @@ body::before {
     border: none;
     border-radius: 10px;
     position: relative;
-    height: 320px;
+    height: 300px;
     max-height: 320px;
 }
 
