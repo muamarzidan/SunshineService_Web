@@ -67,7 +67,7 @@ body {
     color: #ffffff !important;
 }
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
     #navv {
         background-color: #ffffff !important;
     }
@@ -75,7 +75,7 @@ body {
     #navv .navbar-nav .nav-link {
         color: #1E1E1E !important;
     }
-}
+} */
 
 
 
