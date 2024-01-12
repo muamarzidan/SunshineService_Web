@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
-* {
-    box-sizing: border-box;
-}
-
 a {
     text-decoration: none;
 }
@@ -16,23 +12,8 @@ body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    background-color: #000000;
+    background-image: url('./assets/img/sunshine-hero.webp');
 }
-
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url(./assets/img/sunshine-hero.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: -1;
-    opacity: 0.8;
-} 
 
 
 
@@ -73,17 +54,17 @@ body::before {
 
 .navbar #button-daftar {
     width: 160px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
+    background-color: #174076;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
 }
 
 .navbar #button-daftar a {
     font-size: 15px;
-    color: #000000;
+    color: #ffffff !important;
 }
 
 @media (max-width: 576px) {
@@ -839,7 +820,7 @@ body::before {
     position: absolute;
     text-align: center;
     line-height: 50px;
-    background: #ffffff;
+    background: #174076;
     border-radius: 50%;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
     transform: translateY(-50%);
@@ -874,6 +855,10 @@ body::before {
     scrollbar-width: none;
     height: 400px;
     align-content: center;
+}
+
+#right, #left {
+    color: #ffffff;
 }
 
 .carousell::-webkit-scrollbar {

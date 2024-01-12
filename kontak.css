@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+* {
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
 }
@@ -83,119 +87,75 @@ nav {
 
 
 
-
-.div {
-    margin-top: 130px;
-}
-
-.profile {
+.kontak-kami {
+    height: 100vh;
     width: 100%;
+    margin-top: 120px;
 }
 
-.profile img {
-    max-height: 300px;
-    border-radius: 30px;
-    padding: 1em;
+.kontak-kami .kontak-title {
+    width: 100%;
+    height: auto;
 }
 
-.profile h2 {
-    font-family: 'PT Serif', serif;
-    padding-bottom: 10px;
+.kontak-kami .kontak-title h3 {
     font-weight: bold;
-    color: 1E1E1E;
-    margin: 0;
+    color: #1E1E1E;
 }
 
-.profile h5 {
-    color: #1E1E1E  ;
-    text-transform: uppercase;
-    font-weight: medium;
+.kontak-kami iframe {
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
-.profile .div p {
-    font-size: normal;
-    font-weight: 300;
-    color: #5C5C5C;
+.kontak-kami form input {
+    width: 100%;
+    height: 55px;
+    border-radius: 10px;
+       border: 1px solid rgba(184, 184, 184, 0.38);
+    background: rgba(250, 250, 250, 0.50);
 }
 
-.profile .card {
-    font-size: normal;
-    font-weight: 300;
-    color: #696984;
+.kontak-kami form textarea {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    border: 1px solid rgba(184, 184, 184, 0.38);
+    background: rgba(250, 250, 250, 0.50);
+    padding-top: 15px;
 }
 
-.profile .img-fluid {
-    height: 230px;
-    object-fit: cover;
+.kontak-kami form input::placeholder {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    padding-left: 10px;
+    color: #9D9B9B;
 }
 
-.profile .card {
-    border: none;
-    width: 330px;
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+.kontak-kami form textarea::placeholder {
+    font-size: 15px;
+    padding-left: 10px;
+    color: #9D9B9B;
 }
 
-.profile .card-body {
-    padding: 0 1rem 1rem 1rem;
+.kontak-kami form button {
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: #174076;
+    color: #ffffff;
 }
 
-@media screen and (max-width: 992px) {
-    .profile .card {
-        width: 200px;
-    }
-
-    .profile .img-fluid {
-        height: 150px;
-        object-fit: cover;
-    }
-
-    .profile h5 {
-        font-size: 14px;
-        margin: 0;
-    }
-
-    .profile p {
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .profile img {
-        padding: 1.5em 1.5em 0.8em 1.5em;
-        border-radius: 40px;
-    }
-
-    .profile .img-fluid {
-        height: 290px;
-        object-fit: cover;
-    }
-
-    .profile .card {
-        width: 100%;
-        border-radius: 20px;
-        height: 360px;
-    }
-
-    .profile h5 {
-        font-size: 20px;
-    }
-
-    .profile p {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .profile img {
-        max-height: 250px;
-        border-radius: 40px;
-    }
-
-    .profile .card {
-        height: 315px;
-    }
+.kontak-kami h4 {
+    font-weight: 400 !important;
 }
 
 
@@ -301,7 +261,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
+    color: white;
 }
 
 .footer .container {
@@ -340,18 +300,10 @@ nav {
     .footer #right {
         padding-left: 20px;
     }
-    .creation-link p {
-        font-size: 18px;
-    }
 }
 
+
 @media screen and (max-width: 382px) {
-    .contact {
-        height: 70vh;
-    }
-    .contact p {
-        font-size: 0.8rem;
-    }
     .footer {
         height: 15vh;
     }
