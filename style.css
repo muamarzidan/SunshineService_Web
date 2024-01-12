@@ -45,11 +45,24 @@ body {
     color: #000000 !important;
 }
 
-.navbar #navbarNavigation .nav-item {
+.navbar.navbar-light.active {
+    background-color: white;
+}
+
+.navbar.navbar-light.active .navbar-nav .nav-link {
+    color: black !important;
+}
+
+.navbar #navbarSupportedContent .nav-item {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 45px;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(255, 255, 255, 0.5) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 .navbar #button-daftar {
@@ -67,15 +80,11 @@ body {
     color: #ffffff !important;
 }
 
-/* @media (max-width: 576px) {
-    #navv {
-        background-color: #ffffff !important;
+@media screen and (max-width: 990px) {
+    .navbar #button-daftar {
+        width: 100%;
     }
-
-    #navv .navbar-nav .nav-link {
-        color: #1E1E1E !important;
-    }
-} */
+}
 
 
 

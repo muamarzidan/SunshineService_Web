@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
 function updateIconSizeFooter() {
     const width = window.innerWidth || document.documentElement.clientWidth;
     const iconEmail = document.getElementById("icon-1");
