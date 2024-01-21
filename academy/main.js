@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     var navbar = document.querySelector('.navbar');
 
-    window.addEventListener('scrolll', function () {
+    window.addEventListener('scroll', function () {
         if (window.scrollY > 750) {
             navbar.classList.add('scrolled');
             navbar.classList.add('shadow-on-scroll');
