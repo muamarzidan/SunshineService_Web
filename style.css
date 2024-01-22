@@ -13,6 +13,8 @@ body {
     padding: 0;
     scroll-behavior: smooth;
     background-image: url('./assets/img/sunshine-hero.webp');
+    /* background-repeat: no-repeat; */
+    background-size: contain;
 }
 
 
