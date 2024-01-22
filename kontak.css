@@ -20,6 +20,7 @@ body {
 }
 
 
+
 nav {
     background-color: #ffffff !important;
     box-shadow: 1px 1px 10px 5px rgba(136, 136, 136, 0.059);
@@ -184,7 +185,6 @@ nav {
     .kontak-kami form input::placeholder {
         font-size: 13px;
     }
-    
     .kontak-kami form textarea::placeholder {
         font-size: 13px;
     }
@@ -224,7 +224,7 @@ nav {
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 960px) {
     .contact {
         height: 65vh;
     }
@@ -246,7 +246,7 @@ nav {
 
 @media screen and (max-width: 768px) {
     .contact {
-        height: 75vh;
+        height: 70vh;
     }
 }
 
