@@ -59,17 +59,24 @@ nav {
 .navbar #button-daftar {
     width: 160px;
     background-color: #174076;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
 }
 
 .navbar #button-daftar a {
     font-size: 15px;
     color: #ffffff !important;
 }
+
+@media screen and (max-width: 990px) {
+    .navbar #button-daftar {
+        width: 100%;
+    }
+}
+
 
 @media (max-width: 576px) {
     #navv {
