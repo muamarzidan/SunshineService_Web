@@ -59,11 +59,15 @@ nav {
 .navbar #button-daftar {
     width: 160px;
     background-color: #174076;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
+    border-radius: 25px;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
 }
 
 .navbar #button-daftar a {
@@ -86,24 +90,10 @@ nav {
 .notfound {
     width: 100%;
     height: 100vh;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.notfound .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }  
 
 .notfound-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    flex-direction: column !important;
 }
 
 .notfound p {
@@ -113,12 +103,12 @@ nav {
 }
 
 .notfound #description {
-    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
 .notfound h1 {
-    font-family: 'Lilita One', cursive;;
+    font-family: 'Lilita One', cursive;
     font-size: 20rem;
     font-weight: bold;
     margin: 0;
@@ -166,8 +156,7 @@ nav {
 
 
 .contact {
-    background-color: #ffffff;
-    height: 70vh;
+    height: 60vh;
     width: 100%;
     padding-top: 120px;
 }
