@@ -886,8 +886,8 @@ a {
 
 
 .contact {
-    background-color: #ffffff;
     height: 60vh;
+    background-color: #ffffff;
     padding-top: 120px;
 }
 
@@ -940,13 +940,25 @@ a {
 
 @media screen and (max-width: 768px) {
     .contact {
-        height: 70vh;
+        height: 65vh;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contact {
+        padding-top: 100px;
     }
 }
 
 @media screen and (max-width: 382px) {
     .contact p {
         font-size: 0.8rem;
+    }
+    .contact {
+        height: 70vh;
+    }
+    .contact {
+        padding-top: 100px;
     }
 }
 

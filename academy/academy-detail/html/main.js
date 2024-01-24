@@ -17,7 +17,7 @@ function updateIconSizeAbout() {
 
         iconBook.style.display = "block";
         iconBook.setAttribute("width", "16");
-    }else if (width <= 768) {
+    } else if (width <= 768) {
         iconToga.style.display = "block";
         iconToga.setAttribute("width", "24");
 
@@ -74,7 +74,7 @@ function updateIconSizeService() {
 
         iconBook.style.display = "block";
         iconBook.setAttribute("width", "16");
-    }else if (width <= 768) {
+    } else if (width <= 768) {
         iconPeople.style.display = "block";
         iconPeople.setAttribute("width", "24");
 
@@ -122,7 +122,7 @@ function updateIconSizeFooter() {
 
         iconInstagram.style.display = "block";
         iconInstagram.setAttribute("width", "16");
-    }else if (width <= 768) {
+    } else if (width <= 768) {
         iconEmail.style.display = "block";
         iconEmail.setAttribute("width", "24");
 
@@ -153,5 +153,6 @@ function updateIconSizeFooter() {
 }
 window.addEventListener("DOMContentLoaded", updateIconSizeFooter);
 window.addEventListener("resize", updateIconSizeFooter);
+  
 
 
