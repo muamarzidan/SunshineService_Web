@@ -21,16 +21,16 @@ function updateIconSizeAbout() {
 
     if (width <= 576) {
         iconToga.style.display = "block";
-        iconToga.setAttribute("width", "16");
+        iconToga.setAttribute("width", "36");
 
         iconPeople.style.display = "block";
-        iconPeople.setAttribute("width", "16");
+        iconPeople.setAttribute("width", "36");
 
         iconHappy.style.display = "block";
-        iconHappy.setAttribute("width", "16");
+        iconHappy.setAttribute("width", "36");
 
         iconBook.style.display = "block";
-        iconBook.setAttribute("width", "16");
+        iconBook.setAttribute("width", "36");
     }else if (width <= 768) {
         iconToga.style.display = "block";
         iconToga.setAttribute("width", "24");
@@ -79,16 +79,7 @@ function updateIconSizeService() {
     const iconHappy = document.getElementById("icon-srv-2");
     const iconBook = document.getElementById("icon-srv-3");
 
-    if (width <= 576) {
-        iconPeople.style.display = "block";
-        iconPeople.setAttribute("width", "16");
-
-        iconHappy.style.display = "block";
-        iconHappy.setAttribute("width", "16");
-
-        iconBook.style.display = "block";
-        iconBook.setAttribute("width", "16");
-    }else if (width <= 768) {
+    if (width <= 768) {
         iconPeople.style.display = "block";
         iconPeople.setAttribute("width", "24");
 
@@ -99,13 +90,13 @@ function updateIconSizeService() {
         iconBook.setAttribute("width", "24");
     } else if (width <= 992) {
         iconPeople.style.display = "block";
-        iconPeople.setAttribute("width", "30");
+        iconPeople.setAttribute("width", "26");
 
         iconHappy.style.display = "block";
-        iconHappy.setAttribute("width", "30");
+        iconHappy.setAttribute("width", "26");
 
         iconBook.style.display = "block";
-        iconBook.setAttribute("width", "30");
+        iconBook.setAttribute("width", "26");
     } else {
         iconPeople.style.display = "block";
         iconPeople.setAttribute("width", "26");

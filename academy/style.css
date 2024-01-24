@@ -1,17 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
     scroll-behavior: smooth;
     background-image: url('./assets/images/hero-sunshine.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center; 
 }
 
 body::before {
@@ -20,14 +26,13 @@ body::before {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.307);
 }
 
 a {
     text-decoration: none;
 }
-
 
 
 
@@ -107,27 +112,19 @@ a {
     width: 100%;
 }
 
+.hero a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .hero-content {
     display: flex;
     flex-direction: column;
 }
 
-.hero-content h1 {
-    font-family: 'PT Serif', serif;
-    font-size: 3rem;
+.hero h1 {
+    font-size: 3.5rem;
     font-weight: bold;
-    color: #ffffff;
-    margin: 0;
-}
-
-.hero-content p {
-    font-size: medium;
-    color: #ffffff;
-    margin: 0;
-}
-
-.hero a {
-    text-decoration: none;
     color: #ffffff;
 }
 
@@ -152,6 +149,31 @@ a {
     -moz-transition: 0.7s;
     -ms-transition: 0.7s;
     -o-transition: 0.7s;
+}
+
+@media screen and (max-width: 576px) {
+    .hero h1 {
+        font-size: 3rem !important;
+    }
+    .hero p {
+        font-size: 0.8rem !important;
+    }
+    .hero-button {
+        padding: 12px 12px;
+        border-radius: 30px;
+        color: #FAFAFA;
+        font-weight: 500;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+}
+}
+
+@media screen and (max-width: 378px) {
+    .hero h1 {
+        font-size: 1.8rem !important;
+    }
 }
 
 
@@ -216,10 +238,9 @@ a {
 
 
 
-
 .service {
     background-color: #174076;
-    height: 500px;
+    height: auto;
     width: 100%;
     padding: 70px 0;
 }
@@ -291,9 +312,6 @@ a {
 }
 
 @media screen and (max-width: 1115px) {
-    .service {
-        height: 170vh;
-    }
     .service .card {
         height: 400px;
         max-height: 400px;
@@ -301,9 +319,6 @@ a {
 }
 
 @media screen and (max-width: 992px) {
-    .service {
-        height: 150vh;
-    }
     .service .card {
         height: 320px;
         max-height: 400px;
@@ -324,6 +339,9 @@ a {
         height: 100%;
         padding-bottom: 70px
     }
+    .service #service-tagline {
+        font-size: 2rem;
+    }
     .service .card {
         margin-top: 40px;
     }
@@ -337,8 +355,7 @@ a {
         font-size: 18px;
     }
     .service .card-icon iconify-icon {
-        top: 42px;
-        left: 23px;
+        left: 20px;
     }
 }
 
@@ -383,15 +400,14 @@ a {
 
 
 
-
-.pelatihan {
+.package {
     background-color: #ffffff;
-    height: 160vh;
+    height: auto;
     width: 100%;
-    padding: 80px 0 0 0;
+    padding: 80px 0 100px 0;
 }
 
-.pelatihan .card {
+.package .card {
     border-radius: 10px !important;
     border: none;
     box-shadow: #00000014 0px 0px 10px 0px;
@@ -401,7 +417,7 @@ a {
     -o-border-radius: 10px !important;
 }
 
-.pelatihan .card img {
+.package .card img {
     width: 100%;
     height: 100%;
     border-radius: 25px;
@@ -411,27 +427,59 @@ a {
     -o-border-radius: 25px;
 }
 
-.pelatihan .card-body {
+.package .card-body {
     padding: 0 1.25rem 1.25rem 1.25rem !important;
 }
 
-.pelatihan .card h5 {
+.package .card h5 {
     font-size: 1.1rem;
 }
 
-.pelatihan .card p {
+.package .card p {
     margin-bottom: 0 !important;
+}
+
+.package #package-custom-cardLeft {
+    margin-left: 150px;
+}
+
+.package #package-custom-cardRight {
+    margin-right: 150px;
+}
+
+@media screen and (max-width: 1200px) {
+    #package-custom-cardLeft, #package-custom-cardRight {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .package .package-card {
+        justify-content: center !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .package .card {
+        max-width: 18rem !important;
+    }
 }
 
 
 
 .banner {
-    background-image: url('./assets/images/hero-sunshine.png');
+    background-image: url('./assets/images/banner-academy-sunshine.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center; 
     height: 70vh;
     width: 100%;
     flex-direction: column !important;
+}
+
+.banner #banner-tagline {
+    color: #FFC700;
 }
 
 .banner .hero-button {
@@ -452,6 +500,19 @@ a {
     text-decoration: none;
 }
 
+@media screen and ( max-width: 768px) {
+    .banner #banner-tagline {
+        font-size: 2rem;
+    }
+    .banner .hero-button {
+        width: 160px;
+        background-color: #174076;
+        padding: 12px 12px;
+        margin-top: 20px;
+        border-radius: 30px;
+    }
+}
+
 
 
 
@@ -462,31 +523,42 @@ a {
     padding: 80px 0 0 0;
 }
 
+.silabus .container {
+    max-width: 1400px !important;
+}
+
 .silabus-custom-container{
     width: auto;
     height: auto;
     background-color: #174076;
 }
 
-.silabus .container {
-    max-width: 1400px !important;
-}
-
 .silabus .col-md-9, .silabus .col-md-1, .silabus .col {
     padding: 0 0 0 0 !important;
+    width: 100% !important;
 }
 
 .silabus p {
     margin: 0 !important;
 }
 
-#silabus-title{
+.silabus #silabus-title{
     font-weight: bold;
     color: #174076;
 }
 
+.silabus-outer-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.silabus .silabus-outer-box .row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
 .silabus-box {
-    width: auto;
+    width: 100% !important;
     height: 100px;
     background-color: #ffffff;
     border-radius: 25px;
@@ -494,6 +566,54 @@ a {
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
+}
+
+@media screen and ( max-width: 1300px) {
+    .silabus .container {
+        max-width: 1000px !important;
+    }
+}
+
+@media screen and ( max-width: 1117px) {
+    .silabus .container {
+        max-width: 800px !important;
+    }
+}
+
+@media screen and ( max-width: 820px) {
+    .silabus .container {
+        max-width: 600px !important;
+    }
+}
+
+@media screen and ( max-width: 768px) {
+    .silabus .silabus-outer-box {
+        width: 500px;
+        max-width: 600px !important;
+    }
+    .silabus-box {
+        height: 130px;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+    }
+    .silabus #silabus-title{
+        font-size: 16px;
+    }
+    .silabus #silabus-description {
+        font-size: 14px;
+    }
+}
+
+@media screen and ( max-width: 576px) {
+    .silabus #silabus-title{
+        font-size: 14px;
+    }
+    .silabus #silabus-description {
+        font-size: 12px;
+    }
 }
 
 
@@ -508,6 +628,7 @@ a {
 }
 
 .faq .card {
+    max-width: 100% !important;
     border-radius: 10px !important;
     box-shadow: #00000014 0px 0px 10px 0px;
     -webkit-border-radius: 10px !important;
@@ -519,6 +640,29 @@ a {
 .faq .card button {
     color: #1E1E1E;
     text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .faq .card button {
+        height: 50px !important;
+        font-size: 14px;   
+        text-wrap: wrap;
+    }
+}
+
+@media (max-width: 490px) {
+    .faq .card button {
+        height: 70px !important;
+    }
+    .faq .card-body {
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width: 380px) {
+    .faq .card button {
+        font-size: 13px;  
+    }
 }
 
 
@@ -741,11 +885,9 @@ a {
 
 
 
-
 .contact {
     background-color: #ffffff;
-    height: 70vh;
-    width: 100%;
+    height: 60vh;
     padding-top: 120px;
 }
 
@@ -768,12 +910,6 @@ a {
     color: #1E1E1E;
 }
 
-.contact #link .col-xl-10 {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-}
-
 @media screen and (max-width: 1078px) {
     .contact .smallone p {
         word-wrap: break-word;
@@ -782,14 +918,9 @@ a {
     }
 }
 
-@media screen and (max-width: 992px) {
-    .contact .smallone p {
-        word-wrap: break-word;
-        height: auto;
-        overflow: hidden;
-    }
+@media screen and (max-width: 960px) {
     .contact {
-        height: 65vh;
+        height: 55vh;
     }
     .contact h4 {
         font-size: 1.3rem;
@@ -809,27 +940,11 @@ a {
 
 @media screen and (max-width: 768px) {
     .contact {
-        height: 75vh;
-    }
-    .contact .smallone p {
-        word-wrap: break-word;
-        height: auto;
-        overflow: hidden;
-    }
-}
-
-@media screen and (max-width: 428px) {
-    .contact .smallone p {
-        word-wrap: break-word;
-        height: auto;
-        overflow: hidden;
+        height: 70vh;
     }
 }
 
 @media screen and (max-width: 382px) {
-    .contact {
-        height: 75vh;
-    }
     .contact p {
         font-size: 0.8rem;
     }
@@ -840,43 +955,34 @@ a {
 .footer {
     background-color: #174076;
     height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: white;
-}
-
-.footer .container {
-    text-align: center;
-}
-
-.footer .footer-desc {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.footer .mbuh {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
 }
 
 .footer .container p {
     margin: 0;
 }
 
+.footer #footer-desc {
+    flex-wrap: nowrap !important;
+}
+
+.footer #left {
+    padding-left: 130px;
+}
+
 @media screen and (max-width: 768px) {
-    .footer .footer-desc {
-        justify-content: center;
+    .footer #footer-copyright {
+        justify-content: center !important;
+    }
+    .footer #footer-desc {
+        margin-top: 10px;
+        justify-content: space-evenly !important;
     }
     .footer p {
         font-size: 0.9rem;
     }
     .footer #left {
+        padding-left: 0;
         padding-right: 20px;
     }
     .footer #right {
@@ -884,12 +990,11 @@ a {
     }
 }
 
-
 @media screen and (max-width: 382px) {
     .footer {
         height: 15vh;
     }
-    .footer-desc p {
+    #footer-desc p {
         font-size: 0.8rem;
     }
 }
