@@ -1,110 +1,36 @@
 function updateIconSizeAbout() {
     const width = window.innerWidth || document.documentElement.clientWidth;
-    const iconToga = document.getElementById("icon-abt-1");
-    const iconPeople = document.getElementById("icon-abt-2");
-    const iconHappy = document.getElementById("icon-abt-3");
-    const iconBook = document.getElementById("icon-abt-4");
+    const iconClock = document.getElementById("icon-hero-1");
+    const iconCalender = document.getElementById("icon-hero-2");
 
     if (width <= 576) {
-        iconToga.style.display = "block";
-        iconToga.setAttribute("width", "16");
+        iconClock.style.display = "block";
+        iconClock.setAttribute("width", "20");
 
-        iconPeople.style.display = "block";
-        iconPeople.setAttribute("width", "16");
-
-        iconHappy.style.display = "block";
-        iconHappy.setAttribute("width", "16");
-
-        iconBook.style.display = "block";
-        iconBook.setAttribute("width", "16");
+        iconCalender.style.display = "block";
+        iconCalender.setAttribute("width", "20");
     } else if (width <= 768) {
-        iconToga.style.display = "block";
-        iconToga.setAttribute("width", "24");
+        iconClock.style.display = "block";
+        iconClock.setAttribute("width", "24");
 
-        iconPeople.style.display = "block";
-        iconPeople.setAttribute("width", "24");
+        iconCalender.style.display = "block";
+        iconCalender.setAttribute("width", "24");
+    } else if (width <= 996) {
+        iconClock.style.display = "block";
+        iconClock.setAttribute("width", "22");
 
-        iconHappy.style.display = "block";
-        iconHappy.setAttribute("width", "24");
-
-        iconBook.style.display = "block";
-        iconBook.setAttribute("width", "24");
-    } else if (width <= 992) {
-        iconToga.style.display = "block";
-        iconToga.setAttribute("width", "30");
-
-        iconPeople.style.display = "block";
-        iconPeople.setAttribute("width", "30");
-
-        iconHappy.style.display = "block";
-        iconHappy.setAttribute("width", "30");
-
-        iconBook.style.display = "block";
-        iconBook.setAttribute("width", "30");
+        iconCalender.style.display = "block";
+        iconCalender.setAttribute("width", "22");
     } else {
-        iconToga.style.display = "block";
-        iconToga.setAttribute("width", "35");
+        iconClock.style.display = "block";
+        iconClock.setAttribute("width", "24");
 
-        iconPeople.style.display = "block";
-        iconPeople.setAttribute("width", "35");
-
-        iconHappy.style.display = "block";
-        iconHappy.setAttribute("width", "35");
-
-        iconBook.style.display = "block";
-        iconBook.setAttribute("width", "35");
+        iconCalender.style.display = "block";
+        iconCalender.setAttribute("width", "24");
     }
 }
 window.addEventListener("DOMContentLoaded", updateIconSizeAbout);
 window.addEventListener("resize", updateIconSizeAbout);
-
-
-function updateIconSizeService() {
-    const width = window.innerWidth || document.documentElement.clientWidth;
-    const iconPeople = document.getElementById("icon-srv-1");
-    const iconHappy = document.getElementById("icon-srv-2");
-    const iconBook = document.getElementById("icon-srv-3");
-
-    if (width <= 576) {
-        iconPeople.style.display = "block";
-        iconPeople.setAttribute("width", "16");
-
-        iconHappy.style.display = "block";
-        iconHappy.setAttribute("width", "16");
-
-        iconBook.style.display = "block";
-        iconBook.setAttribute("width", "16");
-    } else if (width <= 768) {
-        iconPeople.style.display = "block";
-        iconPeople.setAttribute("width", "24");
-
-        iconHappy.style.display = "block";
-        iconHappy.setAttribute("width", "24");
-
-        iconBook.style.display = "block";
-        iconBook.setAttribute("width", "24");
-    } else if (width <= 992) {
-        iconPeople.style.display = "block";
-        iconPeople.setAttribute("width", "30");
-
-        iconHappy.style.display = "block";
-        iconHappy.setAttribute("width", "30");
-
-        iconBook.style.display = "block";
-        iconBook.setAttribute("width", "30");
-    } else {
-        iconPeople.style.display = "block";
-        iconPeople.setAttribute("width", "26");
-
-        iconHappy.style.display = "block";
-        iconHappy.setAttribute("width", "26");
-
-        iconBook.style.display = "block";
-        iconBook.setAttribute("width", "26");
-    }
-}
-window.addEventListener("DOMContentLoaded", updateIconSizeService);
-window.addEventListener("resize", updateIconSizeService);
 
 
 function updateIconSizeFooter() {
