@@ -472,6 +472,12 @@ nav {
     text-decoration: none;
 }
 
+@media (max-width: 992px) {
+    .banner .banner-button {
+        padding: 15px 15px;
+    }
+}
+
 @media (max-width: 768px) {
     .banner {
         height: 50vh;
@@ -484,6 +490,18 @@ nav {
     }
     .banner h3 {
         font-size: 26px;
+    }
+    .banner .banner-button {
+        width: 200px;
+        padding: 12px 12px;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+    }
+    .banner .banner-button a {
+        font-size: 16px;
     }
 }
 
@@ -502,14 +520,17 @@ nav {
         font-size: 18px;
     }
     .banner .banner-button {
-        width: 170px;
-        padding: 12px 12px;
-        font-size: 14px;
+        margin-top: 0;
+        width: 180px;
+        padding: 10px 1px;
         border-radius: 30px;
         -webkit-border-radius: 30px;
         -moz-border-radius: 30px;
         -ms-border-radius: 30px;
         -o-border-radius: 30px;
+    }
+    .banner .banner-button a {
+        font-size: 14px;
     }
 }
 
