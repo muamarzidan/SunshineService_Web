@@ -76,7 +76,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 45px;
+    height: 50px;
 }
 
 .navbar-light .navbar-toggler {
@@ -85,7 +85,7 @@ a {
 }
 
 .navbar #button-daftar {
-    width: 160px;
+    width: 170px;
     background-color: #174076;
     border-radius: 25px;
     -webkit-border-radius: 25px;
@@ -185,17 +185,18 @@ a {
     padding: 70px 0;
 }
 
-.about-description-sunshine h3 {
+.about .about-description h3 {
     font-weight: normal;
     color: #1E1E1E;
     margin: 0;
 }
 
-.about-description-sunshine p {
+.about .about-description p {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     color: #1E1E1E;
     margin: 0;
+    line-height: 30px;
 }
 
 .about #smalltree {
@@ -204,15 +205,26 @@ a {
     text-overflow: ellipsis;
 }
 
+.about .about-right {
+    flex-wrap: wrap;
+}
+
 .about .card {
     width: 220px;
     max-width: 220px;
     height: 180px;
     max-height: 180px;
     margin: 20px 0;
-    padding: 0 20px;
+    padding: 0 40px;
     border: none;
     box-shadow: #00000014 0px 0px 10px 0px;
+}
+
+.about .card p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1E1E1E;
+    margin: 0;
 }
 
 @media screen and (max-width: 992px) {
@@ -220,19 +232,102 @@ a {
         height: 100%;
         padding-top: 90px;
     }
+    .about .about-description h3 {
+        font-size: 24px;
+    }
+    
+    .about .about-description p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .about .card {
+        width: 145px;
+        max-width: 145px;
+        height: 145px;
+        max-height: 145px;
+        margin: 20px 10px;
+        padding: 0 15px;
+    }
+    .about .card p {
+        font-size: 14px;
+        text-wrap: wrap;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .about {
         height: 100%;
-        padding-top: 50px;
+        padding-top: 70px;
     }
     .about-content h2 {
         font-size: 24px;
     }
-    .about p {
+    .about .about-description p {
+        margin-top: 16px !important;
         text-align: justify;
         font-size: 15px;
+        line-height: 20px;
+    }
+    .about .about-right {
+        margin-top: 20px;
+    }
+    .about .card {
+        width: 175px;
+        max-width: 200px;
+        padding: 0 25px;
+    }
+    .about .card p {
+        font-size: 14px;
+        text-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 437px) {
+    .about {
+        height: 100%;
+        padding-top: 60px;
+    }
+    .about .about-description h3 {
+        font-size: 18px;
+    }
+    .about .about-description p {
+        font-size: 14px
+    }
+    .about .card {
+        width: 150px;
+        max-width: 150px;
+        height: 130px;
+        max-height: 145px;
+        margin: 10px 10px;
+        padding: 0 25px;
+    }
+    .about .card p {
+        font-size: 14px;
+        text-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 437px) {
+    .about .card {
+        width: 130px;
+        max-width: 150px;
+        height: 120px;
+        max-height: 120px;
+        margin: 5px 5px;
+    }
+    .about .card p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 437px) {
+    .about .card {
+        width: 120px;
+        max-width: 150px;
+        height: 115px;
+        max-height: 145px;
+        margin: 5px 5px;
+        padding: 0 25px;
     }
 }
 
@@ -439,6 +534,24 @@ a {
     margin-bottom: 0 !important;
 }
 
+.package .card button{
+    width: 100%;
+    height: 50px;
+    background-color: #174076;
+    color: white;
+    margin-top: 15px;
+    border: none;
+}
+
+.package .card button a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.package .package-card-icon {
+    margin-top: 10px;
+}
+
 .package #package-custom-cardLeft {
     margin-left: 150px;
 }
@@ -478,13 +591,9 @@ a {
     flex-direction: column !important;
 }
 
-.banner #banner-tagline {
-    color: #FFC700;
-}
-
 .banner .hero-button {
-    width: 180px;
-    padding: 15px 15px;
+    width: 220px;
+    padding: 15px 25px;
     background-color: #174076;
     border-radius: 40px;
     color: #FAFAFA;
@@ -618,8 +727,6 @@ a {
 
 
 
-
-
 .faq {
     background-color: #ffffff;
     height: auto;
@@ -667,7 +774,141 @@ a {
 
 
 
-.testimonials {
+.contact {
+    height: 60vh;
+    background-color: #ffffff;
+    padding-top: 180px;
+}
+
+.contact h4 {
+    font-family: 'PT Serif', serif;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: #1E1E1E;
+    margin: 0;
+}
+
+.contact p {
+    font-size: normal;
+    font-weight: 300;
+    color: #1E1E1E;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #1E1E1E;
+}
+
+.contact #contact-product a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1078px) {
+    .contact .smallone p {
+        word-wrap: break-word;
+        height: auto;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .contact {
+        height: 55vh;
+    }
+    .contact h4 {
+        font-size: 1.3rem;
+    }
+    .contact p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 853px) {
+    #link p {
+        white-space: wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        height: 65vh;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contact {
+        padding-top: 100px;
+    }
+}
+
+@media screen and (max-width: 382px) {
+    .contact p {
+        font-size: 0.8rem;
+    }
+    .contact {
+        height: 70vh;
+    }
+    .contact {
+        padding-top: 100px;
+    }
+}
+
+
+
+.footer {
+    background-color: #174076;
+    height: 10vh;
+    color: white;
+}
+
+.footer .container p {
+    margin: 0;
+}
+
+.footer #footer-desc {
+    flex-wrap: nowrap !important;
+}
+
+.footer #left {
+    padding-left: 130px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer #footer-copyright {
+        justify-content: center !important;
+    }
+    .footer #footer-desc {
+        margin-top: 10px;
+        justify-content: space-evenly !important;
+    }
+    .footer p {
+        font-size: 0.9rem;
+    }
+    .footer #left {
+        padding-left: 0;
+        padding-right: 20px;
+    }
+    .footer #right {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 382px) {
+    .footer {
+        height: 15vh;
+    }
+    #footer-desc p {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+
+/* .testimonials {
     background-color: #ffffff;
     height: 100vh;
     width: 100%;
@@ -881,135 +1122,12 @@ a {
     .wrappe .carousell {
         grid-auto-columns: 100%;
     }
-}
+} */
 
 
 
-.contact {
-    height: 60vh;
-    background-color: #ffffff;
-    padding-top: 120px;
-}
-
-.contact h4 {
-    font-family: 'PT Serif', serif;
-    padding-bottom: 10px;
-    font-weight: bold;
-    color: #1E1E1E;
-    margin: 0;
-}
-
-.contact p {
-    font-size: normal;
-    font-weight: 300;
-    color: #1E1E1E;
-}
-
-.contact a {
-    text-decoration: none;
-    color: #1E1E1E;
-}
-
-@media screen and (max-width: 1078px) {
-    .contact .smallone p {
-        word-wrap: break-word;
-        height: auto;
-        overflow: hidden;
-    }
-}
-
-@media screen and (max-width: 960px) {
-    .contact {
-        height: 55vh;
-    }
-    .contact h4 {
-        font-size: 1.3rem;
-    }
-    .contact p {
-        font-size: 0.9rem;
-    }
-}
-
-@media screen and (max-width: 853px) {
-    #link p {
-        white-space: wrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .contact {
-        height: 65vh;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .contact {
-        padding-top: 100px;
-    }
-}
-
-@media screen and (max-width: 382px) {
-    .contact p {
-        font-size: 0.8rem;
-    }
-    .contact {
-        height: 70vh;
-    }
-    .contact {
-        padding-top: 100px;
-    }
-}
 
 
-
-.footer {
-    background-color: #174076;
-    height: 10vh;
-    color: white;
-}
-
-.footer .container p {
-    margin: 0;
-}
-
-.footer #footer-desc {
-    flex-wrap: nowrap !important;
-}
-
-.footer #left {
-    padding-left: 130px;
-}
-
-@media screen and (max-width: 768px) {
-    .footer #footer-copyright {
-        justify-content: center !important;
-    }
-    .footer #footer-desc {
-        margin-top: 10px;
-        justify-content: space-evenly !important;
-    }
-    .footer p {
-        font-size: 0.9rem;
-    }
-    .footer #left {
-        padding-left: 0;
-        padding-right: 20px;
-    }
-    .footer #right {
-        padding-left: 20px;
-    }
-}
-
-@media screen and (max-width: 382px) {
-    .footer {
-        height: 15vh;
-    }
-    #footer-desc p {
-        font-size: 0.8rem;
-    }
-}
 
 
 

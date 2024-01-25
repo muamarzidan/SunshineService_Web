@@ -21,17 +21,29 @@ function updateIconSizeAbout() {
 
     if (width <= 576) {
         iconToga.style.display = "block";
-        iconToga.setAttribute("width", "36");
+        iconToga.setAttribute("width", "22");
 
         iconPeople.style.display = "block";
-        iconPeople.setAttribute("width", "36");
+        iconPeople.setAttribute("width", "22");
 
         iconHappy.style.display = "block";
-        iconHappy.setAttribute("width", "36");
+        iconHappy.setAttribute("width", "22");
 
         iconBook.style.display = "block";
-        iconBook.setAttribute("width", "36");
-    }else if (width <= 768) {
+        iconBook.setAttribute("width", "22");
+    } else if (width <= 768) {
+        iconToga.style.display = "block";
+        iconToga.setAttribute("width", "30");
+
+        iconPeople.style.display = "block";
+        iconPeople.setAttribute("width", "30");
+
+        iconHappy.style.display = "block";
+        iconHappy.setAttribute("width", "30");
+
+        iconBook.style.display = "block";
+        iconBook.setAttribute("width", "30  ");
+    } else if (width <= 992) {
         iconToga.style.display = "block";
         iconToga.setAttribute("width", "24");
 
@@ -43,18 +55,6 @@ function updateIconSizeAbout() {
 
         iconBook.style.display = "block";
         iconBook.setAttribute("width", "24");
-    } else if (width <= 992) {
-        iconToga.style.display = "block";
-        iconToga.setAttribute("width", "30");
-
-        iconPeople.style.display = "block";
-        iconPeople.setAttribute("width", "30");
-
-        iconHappy.style.display = "block";
-        iconHappy.setAttribute("width", "30");
-
-        iconBook.style.display = "block";
-        iconBook.setAttribute("width", "30");
     } else {
         iconToga.style.display = "block";
         iconToga.setAttribute("width", "35");
