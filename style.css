@@ -14,7 +14,10 @@ body {
     scroll-behavior: smooth;
     background-image: url('./assets/img/sunshine-hero.webp');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; 
 }
 
 
