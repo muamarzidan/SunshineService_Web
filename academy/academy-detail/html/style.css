@@ -341,6 +341,9 @@ nav {
     .hero .col-md-6 {
         margin-bottom: 0; 
     }
+    .hero .hero-left {
+        margin-top: 20px;
+    }
     .hero .custom-box {
         padding: 20px 10px;
     }
