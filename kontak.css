@@ -80,6 +80,12 @@ nav {
     font-size: 15px;
 }
 
+@media (max-width: 768px) {
+    .navbar #button-daftar {
+        width: 100%;
+    }
+}
+
 @media (max-width: 576px) {
     #navv {
         background-color: #ffffff !important;
