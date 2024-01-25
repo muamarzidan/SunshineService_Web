@@ -59,9 +59,12 @@
         document.addEventListener("DOMContentLoaded", function () {
             const navbarToggle = document.querySelector('.navbar-toggler');
             const navbar = document.querySelector('.navbar');
+            const navbarIcon = document.querySelector('.navbar-toggler-icon');
 
             navbarToggle.addEventListener('click', function () {
                 navbar.classList.toggle('active', navbarToggle.getAttribute('aria-expanded') === 'false');
+                // Toggle class for the navbar icon
+                navbarIcon.classList.toggle('icon-expanded', navbarToggle.getAttribute('aria-expanded') === 'false');
             });
         });
     </script>
