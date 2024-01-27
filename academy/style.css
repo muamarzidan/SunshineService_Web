@@ -786,6 +786,9 @@ a {
 }
 
 @media screen and ( max-width: 378px) {
+    .banner {
+        height: 50vh;
+    }
     .banner h1 {
         font-size: 1.2rem;
         line-height: 25px;
