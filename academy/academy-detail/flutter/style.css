@@ -62,10 +62,11 @@ nav {
 }
 
 .navbar #button-daftar {
-    width: 160px;
+    width: 170px;
     background-color: #174076;
     border-radius: 25px;
-    padding: 5px 0;
+    height: 50px !important;
+    padding: 0 10px; 
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
@@ -75,6 +76,7 @@ nav {
 .navbar #button-daftar a {
     color: #ffffff !important;
     font-size: 15px;
+    padding: 15px 0;
 }
 
 @media (max-width: 768px) {
@@ -103,17 +105,9 @@ nav {
 }
 
 .hero h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin: 0;
-    color: #1E1E1E !important;
-}
-
-.hero h2 {
     font-size: 2.4rem;
     font-weight: bold;
     margin: 0;
-    color: #1E1E1E !important;
 }
 
 .hero p {
@@ -127,8 +121,12 @@ nav {
 }
 
 .hero-left {
-    padding-right: 10px !important;
-    padding-top: 90px;
+    padding-right: 30px !important;
+    padding-top: 60px;
+}
+
+.hero #hero-schedule .row {
+    flex-wrap: nowrap !important;
 }
 
 .custom-box {
@@ -136,15 +134,15 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    width: 785px;
+    width: 710px;
     max-width: 785px;
     height: 85px;
     max-height: 100px;
     background-color: #fff;
     position: absolute;
     bottom: 0;
-    top: 400px;
-    left: 72%;
+    top: 430px;
+    left: 65%;
     transform: translateX(-50%);
     z-index: 2;
     border: none;
@@ -170,29 +168,30 @@ nav {
     max-width: 750px;
 }
 
-.custom-box  p, .custom-box span{
-    color: #174076;
-}
-
 .custom-box .col-md-4 {
     padding-right: 0 !important; 
     padding-left: 0 !important;
 }
 
+.custom-box  p, .custom-box span{
+    color: #174076;
+}
+
 .custom-box img {
-    width: 70px;
+    width: 68px;
     height: 70px;
 }
 
 .custom-box button {
-    width: 100%;
-    height: 60px;
+    width: 220px;
+    height: 55px;
     border-radius: 50px;
     background-color: #174076 !important;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
+    padding: 0 10px;
 }
 
 .custom-box .col-lg-4 .col-4, .custom-box .col-lg-4 .col-8 {
@@ -209,15 +208,20 @@ nav {
     padding-left: 0 !important;
 }   
 
+.custom-box .custom-box-container .col-md-8 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
 @media (max-width: 1200px) {
     .hero-left {
         padding-top: 0;
     }
     .custom-box {
-        width: 775px;
+        width: 700px;
         height: 80px;
-        top: 400px;
-        left: 84%;
+        top: 430px;
+        left: 75%;
     }
     .custom-box img {
         width: 60px;
@@ -236,19 +240,20 @@ nav {
         font-size: 2rem;
     }
     .hero h2 {
+        padding: 0 !important;
         font-size: 1.5rem;
     }
     .hero p {
         font-size: 0.9rem;
     }
     .custom-box {
-        width: 700px;
+        width: 680px;
         height: 65px;
-        top: 350px;
+        top: 360px;
         left: 100%;
     }
     .custom-box-container {
-        width: 680px;
+        width: 650px;
         max-width: 750px;
     }
     .custom-box img {
@@ -259,13 +264,17 @@ nav {
         font-size: 0.8rem;
     }
     .custom-box button {
-        height: 55px;
+        height: 45px;
+        font-size: 16px;
     }
 }
 
 @media (max-width: 768px) { 
     .hero {
         height: 170vh;
+    }
+    .hero h2 {
+        font-size: 2rem;
     }
     .hero .row {
         flex-direction: column-reverse;
@@ -285,8 +294,8 @@ nav {
         flex-direction: row !important;
     }
     .custom-box .col-sm-12 {
-        padding-right: 0 !important; 
-        padding-left: 0 !important;
+        padding-right: 10px !important; 
+        padding-left: 10px !important;
     }
     .custom-box {
         width: 100%;
@@ -319,13 +328,14 @@ nav {
     .custom-box-button {
         margin-top: 20px;
     }
-    .custom-box #custom-box-category, .custom-box #custom-box-mentor     {
+    .custom-box #custom-box-category, .custom-box #custom-box-nameMentor {
         font-weight: bold;
     }
     .hero .custom-box p{
         font-size: 0.9rem;
     }
     .custom-box button {
+        width: 100%;
         border-radius: 20px;
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
@@ -341,15 +351,18 @@ nav {
     .hero .col-md-6 {
         margin-bottom: 0; 
     }
+    .hero .hero-left {
+        margin-top: 20px;
+    }
     .hero .custom-box {
         padding: 20px 10px;
     }
     .hero .custom-box p{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
     .custom-box img {
-        width: 45px;
-        height: 45px;
+        width: 50px;
+        height: 50px;
     }
     .hero .custom-box button {
         border-radius: 16px !important;
@@ -359,28 +372,61 @@ nav {
         -o-border-radius: 16px !important;
     }
     .custom-box-button {
-        margin-top: 15px;
+        margin-top: 20px;
+    }
+    .custom-box .custom-box-container .col-6 .row .col-3, .custom-box .custom-box-container .col-6 .row .col-9, .custom-box .custom-box-container .col-6 .row .col-md-4, .custom-box .custom-box-container .col-6 .row .col-md-8 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .custom-box .custom-box-container .col-md-8 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 }
 
-@media (max-width: 476px) {
-    .hero .custom-box p{
-        font-size: 0.8rem;
+@media (max-width: 416px) {
+    .hero h1 {
+        font-size: 2rem;
     }
-    .custom-box img {
-        width: 50px;
-        height: 40px;
+    .hero h2 {
+        font-size: 1.8rem;
     }
 }
 
-@media screen and (max-width: 378px) {
-    .hero .custom-box p{
-        font-size: 0.7rem;
+@media screen and (max-width: 380px) {
+    .hero {
+        height: 150vh;
+    }
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    .hero h2 {
+        font-size: 1.4rem;
+    }
+    .hero .custom-box {
+        padding: 15px 0;
     }
     .hero .custom-box button {
-        height: 50px;
+        height: 45px;
         font-size: 0.9rem;
     }
+    .hero .custom-box img {
+        width: 45px;
+        height: 45px;
+    }
+    .hero .custom-box #custom-box-nameMentor, .hero .custom-box #custom-box-mentor {
+        padding-left: 10px;
+    }
+}
+
+
+
+
+.introduction {
+    background-color: #ffffff;
+    height: auto;
+    width: 100%;
+    padding: 120px 0 100px 0;
 }
 
 
@@ -421,88 +467,6 @@ nav {
     }
 }
 
-
-
-.banner {
-    background-image: url('../../assets/images/banner-academy-sunshine.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 70vh;
-    width: 100%;
-    flex-direction: column !important;
-}
-
-.banner .banner-tagline {
-    width: 700px;
-}
-
-.banner p {
-    font-size: 20px;
-}
-
-.banner h3 {
-    font-size: 32px;
-}
-
-.banner .hero-button {
-    width: 180px;
-    padding: 15px 15px;
-    background-color: #174076;
-    border-radius: 40px;
-    color: #FAFAFA;
-    font-weight: 500;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    -ms-border-radius: 40px;
-    -o-border-radius: 40px;
-}
-
-.banner .hero-button a{
-    color: #ffffff;
-    text-decoration: none;
-}
-
-@media (max-width: 768px) {
-    .banner {
-        height: 50vh;
-    }
-    .banner .banner-tagline {
-        width: 500px;
-    }
-    .banner p {
-        font-size: 16px;
-    }
-    .banner h3 {
-        font-size: 26px;
-    }
-}
-
-@media (max-width: 476px) {
-    .banner {
-        height: 40vh;
-    }
-    .banner .banner-tagline {
-        width: 300px;
-        max-width: 300px;
-    }
-    .banner p {
-        font-size: 14px;
-    }
-    .banner h3 {
-        font-size: 18px;
-    }
-    .banner .hero-button {
-        width: 170px;
-        padding: 12px 12px;
-        font-size: 14px;
-        border-radius: 30px;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        -ms-border-radius: 30px;
-        -o-border-radius: 30px;
-    }
-}
 
 
 .benefit {
@@ -576,7 +540,6 @@ nav {
 }
 
 .contact h4 {
-    font-family: 'PT Serif', serif;
     padding-bottom: 10px;
     font-weight: bold;
     color: #1E1E1E;

@@ -398,6 +398,16 @@ nav {
 
 
 
+
+.introduction {
+    background-color: #ffffff;
+    height: auto;
+    width: 100%;
+    padding: 120px 0 100px 0;
+}
+
+
+
 .silabus {
     background-color: #ffffff;
     height: auto;
