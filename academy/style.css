@@ -867,8 +867,8 @@ a {
 
 @media screen and ( max-width: 768px) {
     .silabus .silabus-outer-box {
-        width: 500px;
-        max-width: 600px !important;
+        width: 100%;
+        max-width: none;
     }
     .silabus-box {
         height: 130px;
@@ -886,12 +886,34 @@ a {
     }
 }
 
+@media screen and ( max-width: 616px) {
+    .silabus .container {
+        margin-right: 20px;
+        margin-left: 20px;
+        width: auto !important;
+        max-width: none;
+    }
+}
+
 @media screen and ( max-width: 576px) {
     .silabus #silabus-title{
         font-size: 14px;
     }
     .silabus #silabus-description {
         font-size: 12px;
+        padding-right: 10px;
+    }
+    .silabus #silabus-card-last {
+        height: 150px;
+    }
+}
+
+@media screen and ( max-width: 350px) {
+    .silabus #silabus-card-four {
+        height: 150px;
+    }
+    .silabus #silabus-card-last {
+        height: 180px;
     }
 }
 
