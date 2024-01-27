@@ -74,6 +74,10 @@ a {
     background-color: #ffffff;
 }
 
+.navbar-light .navbar-toggler-icon.icon-scrolled {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
 .navbar-light.scrolled .navbar-nav .nav-link {
     color: #000000 !important;
 }
@@ -181,7 +185,7 @@ a {
         -moz-border-radius: 30px;
         -ms-border-radius: 30px;
         -o-border-radius: 30px;
-}
+    }
 }
 
 @media screen and (max-width: 378px) {
@@ -207,7 +211,7 @@ a {
 
 .about .about-description p {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     color: #1E1E1E;
     margin: 0;
     line-height: 30px;
@@ -236,7 +240,7 @@ a {
 
 .about .card p {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 300;
     color: #1E1E1E;
     margin: 0;
 }
@@ -249,7 +253,6 @@ a {
     .about .about-description h3 {
         font-size: 24px;
     }
-    
     .about .about-description p {
         font-size: 16px;
         line-height: 25px;
@@ -354,13 +357,49 @@ a {
     padding: 70px 0;
 }
 
+.service .container {
+    max-width: 1400px !important;
+}
+
+.service h1 {
+    font-size: 2rem;
+}
+
+.service p {
+    font-weight: 300 !important;
+    font-size: 20px
+}
+
+.service .service-cards-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.service-cards-scroll {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.service .service-cards-container::-webkit-scrollbar {
+    display: none;
+}
+
+.service .service-cards-container {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
 .service .card {
-    height: 300px;
+    width: 400px;
+    max-width: 400px;
+    height: 320px;
     max-height: 320px;
+    border: 1px solid #ffffff;
     background-color: #174076;
+    /*border: none;*/
     position: relative;
-    border: none;
-    border-radius: 10px;
 }
 
 .service-card::before {
@@ -378,14 +417,14 @@ a {
 }
 
 .service .card-body h5 {
-    font-size: medium;
+    font-size: 18px;
     margin: 0;
 }
 
 .service .card-body p {
     margin: 0;
-    font-size: thin;
-    font-weight: 100;
+    font-size: 17px;
+    font-weight: lighter;
 }
 
 .service .card-icon {
@@ -420,17 +459,44 @@ a {
     left: 21px;
 }
 
-@media screen and (max-width: 1115px) {
+@media screen and (min-width: 1200px) {
+    .service .service-cards-wrapper {
+        flex-direction: row;
+    }
+    .service .col-md-4 {
+        flex: 0 0 auto;
+        max-width: 33.33%;
+    }
     .service .card {
-        height: 400px;
-        max-height: 400px;
+        width: 300px;
+        max-width: 300px;
+        height: 320px;
+        max-height: 320px;
+        background-color: #174076;
+        border: 1px solid #ffffff;
+        /*border: none;*/
+        border-radius: 10px;
+        position: relative;
+        margin: 0 0 0 65px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .service .card {
+        width: 370px;
+        height: 300px;
+        max-height: 300px;
     }
 }
 
 @media screen and (max-width: 992px) {
     .service .card {
-        height: 320px;
-        max-height: 400px;
+        width: 270px;
+        max-width: 270px;
     }
     .service .card-body {
         padding: 0 1rem 1rem 1rem;
@@ -439,7 +505,7 @@ a {
         font-size: 16px;
     }
     .service .card-body p {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -452,39 +518,40 @@ a {
         font-size: 2rem;
     }
     .service .card {
+        width: 350px;
+        max-width: 400px;
+        height: 320px;
+        max-height: 400px;
         margin-top: 40px;
     }
     .service .card-body {
-        padding: 2.75rem;
+        padding: 1.5rem;
     }
     .service .card-body h5 {
-        font-size: 25px;
+        margin-top: 5px !important;
+        font-size: 20px;
     }
     .service .card-body p {
-        font-size: 18px;
+        font-size: 16px;
     }
     .service .card-icon iconify-icon {
         left: 20px;
     }
 }
 
-@media screen and (max-width: 600px) {
-    .service .card {
-        height: 350px;
-        max-height: 400px;
-    }
-}
-
-
 @media screen and (max-width: 576px) {
-    .card-body {
+    .service .service-cards-container {
+        margin : 10px !important;
+    }
+    .service #service-tagline {
+        font-size: 1.5rem;
+    }
+    .service #service-tagline-desc {
+        padding: 0 40px;
+        font-size: 16px;
+    }
+    .service .card-body {
         padding: 1rem 2.5rem;
-    }
-    .service .card-body h5 {
-        font-size: 20px;
-    }
-    .service .card-body p {
-        font-size: 15px;
     }
     .service .circle {
         margin-top: 50px;
@@ -507,6 +574,32 @@ a {
     }
 }
 
+@media screen and (max-width: 449px) {
+    .service .card {
+        width: 300px;
+        max-width: 300px;
+        height: 320px;
+        max-height: 320px;
+        margin: 0 0 0 5px;
+    }
+    .service .card-body {
+        padding: 1rem 1rem;
+    }
+}
+
+@media screen and (max-width: 378px) {
+    .service #service-tagline-desc {
+        padding: 0 30px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 356px) {
+    .service .card {
+        margin: 0 !important;
+    }
+}
+
 
 
 .package {
@@ -517,13 +610,13 @@ a {
 }
 
 .package .card {
-    border-radius: 10px !important;
+    border-radius: 16px !important;
     border: none;
     box-shadow: #00000014 0px 0px 10px 0px;
-    -webkit-border-radius: 10px !important;
-    -moz-border-radius: 10px !important;
-    -ms-border-radius: 10px !important;
-    -o-border-radius: 10px !important;
+    -webkit-border-radius: 16px !important;
+    -moz-border-radius: 16px !important;
+    -ms-border-radius: 16px !important;
+    -o-border-radius: 16px !important;
 }
 
 .package .card img {
@@ -555,6 +648,11 @@ a {
     color: white;
     margin-top: 15px;
     border: none;
+    border-radius: 16px !important;
+    -webkit-border-radius: 16px !important;
+    -moz-border-radius: 16px !important;
+    -ms-border-radius: 16px !important;
+    -o-border-radius: 16px !important;
 }
 
 .package .card button a{
@@ -596,10 +694,11 @@ a {
 
 
 .banner {
-    background-image: url('./assets/images/banner-academy-sunshine.png');
+    /* background-image: url('./assets/images/banner-academy-sunshine.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
+    background-position: center;  */
+    background-color: #00000059;
     height: 70vh;
     width: 100%;
     flex-direction: column !important;
@@ -781,6 +880,12 @@ a {
 }
 
 @media (max-width: 380px) {
+    .faq .card-header {
+        padding: 1.5rem 1rem;
+    }    
+    .faq .card-header .btn {
+        padding: 0 0 0 0 !important;
+    } 
     .faq .card button {
         font-size: 13px;  
     }
@@ -794,8 +899,7 @@ a {
     padding-top: 180px;
 }
 
-.contact h4 {
-    font-family: 'PT Serif', serif;
+.contact h5 {
     padding-bottom: 10px;
     font-weight: bold;
     color: #1E1E1E;

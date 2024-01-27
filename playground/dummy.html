@@ -1,44 +1,367 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar w/ text</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-        </ul>
-        <span class="navbar-text">
-          Navbar text with an inline element
-        </span>
-      </div>
-    </nav>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <h1>Hello, world!</h1>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar w/ text</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        Navbar text with an inline element
+      </span>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Google Drive Video Player</h1>
+    <div class="embed-responsive embed-responsive-16by9">
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
+
+
+<!-- ini bekasan code di academu -->
+<!-- <section class="service" id="service">
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto text-center text-white">
+                    <h1 id="service-tagline" class="font-weight-bold">Kenapa Pilih Sunshine Academy?</h1>
+                    <p>Bergabunglah dengan kami untuk mengasa skill anda di bidang IT</p>
+                </div>
+                <div class="d-flex flex-wrap justify-content-between align-items-center">
+                    <div class="col-md-4">
+                        <div class="card service-card">
+                            <div class="card-icon">
+                                <div class="circle" style="background-color: #ffffff;"></div>
+                                <iconify-icon icon="ion:people" id="icon-srv-1" style="color: #174076;"></iconify-icon>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center text-white">Mentor yang Ahli</h5>
+                                <p class="card-text text-center text-white mt-2">Kami telah menyiapkan mentor yang
+                                    profesional dengan pengalaman minimal 2 tahun di bidangnya.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card service-card">
+                            <div class="card-icon">
+                                <div class="circle" style="background-color: #ffffff;"></div>
+                                <iconify-icon icon="cil:mood-very-good" style="color: #174076;"
+                                    id="icon-srv-2"></iconify-icon>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center text-white">Metode Belajar Asik</h5>
+                                <p class="card-text text-center text-white mt-2">Kami telah menyiapkan metode
+                                    belajar yang asik dan interaktif untuk kenyamanan belajar Anda.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card service-card">
+                            <div class="card-icon">
+                                <div class="circle" style="background-color: #ffffff;"></div>
+                                <iconify-icon icon="ion:book" id="icon-srv-3" style="color: #174076;"></iconify-icon>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center text-white">Gratis Modul Ajar</h5>
+                                <p class="card-text text-center text-white mt-2">Kami telah menyiapkan modul ajar
+                                    yang mudah dipahami dan sesuai dengan kurikulum yang didesain sesuai standar
+                                    industri.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card service-card">
+                            <div class="card-icon">
+                                <div class="circle" style="background-color: #ffffff;"></div>
+                                <iconify-icon icon="ion:book" id="icon-srv-3" style="color: #174076;"></iconify-icon>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center text-white">Gratis Modul Ajar</h5>
+                                <p class="card-text text-center text-white mt-2">Kami telah menyiapkan modul ajar
+                                    yang mudah dipahami dan sesuai dengan kurikulum yang didesain sesuai standar
+                                    industri.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+<!-- <script>
+    const wrapper = document.querySelector(".wrappe");
+    const carousel = document.querySelector(".carousell");
+    const firstCardWidth = carousel.querySelector(".cardd").offsetWidth;
+    const arrowBtns = document.querySelectorAll(".wrappe i");
+    const carouselChildrens = [...carousel.children];
+
+    let isDragging = false, startX, startScrollLeft, timeoutId;
+    let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+
+    carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
+        carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+    });
+    carouselChildrens.slice(0, cardPerView).forEach(card => {
+        carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+    });
+    carousel.classList.add("no-transition");
+    carousel.scrollLeft = carousel.offsetWidth;
+    carousel.classList.remove("no-transition");
+    arrowBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+            carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
+        });
+    });
+
+    const dragStart = (e) => {
+        isDragging = true;
+        carousel.classList.add("dragging");
+        startX = e.pageX;
+        startScrollLeft = carousel.scrollLeft;
+    }
+
+    const dragging = (e) => {
+        if (!isDragging) return;
+        carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+    }
+
+    const dragStop = () => {
+        isDragging = false;
+        carousel.classList.remove("dragging");
+    }
+
+    const infiniteScroll = () => {
+        if (carousel.scrollLeft === 0) {
+            carousel.classList.add("no-transition");
+            carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
+            carousel.classList.remove("no-transition");
+        }
+        else if (Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
+            carousel.classList.add("no-transition");
+            carousel.scrollLeft = carousel.offsetWidth;
+            carousel.classList.remove("no-transition");
+        }
+        clearTimeout(timeoutId);
+    }
+
+    carousel.addEventListener("mousedown", dragStart);
+    carousel.addEventListener("mousemove", dragging);
+    document.addEventListener("mouseup", dragStop);
+    carousel.addEventListener("scroll", infiniteScroll);
+    wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+</script> -->
+
+<!-- <section class="testimonials" id="testimoni">
+        <div class="container">
+            <div class="text-center">
+                <h2>Ulasan</h2>
+                <p class="mt-3">Klien Senang & Umpan Balik</p>
+            </div>
+            <div class="wrappe">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul class="carousell">
+                    <li class="cardd">
+                        <h5>Review</h5>
+                        <p class="text-center">Dalam pembuatan website sangat bagus dan cukup cepat, lalu kita di
+                            bimbing hingga konsultasi bareng secara rinci jadi hasil sesuai</p>
+                        <div class="cardd-contentt">
+                            <div class="cardd-imggg">
+                                <img src="../assets/img/sunshine-profile-testimoni.jpg" alt="Sunshine Testimoni"
+                                    draggable="false">
+                                <div class="cardd-name">
+                                    <p>Prabu nawukrida</p>
+                                    <p id="smallone">Mahasiswa</p>
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cardd">
+                        <h5>Review</h5>
+                        <p class="text-center">Dalam konsultasi sangat mudah dimengerti dan dipahami, komunikasi saya
+                            dengan tim serta pelayanan yang ramah sampai website nya jadi dan bagus</p>
+                        <div class="cardd-contentt">
+                            <div class="cardd-imggg">
+                                <img src="../assets/img/sunshine-profile-testimoni.jpg" alt="Sunshine Testimoni Icon"
+                                    draggable="false">
+                                <div class="cardd-name">
+                                    <p>Putria Amanda</p>
+                                    <p id="smalltwo">Pengusaha</p>
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cardd">
+                        <h5>Review</h5>
+                        <p class="text-center">Menurut saya pribadi, tim IT nya sangat profesional dan tim Konsultan nya
+                            sangat ramah sehingga nyaman diajak berbicara, jadi tidak ada mis comunication</p>
+                        <div class="cardd-contentt">
+                            <div class="cardd-imggg">
+                                <img src="../assets/img/sunshine-profile-testimoni.jpg" alt="Sunshine Testimoni Icon"
+                                    draggable="false">
+                                <div class="cardd-name">
+                                    <p>Adi Sasono</p>
+                                    <p id="smallthree">Management produk</p>
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cardd">
+                        <h5>Review</h5>
+                        <p class="text-center">Hasil dari web nya sendiri menurut saya bagus dan menarik, design yang
+                            diberikan seperti jarang keluar pada umum, interaksi tim bagus</p>
+                        <div class="cardd-contentt">
+                            <div class="cardd-imggg">
+                                <img src="../assets/img/sunshine-profile-testimoni.jpg" alt="Sunshine Testimoni Icon"
+                                    draggable="false">
+                                <div class="cardd-name">
+                                    <p>Nanda Alfarizi</p>
+                                    <p id="smallfour">Mahasiswa</p>
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cardd">
+                        <h5>Review</h5>
+                        <p class="text-center">Dalam menyesuaikan website permintaan sangat rapih dan tertata, dan harga
+                            yang diberikan masih terjangka, dan sesuai dengan hasil menurut saya</p>
+                        <div class="cardd-contentt">
+                            <div class="cardd-imggg">
+                                <img src="../assets/img/sunshine-profile-testimoni.jpg" alt="Sunshine Testimoni Icon"
+                                    draggable="false">
+                                <div class="cardd-name">
+                                    <p>Santoso Pramono</p>
+                                    <p id="smallfive">Mahasiswa</p>
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cardd">
+                        <h5>Review</h5>
+                        <p class="text-center">Dalam peforma website yang dibuat itu bagus, tidak ada load yang
+                            berlebih, walaupun data banyak, keren pokoknya</p>
+                        <div class="cardd-contentt">
+                            <div class="cardd-imggg">
+                                <img src="../assets/img/sunshine-profile-testimoni.jpg" alt="Sunshine Testimoni Icon"
+                                    draggable="false">
+                                <div class="cardd-name">
+                                    <p> Mirasalatna</p>
+                                    <p id="smallsix">Pedagang Toko</p>
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
+                                    height="15"></iconify-icon>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+    </section> -->

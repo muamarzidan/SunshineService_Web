@@ -1,22 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Sunshine Solusi Layanan Teknologi dan Digitalisasi Desa">
-    <meta name="keywords" content="Sunshineid, Sunshine, Sunshine Service, Sunshine Layanan, Sunshine Digital, Sunshine Desa, Sunshine Desa Digital, Sunshine jasa, Sunshinee, IT, Jasa It, SUNSHINE, Sunshine Acadeny">
-    <meta name="author" content="Muamar Zidan Tri Antoro">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Sunshine Solusi Layanan Teknologi dan Digitalisasi Desa" />
+    <meta name="keywords"
+        content="Sunshineid, Sunshine, Sunshine Service, Sunshine Layanan, Sunshine Digital, Sunshine Desa, Sunshine Desa Digital, Sunshine jasa, Sunshinee, IT, Jasa It, SUNSHINE, Sunshine Acadeny" />
+    <meta name="author" content="Muamar Zidan Tri Antoro" />
 
-    <link rel="icon" type="" href="../assets/img/sunshine_icon.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="../assets/img/sunshine_icon.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="../assets/img/sunshine_icon.png" sizes="48x48">
-    <link rel="icon" type="image/svg+xml" href="../assets/img/sunshine_icon.svg">
+    <link rel="icon" type="" href="../assets/img/sunshine_icon.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../assets/img/sunshine_icon.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../assets/img/sunshine_icon.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="../assets/img/sunshine_icon.svg" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="main.js"></script>
 
     <title>Sunshine Academy</title>
@@ -27,7 +29,7 @@
         <div class="container">
             <a class="navbar-brand" href="../index.html">
                 <img src="../assets/img/sunshine_icon.png" alt="Sunshine Logo" width="100" height="100"
-                    class="img-fluid">
+                    class="img-fluid" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +50,8 @@
                         <a class="nav-link text-white" href="../kontak.html">Kontak</a>
                     </li>
                     <li id="button-daftar" class="nav-item">
-                        <a class="nav-link" href="https://forms.gle/A5FzHJjabK1PNk2F9" target="_blank">Daftar Bootcamp</a>
+                        <a class="nav-link" href="https://forms.gle/A5FzHJjabK1PNk2F9" target="_blank">Daftar
+                            Bootcamp</a>
                     </li>
                 </ul>
             </div>
@@ -56,14 +59,37 @@
     </nav>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const navbarToggle = document.querySelector('.navbar-toggler');
-            const navbar = document.querySelector('.navbar');
-            const navbarIcon = document.querySelector('.navbar-toggler-icon');
+        document.addEventListener('DOMContentLoaded', function () {
+            var navbar = document.querySelector('.navbar');
+            var navbarIcon = document.querySelector('.navbar-toggler-icon');
 
-            navbarToggle.addEventListener('click', function () {
-                navbar.classList.toggle('active', navbarToggle.getAttribute('aria-expanded') === 'false');
-                navbarIcon.classList.toggle('icon-expanded', navbarToggle.getAttribute('aria-expanded') === 'false');
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 750) {
+                    navbar.classList.add('scrolled');
+                    navbar.classList.add('shadow-on-scroll');
+                    navbarIcon.classList.add('icon-scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                    navbar.classList.remove('shadow-on-scroll');
+                    navbarIcon.classList.remove('icon-scrolled');
+                }
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const navbarToggle = document.querySelector(".navbar-toggler");
+            const navbar = document.querySelector(".navbar");
+            const navbarIcon = document.querySelector(".navbar-toggler-icon");
+
+            navbarToggle.addEventListener("click", function () {
+                navbar.classList.toggle(
+                    "active",
+                    navbarToggle.getAttribute("aria-expanded") === "false"
+                );
+                navbarIcon.classList.toggle(
+                    "icon-expanded",
+                    navbarToggle.getAttribute("aria-expanded") === "false"
+                );
             });
         });
     </script>
@@ -72,10 +98,14 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h1 class="text-center text-white font-weight-bold">Tingkatkan Skill
-                        IT Kamu Bersama <span class="text-warning font-weight-bold">Sunshine Academy</span></h1>
-                    <p class="text-center text-white">Ambil langkah tepat untuk menemukan kesuksesan bersama
-                        Sunshine Academy</p>
+                    <h1 class="text-center text-white font-weight-bold">
+                        Tingkatkan Skill IT Kamu Bersama
+                        <span class="text-warning font-weight-bold">Sunshine Academy</span>
+                    </h1>
+                    <p class="text-center text-white">
+                        Ambil langkah tepat untuk menemukan kesuksesan bersama Sunshine
+                        Academy
+                    </p>
                     <div class="row d-flex justify-content-center align-items-center">
                         <div class="hero-button text-center">
                             <a href="./academy.html">Daftar Bootcamp</a>
@@ -89,40 +119,47 @@
     <section class="about" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-md-6  d-flex justify-content-between align-items-center">
+                <div class="col-md-6 d-flex justify-content-between align-items-center">
                     <div class="about-description">
-                        <h3 class="font-weight-bold">Belajar IT Seru Bersama Sunshine Academy</h3>
+                        <h3 class="font-weight-bold">
+                            Belajar IT Seru Bersama Sunshine Academy
+                        </h3>
                         <p class="mt-2">
-                            Sunshine Academy adalah salah satu program dari startup sunshine yang bergerak 
-                            di bidang edukasi/pelatihan IT secara online. Sunshine academy memiliki 4 kelas pelatihan, 
-                            yaitu kelas web programming, mobile programming, UI/UX desain, dan animasi 3D. Fasilitas yang kami 
-                            tawarkan mencakup pelatihan online yang dipandu oleh mentor ahli, modul pelatihan yang komprehensif, 
-                            serta sertifikat pelatihan yang diberikan setelah menyelesaikan proyek akhir pada akhir pelatihan.
+                            Sunshine Academy adalah salah satu program dari startup sunshine
+                            yang bergerak di bidang edukasi/pelatihan IT secara online.
+                            Sunshine academy memiliki 4 kelas pelatihan, yaitu kelas web
+                            programming, mobile programming, UI/UX desain, dan animasi 3D.
+                            Fasilitas yang kami tawarkan mencakup pelatihan online yang
+                            dipandu oleh mentor ahli, modul pelatihan yang komprehensif,
+                            serta sertifikat pelatihan yang diberikan setelah menyelesaikan
+                            proyek akhir pada akhir pelatihan.
                         </p>
                     </div>
                 </div>
                 <div class="about-right col-md-6 d-flex justify-content-around">
                     <div class="card d-flex justify-content-center align-items-center">
                         <div class="row d-flex justify-content-center align-items-center">
-                            <iconify-icon icon="basil:document-solid" style="color: #174076;"id="icon-abt-1"></iconify-icon>
+                            <iconify-icon icon="basil:document-solid" style="color: #174076"
+                                id="icon-abt-1"></iconify-icon>
                             <p class="text-center">Project Based Learning</p>
                         </div>
                     </div>
                     <div class="card d-flex justify-content-center align-items-center">
                         <div class="row d-flex justify-content-center align-items-center">
-                            <iconify-icon icon="ion:people" style="color: #174076;" id="icon-abt-2"></iconify-icon>
+                            <iconify-icon icon="ion:people" style="color: #174076" id="icon-abt-2"></iconify-icon>
                             <p class="text-center">Mentor yang berpengalaman</p>
                         </div>
                     </div>
                     <div class="card d-flex justify-content-center align-items-center">
                         <div class="row d-flex justify-content-center align-items-center">
-                            <iconify-icon icon="game-icons:achievement" style="color: #174076;" id="icon-abt-3"></iconify-icon>
+                            <iconify-icon icon="game-icons:achievement" style="color: #174076"
+                                id="icon-abt-3"></iconify-icon>
                             <p class="text-center">Mendapatkan sertifikat pelatihan</p>
                         </div>
                     </div>
                     <div class="card d-flex justify-content-center align-items-center">
                         <div class="row d-flex justify-content-center align-items-center">
-                            <iconify-icon icon="ion:book" style="color: #174076;" id="icon-abt-4"></iconify-icon>
+                            <iconify-icon icon="ion:book" style="color: #174076" id="icon-abt-4"></iconify-icon>
                             <p class="text-center">Mendapatkan modul pelatihan</p>
                         </div>
                     </div>
@@ -135,51 +172,121 @@
         <div class="container">
             <div class="row">
                 <div class="mx-auto text-center text-white">
-                    <h1 id="service-tagline" class="font-weight-bold">Kenapa Pilih Sunshine Academy?</h1>
-                    <p>Bergabunglah dengan kami untuk mengasa skill anda di bidang IT</p>
+                    <h1 id="service-tagline" class="font-weight-bold">
+                        Kenapa Pilih Sunshine Academy?
+                    </h1>
+                    <p id="service-tagline-desc" class="mt-3">
+                        Bergabunglah dengan kami untuk mengasah skill anda di bidang IT
+                    </p>
                 </div>
-                <div class="d-flex flex-wrap justify-content-between align-items-center">
-                    <div class="col-md-4">
-                        <div class="card service-card">
-                            <div class="card-icon">
-                                <div class="circle" style="background-color: #ffffff;"></div>
-                                <iconify-icon icon="ion:people" id="icon-srv-1" style="color: #174076;"></iconify-icon>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title text-center text-white">Mentor yang Ahli</h5>
-                                <p class="card-text text-center text-white mt-2">Kami telah menyiapkan mentor yang
-                                    profesional dengan pengalaman minimal 2 tahun di bidangnya.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card service-card">
-                            <div class="card-icon">
-                                <div class="circle" style="background-color: #ffffff;"></div>
-                                <iconify-icon icon="cil:mood-very-good" style="color: #174076;"
-                                    id="icon-srv-2"></iconify-icon>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title text-center text-white">Metode Belajar Asik</h5>
-                                <p class="card-text text-center text-white mt-2">Kami telah menyiapkan metode
-                                    belajar yang asik dan interaktif untuk kenyamanan belajar Anda.
-                                </p>
+                <div class="service-cards-container mt-5">
+                    <div class="service-cards-scroll">
+                        <div class="col-md-4">
+                            <div class="card service-card">
+                                <div class="card-icon">
+                                    <div class="circle" style="background-color: #ffffff"></div>
+                                    <iconify-icon icon="ion:people" id="icon-srv-1"
+                                        style="color: #174076"></iconify-icon>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center text-white mt-3">
+                                        Mentor yang Ahli
+                                    </h5>
+                                    <p class="card-text text-center text-white mt-3">
+                                        Kami telah menyiapkan mentor yang profesional dengan
+                                        pengalaman minimal 2 tahun di bidangnya.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card service-card">
-                            <div class="card-icon">
-                                <div class="circle" style="background-color: #ffffff;"></div>
-                                <iconify-icon icon="ion:book" id="icon-srv-3" style="color: #174076;"></iconify-icon>
+                        <div class="col-md-4">
+                            <div class="card service-card">
+                                <div class="card-icon">
+                                    <div class="circle" style="background-color: #ffffff"></div>
+                                    <iconify-icon icon="ph:shooting-star-fill" style="color: #174076"
+                                        id="icon-srv-2"></iconify-icon>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center text-white mt-3">
+                                        Metode Belajar Asik
+                                    </h5>
+                                    <p class="card-text text-center text-white mt-3">
+                                        Kami telah menyiapkan metode belajar yang asik dan
+                                        interaktif untuk kenyamanan belajar Anda.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="card-body">
-                                <h5 class="card-title text-center text-white">Gratis Modul Ajar</h5>
-                                <p class="card-text text-center text-white mt-2">Kami telah menyiapkan modul ajar
-                                    yang mudah dipahami dan sesuai dengan kurikulum yang didesain sesuai standar
-                                    industri.
-                                </p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card service-card">
+                                <div class="card-icon">
+                                    <div class="circle" style="background-color: #ffffff"></div>
+                                    <iconify-icon icon="ion:book" id="icon-srv-3" style="color: #174076"></iconify-icon>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center text-white mt-3">
+                                        Gratis Modul Ajar
+                                    </h5>
+                                    <p class="card-text text-center text-white mt-3">
+                                        Kami telah menyiapkan modul ajar yang mudah dipahami dan
+                                        sesuai dengan kurikulum yang didesain sesuai standar
+                                        industri.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card service-card">
+                                <div class="card-icon">
+                                    <div class="circle" style="background-color: #ffffff"></div>
+                                    <iconify-icon icon="ion:book" id="icon-srv-3" style="color: #174076"></iconify-icon>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center text-white mt-3">
+                                        Gratis Modul Ajar
+                                    </h5>
+                                    <p class="card-text text-center text-white mt-3">
+                                        Kami telah menyiapkan modul ajar yang mudah dipahami dan
+                                        sesuai dengan kurikulum yang didesain sesuai standar
+                                        industri.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card service-card">
+                                <div class="card-icon">
+                                    <div class="circle" style="background-color: #ffffff"></div>
+                                    <iconify-icon icon="ion:book" id="icon-srv-3" style="color: #174076"></iconify-icon>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center text-white mt-3">
+                                        Gratis Modul Ajar
+                                    </h5>
+                                    <p class="card-text text-center text-white mt-3">
+                                        Kami telah menyiapkan modul ajar yang mudah dipahami dan
+                                        sesuai dengan kurikulum yang didesain sesuai standar
+                                        industri.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card service-card">
+                                <div class="card-icon">
+                                    <div class="circle" style="background-color: #ffffff"></div>
+                                    <iconify-icon icon="ion:book" id="icon-srv-3" style="color: #174076"></iconify-icon>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center text-white mt-3">
+                                        Gratis Modul Ajar
+                                    </h5>
+                                    <p class="card-text text-center text-white mt-3">
+                                        Kami telah menyiapkan modul ajar yang mudah dipahami dan
+                                        sesuai dengan kurikulum yang didesain sesuai standar
+                                        industri.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -195,25 +302,27 @@
                 <p>Bergabunglah dengan kami untuk mengasah skill anda di bidang IT</p>
             </div>
             <div class="package-card row d-flex flex-row flex-wrap justify-content-between align-items-center">
-                <div class="mt-5 card" style="width: 22rem;">
-                    <img class="card-img-top p-3" src="./assets/images/pelatihan-web-sunshine.jpg" alt="Card image cap">
+                <div class="mt-5 card" style="width: 22rem">
+                    <img class="card-img-top p-3" src="./assets/images/pelatihan-web-sunshine.jpg"
+                        alt="Card image cap" />
                     <div class="card-body">
-                        <h5 class="card-title font-weight-bold">Pemrograman dasar web (HTML,CSS)</h5>
+                        <h5 class="card-title">Pemrograman dasar web (HTML,CSS)</h5>
                         <p>
-                            <del style="color: red;"><span style="color: #808080; margin-right: 10px;">Rp.320.000</span></del>
-                            <span class="font-weight-bold" style="color: #174076;">Rp.250.000</span>
+                            <del style="color: red"><span
+                                    style="color: #808080; margin-right: 10px">Rp.320.000</span></del>
+                            <span class="font-weight-bold" style="color: #174076">Rp.250.000</span>
                         </p>
-                        <p>Mentor : Muamar Zidan T.A</p>
+                        <p class="mt-1">Mentor : Muamar Zidan T.A</p>
                         <div class="package-card-icon d-flex justify-content-start align-items-center">
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="20"
+                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="20"
+                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="20"
+                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="20"
+                            <iconify-icon icon="c:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="20"
+                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
                         </div>
                         <button class="rounded">
@@ -221,26 +330,29 @@
                         </button>
                     </div>
                 </div>
-                <div class="mt-5 card" style="width: 22rem;">
+                <div class="mt-5 card" style="width: 22rem">
                     <img class="card-img-top p-3 img-fluid" src="./assets/images/pelatihan-flutter-sunshine.png"
-                        alt="Card image cap">
+                        alt="Card image cap" />
                     <div class="card-body">
-                        <h5 class="card-title font-weight-bold">Bootcamp Online Pemrograman Dasar Aplikasi Mobile (Flutter)</h5>
+                        <h5 class="card-title">
+                            Bootcamp Online Pemrograman Dasar Aplikasi Mobile (Flutter)
+                        </h5>
                         <p>
-                            <del style="color: red;"><span style="color: #808080; margin-right: 10px;">Rp.350.000</span></del>
-                            <span class="font-weight-bold" style="color: #174076;">Rp.230.000</span>
+                            <del style="color: red"><span
+                                    style="color: #808080; margin-right: 10px">Rp.350.000</span></del>
+                            <span class="font-weight-bold" style="color: #174076">Rp.230.000</span>
                         </p>
-                        <p>Mentor : M.Aprilian Tanjung</p>
+                        <p class="mt-1">Mentor : M.Aprilian Tanjung</p>
                         <div class="package-card-icon d-flex justify-content-start align-items-center">
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="20"
+                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="20"
+                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="20"
+                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="20"
+                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="20"
+                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
                         </div>
                         <button class="rounded">
@@ -248,25 +360,29 @@
                         </button>
                     </div>
                 </div>
-                <div class="mt-5 card" style="width: 22rem;">
-                    <img class="card-img-top p-3" src="./assets/images/pelatihan-kotlin-sunshine.png" alt="Card image cap">
+                <div class="mt-5 card" style="width: 22rem">
+                    <img class="card-img-top p-3" src="./assets/images/pelatihan-kotlin-sunshine.png"
+                        alt="Card image cap" />
                     <div class="card-body">
-                        <h5 class="card-title font-weight-bold">Bootcamp Online Pemrograman Dasar Aplikasi Mobile (Kotlin)</h5>
+                        <h5 class="card-title">
+                            Bootcamp Online Pemrograman Dasar Aplikasi Mobile (Kotlin)
+                        </h5>
                         <p>
-                            <del style="color: red;"><span style="color: #808080; margin-right: 10px;">Rp.320.000</span></del>
-                            <span class="font-weight-bold" style="color: #174076;">Rp.280.000</span>
+                            <del style="color: red"><span
+                                    style="color: #808080; margin-right: 10px">Rp.320.000</span></del>
+                            <span class="font-weight-bold" style="color: #174076">Rp.280.000</span>
                         </p>
-                        <p>Mentor : Zaenarif Putra</p>
+                        <p class="mt-1">Mentor : Zaenarif Putra</p>
                         <div class="package-card-icon d-flex justify-content-start align-items-center">
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="20"
+                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="20"
+                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="20"
+                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="20"
+                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="20"
+                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
                         </div>
                         <button class="rounded">
@@ -274,25 +390,29 @@
                         </button>
                     </div>
                 </div>
-                <div id="package-custom-cardLeft" class="mt-5 card" style="width: 22rem;">
-                    <img class="card-img-top p-3" src="./assets/images/pelatihan-design-sunshine.png" alt="Card image cap">
+                <div id="package-custom-cardLeft" class="mt-5 card" style="width: 22rem">
+                    <img class="card-img-top p-3" src="./assets/images/pelatihan-design-sunshine.png"
+                        alt="Card image cap" />
                     <div class="card-body">
-                        <h5 class="card-title font-weight-bold">Bootcamp Online Dasar UI/UX Desain (Figma)</h5>
+                        <h5 class="card-title">
+                            Bootcamp Online Dasar UI/UX Desain (Figma)
+                        </h5>
                         <p>
-                            <del style="color: red;"><span style="color: #808080; margin-right: 10px;">Rp.250.000</span></del>
-                            <span class="font-weight-bold" style="color: #174076;">Rp.200.000</span>
+                            <del style="color: red"><span
+                                    style="color: #808080; margin-right: 10px">Rp.250.000</span></del>
+                            <span class="font-weight-bold" style="color: #174076">Rp.200.000</span>
                         </p>
-                        <p>Mentor : Mellafesa</p>
+                        <p class="mt-1">Mentor : Mellafesa</p>
                         <div class="package-card-icon d-flex justify-content-start align-items-center">
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="20"
+                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="20"
+                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="20"
+                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="20"
+                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="20"
+                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
                         </div>
                         <button class="rounded">
@@ -300,25 +420,29 @@
                         </button>
                     </div>
                 </div>
-                <div id="package-custom-cardRight" class="mt-5 card" style="width: 22rem;">
-                    <img class="card-img-top p-3" src="./assets/images/pelatihan-animasi-sunshine.png" alt="Card image cap">
+                <div id="package-custom-cardRight" class="mt-5 card" style="width: 22rem">
+                    <img class="card-img-top p-3" src="./assets/images/pelatihan-animasi-sunshine.png"
+                        alt="Card image cap" />
                     <div class="card-body">
-                        <h5 class="card-title font-weight-bold">Bootcamp Online Animasi 3D (Blender)</h5>
+                        <h5 class="card-title">
+                            Bootcamp Online Animasi 3D (Blender)
+                        </h5>
                         <p>
-                            <del style="color: red;"><span style="color: #808080; margin-right: 10px;">Rp.400.000</span></del>
-                            <span class="font-weight-bold" style="color: #174076;">Rp.320.000</span>
+                            <del style="color: red"><span
+                                    style="color: #808080; margin-right: 10px">Rp.400.000</span></del>
+                            <span class="font-weight-bold" style="color: #174076">Rp.320.000</span>
                         </p>
-                        <p>Mentor : Pradana Argo</p>
+                        <p class="mt-1">Mentor : Pradana Argo</p>
                         <div class="package-card-icon d-flex justify-content-start align-items-center">
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="20"
+                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="20"
+                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="20"
+                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="20"
+                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
-                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="20"
+                            <iconify-icon icon="ic:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
                         </div>
                         <button class="rounded">
@@ -336,7 +460,10 @@
                 <div class="col">
                     <div class="text-center text-white">
                         <p>Mulai pelatihan bersama kami</p>
-                        <h1 class="text-white font-weight-bold">Tingkatkan keterampilan Anda dengan mengikuti pelatihan IT terbaik</h1>
+                        <h1 class="text-white font-weight-bold">
+                            Tingkatkan keterampilan Anda dengan mengikuti pelatihan IT
+                            terbaik
+                        </h1>
                     </div>
                     <div class="row d-flex justify-content-center align-items-center">
                         <div class="hero-button text-center">
@@ -351,20 +478,18 @@
     <div class="silabus">
         <div class="container">
             <div class="silabus-custom-container row d-flex rounded">
-                <div class="silabus-outer-box m-5 ">
+                <div class="silabus-outer-box m-5">
                     <h2 class="text-white font-weight-bold">Learning Journey</h2>
                     <div class="row bg-light rounded silabus-box mt-5">
                         <div class="col-md-1 col-sm-1 col-2 d-flex justify-content-center align-items-center">
                             <h3 id="silabus-title">1.</h3>
                         </div>
-                        <div class="col-md-9 col-sm-9 col    d-flex justify-content-center align-items-center">
+                        <div class="col-md-9 col-sm-9 col d-flex justify-content-center align-items-center">
                             <div class="col">
-                                <h6 id="silabus-title">
-                                    Pre-Course
-                                </h6>
+                                <h6 id="silabus-title">Pre-Course</h6>
                                 <p id="silabus-description">
-                                    Untuk memastikan semua peserta siap untuk belajar, seperti instalasi tools, resource
-                                    belajar.
+                                    Untuk memastikan semua peserta siap untuk belajar, seperti
+                                    instalasi tools, resource belajar.
                                 </p>
                             </div>
                         </div>
@@ -375,12 +500,10 @@
                         </div>
                         <div class="col-md-9 col-sm-9 col d-flex justify-content-center align-items-center">
                             <div class="col">
-                                <h6 id="silabus-title">
-                                    Sesi Belajar
-                                </h6>
+                                <h6 id="silabus-title">Sesi Belajar</h6>
                                 <p id="silabus-description">
-                                    Penyampaian materi oleh mentor dan dorongan kepada peserta untuk mengaplikasikannya
-                                    secara praktis.
+                                    Penyampaian materi oleh mentor dan dorongan kepada peserta
+                                    untuk mengaplikasikannya secara praktis.
                                 </p>
                             </div>
                         </div>
@@ -391,12 +514,11 @@
                         </div>
                         <div class="col-md-9 col-sm-9 col d-flex justify-content-center align-items-center">
                             <div class="col">
-                                <h6 id="silabus-title">
-                                    Sesi Quiz
-                                </h6>
+                                <h6 id="silabus-title">Sesi Quiz</h6>
                                 <p id="silabus-description">
-                                    Setelah penyampaian materi, peserta akan diberikan quiz untuk melihat apakah materi
-                                    yang telah disampaikan sudah dipahami oleh peserta atau belum
+                                    Setelah penyampaian materi, peserta akan diberikan quiz
+                                    untuk melihat apakah materi yang telah disampaikan sudah
+                                    dipahami oleh peserta atau belum
                                 </p>
                             </div>
                         </div>
@@ -407,13 +529,12 @@
                         </div>
                         <div class="col-md-9 col-sm-9 col d-flex justify-content-center align-items-center">
                             <div class="col">
-                                <h6 id="silabus-title">
-                                    Final Project
-                                </h6>
+                                <h6 id="silabus-title">Final Project</h6>
                                 <p id="silabus-description">
-                                    Di akhir pembelajaran, peserta akan diberikan project individu dengan
-                                    mengaplikasikan materi yang diberikan mentor. Final project akan dibimbing dan
-                                    dipantau oleh mentor.
+                                    Di akhir pembelajaran, peserta akan diberikan project
+                                    individu dengan mengaplikasikan materi yang diberikan
+                                    mentor. Final project akan dibimbing dan dipantau oleh
+                                    mentor.
                                 </p>
                             </div>
                         </div>
@@ -438,10 +559,10 @@
                                 aria-expanded="true" aria-controls="collapseOne"></iconify-icon>
                         </h5>
                     </div>
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                        data-parent="#accordion">
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
-                            Setiap peserta wajib memiliki laptop sendiri untuk mengikuti pembelajaran di Sunshine Academy.
+                            Setiap peserta wajib memiliki laptop sendiri untuk mengikuti
+                            pembelajaran di Sunshine Academy.
                         </div>
                     </div>
                 </div>
@@ -459,7 +580,8 @@
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                         <div class="card-body">
-                            Untuk saat ini sunshine academy belum memiliki bootcamp offline, namun akan segera hadir secepatnya.
+                            Untuk saat ini sunshine academy belum memiliki bootcamp offline,
+                            namun akan segera hadir secepatnya.
                         </div>
                     </div>
                 </div>
@@ -477,7 +599,8 @@
                     </div>
                     <div id="collapseTree" class="collapse" aria-labelledby="headingTree" data-parent="#accordion">
                         <div class="card-body">
-                            Platform yang digunakan untuk sesi kelas adalah whatsapp dan discord.
+                            Platform yang digunakan untuk sesi kelas adalah whatsapp dan
+                            discord.
                         </div>
                     </div>
                 </div>
@@ -487,7 +610,8 @@
                         <h5 class="mb-0 d-flex justify-content-between align-items-center">
                             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
                                 aria-expanded="false" aria-controls="collapseFour">
-                                Saya Tidak Memiliki Pemahaman Sama Sekali Tentang IT, Apakah Memungkinkan untuk Belajar?
+                                Saya Tidak Memiliki Pemahaman Sama Sekali Tentang IT, Apakah
+                                Memungkinkan untuk Belajar?
                             </button>
                             <iconify-icon icon="bx:down-arrow" data-toggle="collapse" data-target="#collapseFour"
                                 aria-expanded="false" aria-controls="collapseFour"></iconify-icon>
@@ -495,7 +619,8 @@
                     </div>
                     <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                         <div class="card-body">
-                            Sangat memungkinkan, yang paling dibutuhkan adalah kemauan atau niat kalian untuk belajar IT
+                            Sangat memungkinkan, yang paling dibutuhkan adalah kemauan atau
+                            niat kalian untuk belajar IT
                         </div>
                     </div>
                 </div>
@@ -513,7 +638,8 @@
                     </div>
                     <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
                         <div class="card-body">
-                            Pastinya dapat, setelah kalian menyelesakan semua kelas dan projek akhir, kalian akan mendapatkan sertifikat pelatihan
+                            Pastinya dapat, setelah kalian menyelesakan semua kelas dan
+                            projek akhir, kalian akan mendapatkan sertifikat pelatihan
                         </div>
                     </div>
                 </div>
@@ -531,7 +657,10 @@
                     </div>
                     <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
                         <div class="card-body">
-                            Saat ini kami menyediakan pelatihan web development menggunakan bahasa html/css, mobile development menggunakan bahasa kotlin dan flutter, UI/UX design menggunakan figma, dan animasi 3D menggunakan blender
+                            Saat ini kami menyediakan pelatihan web development menggunakan
+                            bahasa html/css, mobile development menggunakan bahasa kotlin
+                            dan flutter, UI/UX design menggunakan figma, dan animasi 3D
+                            menggunakan blender
                         </div>
                     </div>
                 </div>
@@ -556,18 +685,19 @@
                 <div class="col-md-6">
                     <div class="row d-md-flex justify-content-between">
                         <div id="contact-product" class="col-xl-6 col-md-6 col-sm-6 col-6">
-                            <h4 class="fw-bold">Produk</h4>
+                            <h5 class="fw-bold">Produk</h5>
                             <p>Desa Digital</p>
                             <p><a href="../index.html#service">Sunshine Service</a></p>
                             <p><a href="./index.html">Sunshine Academy</a></p>
                         </div>
                         <div id="link" class="col-xl-6 col-md-6 col-sm-6 col-6">
-                            <h4 class="fw-bold">Info Kontak</h4>
+                            <h5 class="fw-bold">Info Kontak</h5>
                             <div class="row">
                                 <div class="col-xl-2 col-md-3 col-2">
                                     <iconify-icon icon="ic:outline-email" id="icon-1"></iconify-icon>
                                 </div>
-                                <div class="smallone d-flex justify-content-start align-items-center col-xl-10 col-md-9 col-10">
+                                <div
+                                    class="smallone d-flex justify-content-start align-items-center col-xl-10 col-md-9 col-10">
                                     <p>sunshineid.ofc@gmail.com</p>
                                 </div>
                             </div>
@@ -611,14 +741,13 @@
                         Copyright 2024 Sunshine, All Right Reserved
                     </p>
                 </div>
-                <div  id="footer-desc" class="col-md-6 footer-desc d-flex justify-content-between align-items-center">
+                <div id="footer-desc" class="col-md-6 footer-desc d-flex justify-content-between align-items-center">
                     <p id="left">Privacy Policy</p>
                     <p id="right">Terms & Conditions</p>
                 </div>
             </div>
         </div>
     </footer>
-
 
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -634,241 +763,3 @@
 </html>
 
 
-
-
-
-<!-- <script>
-    const wrapper = document.querySelector(".wrappe");
-    const carousel = document.querySelector(".carousell");
-    const firstCardWidth = carousel.querySelector(".cardd").offsetWidth;
-    const arrowBtns = document.querySelectorAll(".wrappe i");
-    const carouselChildrens = [...carousel.children];
-
-    let isDragging = false, startX, startScrollLeft, timeoutId;
-    let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
-
-    carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
-        carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
-    });
-    carouselChildrens.slice(0, cardPerView).forEach(card => {
-        carousel.insertAdjacentHTML("beforeend", card.outerHTML);
-    });
-    carousel.classList.add("no-transition");
-    carousel.scrollLeft = carousel.offsetWidth;
-    carousel.classList.remove("no-transition");
-    arrowBtns.forEach(btn => {
-        btn.addEventListener("click", () => {
-            carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
-        });
-    });
-
-    const dragStart = (e) => {
-        isDragging = true;
-        carousel.classList.add("dragging");
-        startX = e.pageX;
-        startScrollLeft = carousel.scrollLeft;
-    }
-
-    const dragging = (e) => {
-        if (!isDragging) return;
-        carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
-    }
-
-    const dragStop = () => {
-        isDragging = false;
-        carousel.classList.remove("dragging");
-    }
-
-    const infiniteScroll = () => {
-        if (carousel.scrollLeft === 0) {
-            carousel.classList.add("no-transition");
-            carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
-            carousel.classList.remove("no-transition");
-        }
-        else if (Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
-            carousel.classList.add("no-transition");
-            carousel.scrollLeft = carousel.offsetWidth;
-            carousel.classList.remove("no-transition");
-        }
-        clearTimeout(timeoutId);
-    }
-
-    carousel.addEventListener("mousedown", dragStart);
-    carousel.addEventListener("mousemove", dragging);
-    document.addEventListener("mouseup", dragStop);
-    carousel.addEventListener("scroll", infiniteScroll);
-    wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
-</script> -->
-
-<!-- <section class="testimonials" id="testimoni">
-        <div class="container">
-            <div class="text-center">
-                <h2>Ulasan</h2>
-                <p class="mt-3">Klien Senang & Umpan Balik</p>
-            </div>
-            <div class="wrappe">
-                <i id="left" class="fa-solid fa-angle-left"></i>
-                <ul class="carousell">
-                    <li class="cardd">
-                        <h5>Review</h5>
-                        <p class="text-center">Dalam pembuatan website sangat bagus dan cukup cepat, lalu kita di
-                            bimbing hingga konsultasi bareng secara rinci jadi hasil sesuai</p>
-                        <div class="cardd-contentt">
-                            <div class="cardd-imggg">
-                                <img src="../assets/img/sunshine-profile-testimoni.jpg" alt="Sunshine Testimoni"
-                                    draggable="false">
-                                <div class="cardd-name">
-                                    <p>Prabu nawukrida</p>
-                                    <p id="smallone">Mahasiswa</p>
-                                </div>
-                            </div>
-                            <div class="icon">
-                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
-                                    height="15"></iconify-icon>
-                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
-                                    height="15"></iconify-icon>
-                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
-                                    height="15"></iconify-icon>
-                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
-                                    height="15"></iconify-icon>
-                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
-                                    height="15"></iconify-icon>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="cardd">
-                        <h5>Review</h5>
-                        <p class="text-center">Dalam konsultasi sangat mudah dimengerti dan dipahami, komunikasi saya
-                            dengan tim serta pelayanan yang ramah sampai website nya jadi dan bagus</p>
-                        <div class="cardd-contentt">
-                            <div class="cardd-imggg">
-                                <img src="../assets/img/sunshine-profile-testimoni.jpg" alt="Sunshine Testimoni Icon"
-                                    draggable="false">
-                                <div class="cardd-name">
-                                    <p>Putria Amanda</p>
-                                    <p id="smalltwo">Pengusaha</p>
-                                </div>
-                            </div>
-                            <div class="icon">
-                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
-                                    height="15"></iconify-icon>
-                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
-                                    height="15"></iconify-icon>
-                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
-                                    height="15"></iconify-icon>
-                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
-                                    height="15"></iconify-icon>
-                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
-                                    height="15"></iconify-icon>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="cardd">
-                        <h5>Review</h5>
-                        <p class="text-center">Menurut saya pribadi, tim IT nya sangat profesional dan tim Konsultan nya
-                            sangat ramah sehingga nyaman diajak berbicara, jadi tidak ada mis comunication</p>
-                        <div class="cardd-contentt">
-                            <div class="cardd-imggg">
-                                <img src="../assets/img/sunshine-profile-testimoni.jpg" alt="Sunshine Testimoni Icon"
-                                    draggable="false">
-                                <div class="cardd-name">
-                                    <p>Adi Sasono</p>
-                                    <p id="smallthree">Management produk</p>
-                                </div>
-                            </div>
-                            <div class="icon">
-                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
-                                    height="15"></iconify-icon>
-                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
-                                    height="15"></iconify-icon>
-                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
-                                    height="15"></iconify-icon>
-                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
-                                    height="15"></iconify-icon>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="cardd">
-                        <h5>Review</h5>
-                        <p class="text-center">Hasil dari web nya sendiri menurut saya bagus dan menarik, design yang
-                            diberikan seperti jarang keluar pada umum, interaksi tim bagus</p>
-                        <div class="cardd-contentt">
-                            <div class="cardd-imggg">
-                                <img src="../assets/img/sunshine-profile-testimoni.jpg" alt="Sunshine Testimoni Icon"
-                                    draggable="false">
-                                <div class="cardd-name">
-                                    <p>Nanda Alfarizi</p>
-                                    <p id="smallfour">Mahasiswa</p>
-                                </div>
-                            </div>
-                            <div class="icon">
-                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
-                                    height="15"></iconify-icon>
-                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
-                                    height="15"></iconify-icon>
-                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
-                                    height="15"></iconify-icon>
-                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
-                                    height="15"></iconify-icon>
-                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
-                                    height="15"></iconify-icon>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="cardd">
-                        <h5>Review</h5>
-                        <p class="text-center">Dalam menyesuaikan website permintaan sangat rapih dan tertata, dan harga
-                            yang diberikan masih terjangka, dan sesuai dengan hasil menurut saya</p>
-                        <div class="cardd-contentt">
-                            <div class="cardd-imggg">
-                                <img src="../assets/img/sunshine-profile-testimoni.jpg" alt="Sunshine Testimoni Icon"
-                                    draggable="false">
-                                <div class="cardd-name">
-                                    <p>Santoso Pramono</p>
-                                    <p id="smallfive">Mahasiswa</p>
-                                </div>
-                            </div>
-                            <div class="icon">
-                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
-                                    height="15"></iconify-icon>
-                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
-                                    height="15"></iconify-icon>
-                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
-                                    height="15"></iconify-icon>
-                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
-                                    height="15"></iconify-icon>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="cardd">
-                        <h5>Review</h5>
-                        <p class="text-center">Dalam peforma website yang dibuat itu bagus, tidak ada load yang
-                            berlebih, walaupun data banyak, keren pokoknya</p>
-                        <div class="cardd-contentt">
-                            <div class="cardd-imggg">
-                                <img src="../assets/img/sunshine-profile-testimoni.jpg" alt="Sunshine Testimoni Icon"
-                                    draggable="false">
-                                <div class="cardd-name">
-                                    <p> Mirasalatna</p>
-                                    <p id="smallsix">Pedagang Toko</p>
-                                </div>
-                            </div>
-                            <div class="icon">
-                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
-                                    height="15"></iconify-icon>
-                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
-                                    height="15"></iconify-icon>
-                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
-                                    height="15"></iconify-icon>
-                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
-                                    height="15"></iconify-icon>
-                                <iconify-icon icon="ic:baseline-star" style="color: #ffc700;" width="15"
-                                    height="15"></iconify-icon>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <i id="right" class="fa-solid fa-angle-right"></i>
-            </div>
-        </div>
-    </section> -->

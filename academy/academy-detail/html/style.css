@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -138,7 +138,7 @@ nav {
     background-color: #fff;
     position: absolute;
     bottom: 0;
-    top: 400px;
+    top: 420px;
     left: 72%;
     transform: translateX(-50%);
     z-index: 2;
@@ -180,14 +180,15 @@ nav {
 }
 
 .custom-box button {
-    width: 100%;
-    height: 50px;
+    width: 220px;
+    height: 55px;
     border-radius: 50px;
     background-color: #174076 !important;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
+    padding: 0 10px;
 }
 
 .custom-box .col-lg-4 .col-4, .custom-box .col-lg-4 .col-8 {
@@ -433,111 +434,6 @@ nav {
 
 
 
-.banner {
-    background-image: url('../../assets/images/banner-academy-sunshine.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 70vh;
-    width: 100%;
-    flex-direction: column !important;
-}
-
-.banner .banner-tagline {
-    width: 900px;
-}
-
-.banner p {
-    font-size: 20px;
-}
-
-.banner h3 {
-    font-size: 42px;
-}
-
-.banner .banner-button {
-    margin-top: 10px;
-    width: 220px;
-    padding: 18px 15px;
-    background-color: #174076;
-    border-radius: 40px;
-    color: #FAFAFA;
-    font-weight: 500;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    -ms-border-radius: 40px;
-    -o-border-radius: 40px;
-}
-
-.banner .banner-button a{
-    font-size: 18px;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-@media (max-width: 992px) {
-    .banner .banner-button {
-        padding: 15px 15px;
-    }
-}
-
-@media (max-width: 768px) {
-    .banner {
-        height: 50vh;
-    }
-    .banner .banner-tagline {
-        width: 500px;
-    }
-    .banner p {
-        font-size: 16px;
-    }
-    .banner h3 {
-        font-size: 26px;
-    }
-    .banner .banner-button {
-        width: 200px;
-        padding: 12px 12px;
-        border-radius: 30px;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        -ms-border-radius: 30px;
-        -o-border-radius: 30px;
-    }
-    .banner .banner-button a {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 476px) {
-    .banner {
-        height: 40vh;
-    }
-    .banner .banner-tagline {
-        width: 300px;
-        max-width: 300px;
-    }
-    .banner p {
-        font-size: 14px;
-    }
-    .banner h3 {
-        font-size: 18px;
-    }
-    .banner .banner-button {
-        margin-top: 0;
-        width: 180px;
-        padding: 10px 1px;
-        border-radius: 30px;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        -ms-border-radius: 30px;
-        -o-border-radius: 30px;
-    }
-    .banner .banner-button a {
-        font-size: 14px;
-    }
-}
-
-
 .benefit {
     background-color: #ffffff;
     height: auto;
@@ -609,7 +505,6 @@ nav {
 }
 
 .contact h4 {
-    font-family: 'PT Serif', serif;
     padding-bottom: 10px;
     font-weight: bold;
     color: #1E1E1E;

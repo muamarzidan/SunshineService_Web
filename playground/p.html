@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,36 +8,34 @@
   <title>FAQ Page</title>
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </head>
+
 <body>
 
   <div class="container mt-5">
     <h1 class="text-center mb-4">FAQ</h1>
-
     <div id="accordion">
-      <!-- Pertanyaan 1 -->
       <div class="card">
         <div class="card-header" id="headingOne">
           <h5 class="mb-0">
-            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Pertanyaan 1 
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+              aria-controls="collapseOne">
+              Pertanyaan 1
               <i class="iconify" data-icon="bx:down-arrow"></i>
             </button>
           </h5>
         </div>
-
         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
           <div class="card-body">
             Deskripsi pertanyaan 1.
           </div>
         </div>
       </div>
-
-      <!-- Pertanyaan 2 -->
       <div class="card">
         <div class="card-header" id="headingTwo">
           <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Pertanyaan 2 
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+              aria-expanded="false" aria-controls="collapseTwo">
+              Pertanyaan 2
               <i class="iconify" data-icon="bx:down-arrow"></i>
             </button>
           </h5>
@@ -48,8 +47,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Pertanyaan 3, dan seterusnya... -->
     </div>
   </div>
 
@@ -57,4 +54,5 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
