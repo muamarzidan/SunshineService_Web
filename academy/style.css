@@ -742,10 +742,6 @@ a {
 
 
 .banner {
-    /* background-image: url('./assets/images/banner-academy-sunshine.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;  */
     background-color: #00000059;
     height: 70vh;
     width: 100%;
@@ -780,6 +776,19 @@ a {
         padding: 12px 12px;
         margin-top: 20px;
         border-radius: 30px;
+    }
+}
+
+@media screen and ( max-width: 476px) {
+    .banner h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and ( max-width: 378px) {
+    .banner h1 {
+        font-size: 1.2rem;
+        line-height: 25px;
     }
 }
 
