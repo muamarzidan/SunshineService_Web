@@ -396,9 +396,9 @@ a {
     max-width: 400px;
     height: 320px;
     max-height: 320px;
-    border: 1px solid #ffffff;
+    /* border: 1px solid #ffffff; */
     background-color: #174076;
-    /*border: none;*/
+    border: none;
     position: relative;
 }
 
@@ -473,8 +473,7 @@ a {
         height: 320px;
         max-height: 320px;
         background-color: #174076;
-        border: 1px solid #ffffff;
-        /*border: none;*/
+        border: none;
         border-radius: 10px;
         position: relative;
         margin: 0 0 0 65px;

@@ -1,17 +1,3 @@
-// document.addEventListener('DOMContentLoaded', function () {
-//     var navbar = document.querySelector('.navbar');
-
-//     window.addEventListener('scroll', function () {
-//         if (window.scrollY > 750) {
-//             navbar.classList.add('scrolled');
-//             navbar.classList.add('shadow-on-scroll');
-//         } else {
-//             navbar.classList.remove('scrolled');
-//             navbar.classList.remove('shadow-on-scroll');
-//         }
-//     });
-// });
-
 function updateIconSizeAbout() {
     const width = window.innerWidth || document.documentElement.clientWidth;
     const iconToga = document.getElementById("icon-abt-1");
@@ -78,6 +64,10 @@ function updateIconSizeService() {
     const iconPeople = document.getElementById("icon-srv-1");
     const iconHappy = document.getElementById("icon-srv-2");
     const iconBook = document.getElementById("icon-srv-3");
+    const iconVideo = document.getElementById("icon-srv-4");
+    const iconDocs = document.getElementById("icon-srv-5");
+    const iconCommunity = document.getElementById("icon-srv-6");
+    const iconChat = document.getElementById("icon-srv-7");
 
     if (width <= 768) {
         iconPeople.style.display = "block";
@@ -88,6 +78,18 @@ function updateIconSizeService() {
 
         iconBook.style.display = "block";
         iconBook.setAttribute("width", "24");
+
+        iconVideo.style.display = "block";
+        iconVideo.setAttribute("width", "24");
+
+        iconDocs.style.display = "block";
+        iconDocs.setAttribute("width", "24");
+
+        iconCommunity.style.display = "block";
+        iconCommunity.setAttribute("width", "24");
+
+        iconChat.style.display = "block";
+        iconChat.setAttribute("width", "24");
     } else if (width <= 992) {
         iconPeople.style.display = "block";
         iconPeople.setAttribute("width", "26");
@@ -97,6 +99,18 @@ function updateIconSizeService() {
 
         iconBook.style.display = "block";
         iconBook.setAttribute("width", "26");
+
+        iconVideo.style.display = "block";
+        iconVideo.setAttribute("width", "26");
+
+        iconDocs.style.display = "block";
+        iconDocs.setAttribute("width", "26");
+
+        iconCommunity.style.display = "block";
+        iconCommunity.setAttribute("width", "26");
+
+        iconChat.style.display = "block";
+        iconChat.setAttribute("width", "26");
     } else {
         iconPeople.style.display = "block";
         iconPeople.setAttribute("width", "26");
@@ -106,6 +120,18 @@ function updateIconSizeService() {
 
         iconBook.style.display = "block";
         iconBook.setAttribute("width", "26");
+
+        iconVideo.style.display = "block";
+        iconVideo.setAttribute("width", "26");
+        
+        iconDocs.style.display = "block";
+        iconDocs.setAttribute("width", "26");
+
+        iconCommunity.style.display = "block";
+        iconCommunity.setAttribute("width", "26");
+
+        iconChat.style.display = "block";
+        iconChat.setAttribute("width", "26");
     }
 }
 window.addEventListener("DOMContentLoaded", updateIconSizeService);
