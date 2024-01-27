@@ -790,6 +790,9 @@ a {
         font-size: 1.2rem;
         line-height: 25px;
     }
+    .banner .hero-button a {
+        font-size: 14px;
+    }
 }
 
 
