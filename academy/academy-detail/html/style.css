@@ -592,7 +592,7 @@ nav {
 
 @media screen and (max-width: 768px) {
     .contact {
-        height: 65vh;
+        height: 70vh;
     }
 }
 
@@ -605,9 +605,6 @@ nav {
 @media screen and (max-width: 382px) {
     .contact p {
         font-size: 0.8rem;
-    }
-    .contact {
-        height: 70vh;
     }
     .contact {
         padding-top: 100px;
