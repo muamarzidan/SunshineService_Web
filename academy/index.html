@@ -335,7 +335,7 @@
                             <iconify-icon icon="ic:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
                         </div>
-                        <button class="rounded">
+                        <button class="rounded" onclick="redirectToDetailPage('html')">
                             <a href="./academy-detail/html/index.html" target="_blank">Detail</a>
                         </button>
                     </div>
@@ -365,7 +365,7 @@
                             <iconify-icon icon="ic:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
                         </div>
-                        <button class="rounded">
+                        <button class="rounded" onclick="redirectToDetailPage('flutter')">
                             <a href="./academy-detail/flutter/index.html" target="_blank">Detail</a>
                         </button>
                     </div>
@@ -395,7 +395,7 @@
                             <iconify-icon icon="ic:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
                         </div>
-                        <button class="rounded">
+                        <button class="rounded" onclick="redirectToDetailPage('kotlin')">
                             <a href="./academy-detail/kotlin/index.html" target="_blank">Detail</a>
                         </button>
                     </div>
@@ -425,14 +425,14 @@
                             <iconify-icon icon="ic:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
                         </div>
-                        <button class="rounded">
+                        <button class="rounded" onclick="redirectToDetailPage('figma')">
                             <a href="./academy-detail/figma/index.html" target="_blank">Detail</a>
                         </button>
                     </div>
                 </div>
                 <div id="package-custom-cardRight" class="mt-5 card" style="width: 22rem">
                     <img class="card-img-top p-3" src="./assets/images/pelatihan-animasi-sunshine.png"
-                        alt="Card image cap" />
+                        alt="Card image cap"/>
                     <div class="card-body">
                         <h5 class="card-title">
                             Bootcamp Online Animasi 3D (Blender)
@@ -455,7 +455,7 @@
                             <iconify-icon icon="ic:baseline-star" style="color: #ffc700" width="20"
                                 height="20"></iconify-icon>
                         </div>
-                        <button class="rounded">
+                        <button class="rounded" onclick="redirectToDetailPage('blender')">
                             <a href="./academy-detail/animasi/index.html" target="_blank">Detail</a>
                         </button>
                     </div>
@@ -463,6 +463,34 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function redirectToDetailPage(course) {
+            var coursePath = "";
+    
+            switch (course) {
+                case "html":
+                    coursePath = "./academy-detail/html/index.html";
+                    break;
+                case "flutter":
+                    coursePath = "./academy-detail/flutter/index.html";
+                    break;
+                case "kotlin":
+                    coursePath = "./academy-detail/kotlin/index.html";
+                    break;
+                case "figma":
+                    coursePath = "./academy-detail/figma/index.html";
+                    break;
+                case "blender":
+                    coursePath = "./academy-detail/animasi/index.html";
+                    break;
+                default:
+                    break;
+            }
+            window.location.href = coursePath;
+        }
+    </script>
+    
 
     <div class="banner d-flex justify-content-center align-items-center">
         <div class="container">
