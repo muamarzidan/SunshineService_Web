@@ -422,6 +422,12 @@ nav {
     padding: 120px 0 100px 0;
 }
 
+@media screen and (max-width: 768px) {
+    .introduction .embed-responsive {
+        margin: 0 20px !important;
+    }
+}
+
 
 
 .silabus {
