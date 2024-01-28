@@ -695,11 +695,11 @@ a {
     -moz-border-radius: 16px !important;
     -ms-border-radius: 16px !important;
     -o-border-radius: 16px !important;
-    transition: background-color 0.3s ease; /* Efek transisi 0.3 detik */
+    transition: background-color 0.3s ease;
 }
 
 .package .card button:hover {
-    background-color: #2A6BC2; /* Warna cerah saat hover */
+    background-color: #2A6BC2;
 }
 
 .package .card button a {
