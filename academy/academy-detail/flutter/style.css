@@ -444,6 +444,22 @@ nav {
     padding: 120px 0 100px 0;
 }
 
+.embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video {
+    height: 600px;
+}
+
+@media screen and (max-width: 996px) {
+    .embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video {
+        height: 100% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .introduction .embed-responsive {
+        margin: 0 20px !important;
+    }
+}
+
 
 
 .silabus {
