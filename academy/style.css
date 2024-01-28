@@ -700,6 +700,7 @@ a {
 
 .package .card button:hover {
     background-color: #2A6BC2;
+    cursor: pointer;
 }
 
 .package .card button a {
