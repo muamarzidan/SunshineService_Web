@@ -37,6 +37,7 @@ a {
 
 
 .navbar {
+    padding: 0.7rem 1rem !important;
     transition: background-color 0.3s ease;
     -webkit-transition: background-color 0.3s ease;
     -moz-transition: background-color 0.3s ease;
@@ -110,6 +111,16 @@ a {
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+}
+
+.navbar #button-daftar:hover {
+    background-color: #2A6BC2;
+    cursor: pointer;
 }
 
 .navbar #button-daftar a {
@@ -157,16 +168,12 @@ a {
     -moz-border-radius: 40px;
     -ms-border-radius: 40px;
     -o-border-radius: 40px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
 }
 
 .hero-button:hover {
-    background-color: #0F2B5B;
-    transition: 0.7s;
-    cursor: pointer;
-    -webkit-transition: 0.7s;
-    -moz-transition: 0.7s;
-    -ms-transition: 0.7s;
-    -o-transition: 0.7s;
+    background-color: #2A6BC2;
 }
 
 @media screen and (max-width: 576px) {
@@ -765,6 +772,12 @@ a {
     -moz-border-radius: 40px;
     -ms-border-radius: 40px;
     -o-border-radius: 40px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.banner .hero-button:hover {
+    background-color: #2A6BC2;
 }
 
 .banner .hero-button a{
