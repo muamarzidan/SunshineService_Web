@@ -17,15 +17,20 @@ body {
 
 
 nav {
-    background-color: #ffffff;
+    background-color: #ffffff !important;
+    box-shadow: 1px 1px 10px 5px rgba(136, 136, 136, 0.059);
 }
 
 .navbar {
     transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
 }
 
 .navbar a {
-    color: #000000 !important;
+    color: #1E1E1E !important;
     font-weight: 500;
 }
 
@@ -46,41 +51,52 @@ nav {
 }
 
 .navbar-light.scrolled .navbar-nav .nav-link {
-    color: #000000 !important;
+    color: #1E1E1E !important;
 }
 
 .navbar #navbarNavigation .nav-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 45px;
 }
 
 .navbar #button-daftar {
-    width: 160px;
+    width: 100%;
     background-color: #174076;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
+    border-radius: 25px;
+    padding: 5px 0;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
 }
 
 .navbar #button-daftar a {
-    font-size: 15px;
     color: #ffffff !important;
+    font-size: 15px;
+}
+
+@media (max-width: 992px) {
+    .navbar #navbarNav .nav-item{
+        margin-right: 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar #button-daftar {
+        width: 100%;
+    }
 }
 
 @media (max-width: 576px) {
     #navv {
         background-color: #ffffff !important;
     }
-
+    #navv #button-daftar a {
+        color: #ffffff !important;
+    }
     #navv .navbar-nav .nav-link {
         color: #1E1E1E !important;
     }
 }
-
 
 
 
