@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
-a {
-    text-decoration: none;
-}
 
 html {
     scroll-behavior: smooth;
@@ -14,6 +11,11 @@ body {
     scroll-behavior: smooth;
     background-color: #ffffff;
 }
+
+a {
+    text-decoration: none;
+}
+
 
 
 nav {
@@ -158,17 +160,14 @@ nav {
     .profile .card {
         width: 200px;
     }
-
     .profile .img-fluid {
         height: 150px;
         object-fit: cover;
     }
-
     .profile h5 {
         font-size: 14px;
         margin: 0;
     }
-
     .profile p {
         font-size: 12px;
     }
@@ -179,22 +178,18 @@ nav {
         padding: 1.5em 1.5em 0.8em 1.5em;
         border-radius: 40px;
     }
-
     .profile .img-fluid {
         height: 290px;
         object-fit: cover;
     }
-
     .profile .card {
         width: 100%;
         border-radius: 20px;
         height: 360px;
     }
-
     .profile h5 {
         font-size: 20px;
     }
-
     .profile p {
         font-size: 14px;
     }
@@ -205,7 +200,6 @@ nav {
         max-height: 250px;
         border-radius: 40px;
     }
-
     .profile .card {
         height: 315px;
     }

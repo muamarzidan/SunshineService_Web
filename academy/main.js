@@ -29,7 +29,7 @@ function updateIconSizeAbout() {
 
         iconBook.style.display = "block";
         iconBook.setAttribute("width", "30  ");
-    } else if (width <= 992) {
+    } else if (width <= 996) {
         iconToga.style.display = "block";
         iconToga.setAttribute("width", "24");
 
@@ -144,7 +144,7 @@ function updateIconSizeFooter() {
     const iconNumber = document.getElementById("icon-2");
     const iconInstagram = document.getElementById("icon-3");
 
-    if (width <= 576) {
+    if (width <= 378) {
         iconEmail.style.display = "block";
         iconEmail.setAttribute("width", "16");
 
@@ -153,7 +153,17 @@ function updateIconSizeFooter() {
 
         iconInstagram.style.display = "block";
         iconInstagram.setAttribute("width", "16");
-    }else if (width <= 768) {
+
+    } else if (width <= 576) {
+        iconEmail.style.display = "block";
+        iconEmail.setAttribute("width", "22");
+
+        iconNumber.style.display = "block";
+        iconNumber.setAttribute("width", "22");
+
+        iconInstagram.style.display = "block";
+        iconInstagram.setAttribute("width", "22");
+    } else if (width <= 768) {
         iconEmail.style.display = "block";
         iconEmail.setAttribute("width", "24");
 

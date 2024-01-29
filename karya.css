@@ -16,16 +16,22 @@ body {
 }
 
 
+
 nav {
-    background-color: #ffffff;
+    background-color: #ffffff !important;
+    box-shadow: 1px 1px 10px 5px rgba(136, 136, 136, 0.059);
 }
 
 .navbar {
     transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
 }
 
 .navbar a {
-    color: #000000 !important;
+    color: #1E1E1E !important;
     font-weight: 500;
 }
 
@@ -46,13 +52,10 @@ nav {
 }
 
 .navbar-light.scrolled .navbar-nav .nav-link {
-    color: #000000 !important;
+    color: #1E1E1E !important;
 }
 
 .navbar #navbarNavigation .nav-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 45px;
 }
 
@@ -60,6 +63,7 @@ nav {
     width: 160px;
     background-color: #174076;
     border-radius: 25px;
+    padding: 5px 0;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
@@ -67,22 +71,26 @@ nav {
 }
 
 .navbar #button-daftar a {
-    font-size: 15px;
     color: #ffffff !important;
+    font-size: 15px;
 }
 
-@media screen and (max-width: 990px) {
+@media (max-width: 992px) {
     .navbar #button-daftar {
         width: 100%;
     }
+    .navbar #navbarNav .nav-item{
+        margin-right: 0 !important;
+    }
 }
-
 
 @media (max-width: 576px) {
     #navv {
         background-color: #ffffff !important;
     }
-
+    #navv #button-daftar a {
+        color: #ffffff !important;
+    }
     #navv .navbar-nav .nav-link {
         color: #1E1E1E !important;
     }
@@ -198,15 +206,14 @@ nav {
 
 
 .contact {
+    height: 60vh;
     background-color: #ffffff;
-    height: 80vh;
-    width: 100%;
     padding-top: 180px;
 }
 
-.contact h4 {
-    font-family: 'PT Serif', serif;
+.contact h5 {
     padding-bottom: 10px;
+    font-size: 1.1rem;
     font-weight: bold;
     color: #1E1E1E;
     margin: 0;
@@ -218,39 +225,35 @@ nav {
     color: #1E1E1E;
 }
 
+
 .contact a {
     text-decoration: none;
     color: #1E1E1E;
 }
 
-.contact #link .col-xl-10 {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-}
-
 @media screen and (max-width: 1078px) {
-    .contact .smallone p {
+    .contact .contact-small p {
         word-wrap: break-word;
         height: auto;
         overflow: hidden;
     }
 }
 
-@media screen and (max-width: 992px) {
-    .contact .smallone p {
-        word-wrap: break-word;
-        height: auto;
-        overflow: hidden;
-    }
+@media screen and (max-width: 996px) {
     .contact {
-        height: 76vh;
+        height: 65vh;
     }
     .contact h4 {
         font-size: 1.3rem;
     }
     .contact p {
         font-size: 0.9rem;
+    }
+    .contact .col-md-6 #link{
+        padding-left: 0 !important;
+    }
+    .contact .col-md-6 .contact-small{
+        padding-left: 0 !important;
     }
 }
 
@@ -264,30 +267,30 @@ nav {
 
 @media screen and (max-width: 768px) {
     .contact {
-        height: 80vh;
-        padding-top: 200px;
-    }
-    .contact .smallone p {
-        word-wrap: break-word;
-        height: auto;
-        overflow: hidden;
+        height: 75vh;
     }
 }
 
-@media screen and (max-width: 428px) {
-    .contact .smallone p {
-        word-wrap: break-word;
-        height: auto;
-        overflow: hidden;
+@media screen and (max-width: 576px) {
+    .contact {
+        padding-top: 190px;
+    }
+}
+@media screen and (max-width: 524px) {
+    .contact {
+        height: 85vh;
     }
 }
 
 @media screen and (max-width: 382px) {
-    .contact {
-        height: 75vh;
-    }
     .contact p {
         font-size: 0.8rem;
+    }
+    .contact {
+        height: 70vh;
+    }
+    .contact {
+        padding-top: 100px;
     }
 }
 
@@ -296,52 +299,34 @@ nav {
 .footer {
     background-color: #174076;
     height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: white;
-}
-
-.footer .container {
-    text-align: center;
 }
 
 .footer .container p {
     margin: 0;
 }
 
-.footer .footer-desc {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
+.footer #footer-desc {
+    flex-wrap: nowrap !important;
 }
 
-@media screen and (max-width: 992px) {
-    .creation .creation-link-content img {
-        width: 25px;
-        height: 20px;
-    }
+.footer #left {
+    padding-left: 130px;
 }
 
 @media screen and (max-width: 768px) {
-    .creation-link p {
-        font-size: 18px;
+    .footer #footer-copyright {
+        justify-content: center !important;
     }
-    .creation .creation-link-content img {
-        width: 20px;
-        height: 15px;
-    }
-    .creation-link .creation-link-content {
-        width: 120px;
-    }
-    .footer .footer-desc {
-        justify-content: center;
+    .footer #footer-desc {
+        margin-top: 10px;
+        justify-content: space-evenly !important;
     }
     .footer p {
         font-size: 0.9rem;
     }
     .footer #left {
+        padding-left: 0;
         padding-right: 20px;
     }
     .footer #right {
@@ -353,7 +338,7 @@ nav {
     .footer {
         height: 15vh;
     }
-    .footer-desc p {
+    #footer-desc p {
         font-size: 0.8rem;
     }
 }
