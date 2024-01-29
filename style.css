@@ -24,6 +24,7 @@ body {
 
 .navbar {
     transition: background-color 0.3s ease;
+    padding: 0.7rem 1rem !important;
 }
 
 .navbar a {
@@ -62,7 +63,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 45px;
+    height: 50px;
 }
 
 .navbar-light .navbar-toggler {
@@ -71,13 +72,23 @@ body {
 }
 
 .navbar #button-daftar {
-    width: 160px;
+    width: 170px;
     background-color: #174076;
     border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+}
+
+.navbar #button-daftar:hover {
+    background-color: #2A6BC2;
+    cursor: pointer;
 }
 
 .navbar #button-daftar a {
@@ -1044,6 +1055,26 @@ body {
 }
 
 
+.contact {
+    height: 60vh;
+    background-color: #ffffff;
+    padding-top: 180px;
+}
+
+.contact h5 {
+    padding-bottom: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1E1E1E;
+    margin: 0;
+}
+
+.contact p {
+    font-size: normal;
+    font-weight: 300;
+    color: #1E1E1E;
+}
+
 .contact a {
     text-decoration: none;
     color: #1E1E1E;
@@ -1087,6 +1118,9 @@ body {
     .contact {
         height: 75vh;
     }
+    .contact #contact-address {
+        padding-left: 0 !important;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -1094,21 +1128,16 @@ body {
         padding-top: 190px;
     }
 }
-@media screen and (max-width: 524px) {
+
+@media screen and (max-width: 428px) {
     .contact {
-        height: 85vh;
+        padding-top: 160px;
     }
 }
 
 @media screen and (max-width: 382px) {
     .contact p {
         font-size: 0.8rem;
-    }
-    .contact {
-        height: 70vh;
-    }
-    .contact {
-        padding-top: 100px;
     }
 }
 

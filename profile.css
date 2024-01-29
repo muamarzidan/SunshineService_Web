@@ -24,6 +24,7 @@ nav {
 }
 
 .navbar {
+    padding: 0.7rem 1rem;
     transition: background-color 0.3s ease;
     -webkit-transition: background-color 0.3s ease;
     -moz-transition: background-color 0.3s ease;
@@ -57,11 +58,14 @@ nav {
 }
 
 .navbar #navbarNavigation .nav-item {
-    height: 45px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar #button-daftar {
-    width: 160px;
+    width: 170px;
     background-color: #174076;
     border-radius: 25px;
     padding: 5px 0;
@@ -69,8 +73,17 @@ nav {
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
 }
 
+.navbar #button-daftar:hover {
+    background-color: #2A6BC2;
+    cursor: pointer;
+}
 .navbar #button-daftar a {
     color: #ffffff !important;
     font-size: 15px;
@@ -208,15 +221,14 @@ nav {
 
 
 .contact {
+    height: 60vh;
     background-color: #ffffff;
-    height: 70vh;
-    width: 100%;
-    padding-top: 120px;
+    padding-top: 180px;
 }
 
-.contact h4 {
-    font-family: 'PT Serif', serif;
+.contact h5 {
     padding-bottom: 10px;
+    font-size: 1.1rem;
     font-weight: bold;
     color: #1E1E1E;
     margin: 0;
@@ -233,26 +245,15 @@ nav {
     color: #1E1E1E;
 }
 
-.contact #link .col-xl-10 {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-}
-
 @media screen and (max-width: 1078px) {
-    .contact .smallone p {
+    .contact .contact-small p {
         word-wrap: break-word;
         height: auto;
         overflow: hidden;
     }
 }
 
-@media screen and (max-width: 992px) {
-    .contact .smallone p {
-        word-wrap: break-word;
-        height: auto;
-        overflow: hidden;
-    }
+@media screen and (max-width: 996px) {
     .contact {
         height: 65vh;
     }
@@ -261,6 +262,12 @@ nav {
     }
     .contact p {
         font-size: 0.9rem;
+    }
+    .contact .col-md-6 #link{
+        padding-left: 0 !important;
+    }
+    .contact .col-md-6 .contact-small{
+        padding-left: 0 !important;
     }
 }
 
@@ -276,25 +283,24 @@ nav {
     .contact {
         height: 75vh;
     }
-    .contact .smallone p {
-        word-wrap: break-word;
-        height: auto;
-        overflow: hidden;
+    .contact #contact-address {
+        padding-left: 0 !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contact {
+        padding-top: 190px;
     }
 }
 
 @media screen and (max-width: 428px) {
-    .contact .smallone p {
-        word-wrap: break-word;
-        height: auto;
-        overflow: hidden;
+    .contact {
+        padding-top: 160px;
     }
 }
 
 @media screen and (max-width: 382px) {
-    .contact {
-        height: 75vh;
-    }
     .contact p {
         font-size: 0.8rem;
     }
