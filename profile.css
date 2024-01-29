@@ -59,7 +59,7 @@ nav {
 }
 
 .navbar #button-daftar {
-    width: 100%;
+    width: 160px;
     background-color: #174076;
     border-radius: 25px;
     padding: 5px 0;
@@ -75,14 +75,11 @@ nav {
 }
 
 @media (max-width: 992px) {
-    .navbar #navbarNav .nav-item{
-        margin-right: 0 !important;
-    }
-}
-
-@media (max-width: 768px) {
     .navbar #button-daftar {
         width: 100%;
+    }
+    .navbar #navbarNav .nav-item{
+        margin-right: 0 !important;
     }
 }
 

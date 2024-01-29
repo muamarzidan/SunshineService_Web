@@ -80,9 +80,12 @@ nav {
     font-size: 15px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .navbar #button-daftar {
         width: 100%;
+    }
+    .navbar #navbarNav .nav-item{
+        margin-right: 0 !important;
     }
 }
 
