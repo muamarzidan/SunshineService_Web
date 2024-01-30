@@ -71,6 +71,17 @@ nav {
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
+    border: none;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+}
+
+.navbar #button-daftar:hover {
+    background-color: #2A6BC2;
+    cursor: pointer;
 }
 
 .navbar #button-daftar a {
@@ -187,12 +198,23 @@ nav {
     width: 225px;
     height: 55px;
     border-radius: 50px;
-    background-color: #174076 !important;
+    background-color: #174076;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
     padding: 0 10px;
+    border: none;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+}
+
+.custom-box button:hover {
+    background-color: #2A6BC2;
+    cursor: pointer;
 }
 
 .custom-box .col-lg-4 .col-4, .custom-box .col-lg-4 .col-8 {
