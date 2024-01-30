@@ -578,11 +578,12 @@ nav {
 .contact {
     height: 60vh;
     background-color: #ffffff;
-    padding-top: 120px;
+    padding-top: 180px;
 }
 
-.contact h4 {
+.contact h5 {
     padding-bottom: 10px;
+    font-size: 1.1rem;
     font-weight: bold;
     color: #1E1E1E;
     margin: 0;
@@ -600,22 +601,28 @@ nav {
 }
 
 @media screen and (max-width: 1078px) {
-    .contact .smallone p {
+    .contact .contact-small p {
         word-wrap: break-word;
         height: auto;
         overflow: hidden;
     }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 996px) {
     .contact {
-        height: 55vh;
+        height: 65vh;
     }
     .contact h4 {
         font-size: 1.3rem;
     }
     .contact p {
         font-size: 0.9rem;
+    }
+    .contact .col-md-6 #link{
+        padding-left: 0 !important;
+    }
+    .contact .col-md-6 .contact-small{
+        padding-left: 0 !important;
     }
 }
 
@@ -629,22 +636,28 @@ nav {
 
 @media screen and (max-width: 768px) {
     .contact {
-        height: 70vh;
+        height: 75vh;
+    }
+    .contact #contact-address {
+        padding-left: 0 !important;
     }
 }
 
 @media screen and (max-width: 576px) {
     .contact {
-        padding-top: 100px;
+        padding-top: 190px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .contact {
+        padding-top: 160px;
     }
 }
 
 @media screen and (max-width: 382px) {
     .contact p {
         font-size: 0.8rem;
-    }
-    .contact {
-        padding-top: 100px;
     }
 }
 
