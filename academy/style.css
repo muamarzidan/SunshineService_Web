@@ -741,6 +741,14 @@ a {
     .package .card {
         max-width: 18rem !important;
     }
+    .package .card button {
+        height: 45px;
+        border-radius: 12px !important;
+        -webkit-border-radius: 12px !important;
+        -moz-border-radius: 12px !important;
+        -ms-border-radius: 12px !important;
+        -o-border-radius: 12px !important;
+}
 }
 
 @media screen and (max-width: 567px) {
