@@ -115,12 +115,12 @@ body {
     margin-top: 100px;
 }
 
-.hero-content {
+.hero .hero-content {
     display: flex;
     flex-direction: column;
 }
 
-.hero-content h1 {
+.hero .hero-content h1 {
     font-family: 'PT Serif', serif;
     font-size: 3rem;
     font-weight: bold;
@@ -128,7 +128,7 @@ body {
     margin: 0;
 }
 
-.hero-content p {
+.hero .hero-content p {
     font-size: medium;
     color: #ffffff;
     margin: 0;
@@ -139,30 +139,31 @@ body {
     color: #ffffff;
 }
 
-.hero-button {
+.hero .hero-button {
     width: 180px;
     padding: 15px 15px;
     background-color: #174076;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 50px;
     color: #FAFAFA;
     font-weight: 500;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border: none;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
 }
 
-.hero-button:hover {
-    background-color: #0F2B5B;
-    transition: 0.7s;
+.hero .hero-button:hover {
+    background-color: #2A6BC2;
     cursor: pointer;
-    -webkit-transition: 0.7s;
-    -moz-transition: 0.7s;
-    -ms-transition: 0.7s;
-    -o-transition: 0.7s;
 }
 
 @media screen and (max-width : 768px) {
@@ -253,6 +254,15 @@ body {
     }
 }
 
+@media screen and (max-width: 428px) {
+    .hero-content h1 {
+        font-size: 2.7rem;
+    }
+    #about-title-misi {
+        margin-top: 25px;
+    }
+}
+
 
 
 .suggest {
@@ -306,6 +316,17 @@ body {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    border: none;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+}
+
+.suggest .suggest-button:hover {
+    background-color: #2A6BC2;
+    cursor: pointer;
 }
 
 .suggest .suggest-button a {
@@ -629,20 +650,20 @@ body {
 
 
 
-.wavessss {
+.banner {
     height: 100%;
     width: 100%;
 }
 
-.wavessss .headerr {
+.banner .banner-header {
     position: relative;
     text-align: center;
     background-color: #174076;
     color: #ffffff;
-    border: 1px solid rgb(255, 255, 255);
+    /* border: 1px solid rgb(255, 255, 255); */
 }
 
-.wavessss .logo {
+.banner .logo {
     width: 50px;
     fill: #ffffff;
     padding-right: 15px;
@@ -650,61 +671,67 @@ body {
     vertical-align: middle;
 }
 
-.wavessss .inner-headerr {
-    height: 65vh;
-    width: 100%;
-    margin: 80px 0 0 0;
-    padding: 0 300px 0 300px;
-}
-
-.wavessss .flexx {
+.banner .banner-header-inner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 25vh;
+    height: 40vh;
+    width: 100%;
+    margin: 0;
+    padding: 50px 300px 0 300px;
 }
 
-.wavessss .waves {
+.banner .waves {
     position: relative;
     width: 100%;
-    height: 30vh;
+    height: 20vh;
     margin-bottom: -7px;
     min-height: 100px;
     max-height: 150px;
 }
 
-.wavessss .content {
+.banner .content {
     position: relative;
     height: 20vh;
     text-align: center;
     background-color: #ffffff;
 }
 
-.wavessss .flexx h3 {
+.banner .flexx h3 {
     font-family: 'PT Serif', serif;
     color: #ffffff;
     margin: 0;
     letter-spacing: 1px;
 }
 
-.wavessss .waves-button {
+.banner .banner-button {
     background-color: #0E294D;
     margin-top: 30px;
     padding: 16px 60px;
     border-radius: 8px;
     text-decoration: none;
     font-size: 14px;
-    transition: 0.3s;
+    border: none;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
 }
 
-.wavessss .waves-button a {
+.banner .banner-button:hover {
+    background-color: #2A6BC2;
+    cursor: pointer;
+}
+
+.banner .banner-button a {
     color: #ffffff;
     text-decoration: none;
 }
 
-.wavessss .parallax>use {
+.banner .parallax>use {
     animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
 }
 
@@ -738,20 +765,23 @@ body {
         -moz-transform: translate3d(85px, 0, 0);
         -ms-transform: translate3d(85px, 0, 0);
         -o-transform: translate3d(85px, 0, 0);
+    }
 }
+
+@media (max-width: 1115px) {
+    .banner .banner-header-inner {
+        padding: 50px 200px 0 200px;
+    }
 }
 
 @media (max-width: 992px) {
-    .wavessss .inner-headerr {
-        height: 65vh;
+    .banner .banner-header-inner {
+        height: 45vh;
         width: 100%;
-        margin: 80px 0 0 0;
+        margin: 0;
         padding: 0 100px 0 100px;
     }
-    .wavessss .flexx {
-        height: 15vh;
-    }
-    .wavessss .waves-button {
+    .banner .banner-button {
         background-color: #0E294D;
         margin-top: 30px;
         padding: 12px 60px;
@@ -763,18 +793,18 @@ body {
 }
 
 @media (max-width: 768px) {
-    .wavessss .waves {
+    .banner .waves {
         height: 60px;
         min-height: 40px;
     }
-    .wavessss .content {
+    .banner .content {
         height: 30vh;
     }
-    .wavessss .flexx h3 {
+    .banner .flexx h3 {
         font-size: 18px;
         letter-spacing: 0;
     }
-    .wavessss .waves-button {
+    .banner .banner-button {
         background-color: #0E294D;
         padding: 8px 18px;
         border-radius: 5px;
@@ -783,22 +813,21 @@ body {
         font-weight: 500;
         transition: 0.3s;
     }
-    .wavessss {
+    .banner {
         height: 100%;
     }
-    .wavessss .inner-headerr {
-        height: 14vh;
+    .banner .banner-header-inner {
+        height: 35vh;
         width: 100%;
-        margin: 50px 0 0 0;
         padding: 0 100px 0 100px;
     }
 }
 
 @media (max-width: 576px) {
-    .wavessss .flexx h3 {
+    .banner .flexx h3 {
         font-size: 18px;
     }
-    .wavessss .waves-button {
+    .banner .banner-button {
         background-color: #0E294D;
         margin-top: 10px;
         padding: 8px 16px;
@@ -808,7 +837,8 @@ body {
         font-weight: 500;
         transition: 0.3s;
     }
-    .wavessss .inner-headerr {
+    .banner .banner-header-inner {
+        height: 30vh;
         padding: 0 20px 0 20px;
     }
 }
