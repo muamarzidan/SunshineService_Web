@@ -49,15 +49,19 @@
                     <li class="nav-item mr-4">
                         <a class="nav-link text-white" href="./kontak.html">Kontak</a>
                     </li>
-                    <li id="button-daftar" class="nav-item">
+                    <li id="button-daftar" class="nav-item" onclick="navbarButton()">
                         <a class="nav-link" href="https://forms.gle/A5FzHJjabK1PNk2F9" target="_blank">Daftar Bootcamp</a>
                     </li>
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav>  
 
     <script>
+        function navbarButton() {
+            window.open("https://forms.gle/A5FzHJjabK1PNk2F9", "_blank");
+        }
+
         document.addEventListener("DOMContentLoaded", function () {
             const navbarToggle = document.querySelector('.navbar-toggler');
             const navbar = document.querySelector('.navbar');
@@ -76,7 +80,7 @@
                         <h1>Kami Menawarkan Kualitas Terbaik untuk Pelanggan</h1>
                         <p class="mt-3">Buat kesan yang tak terlupakan dengan website dan aplikasi kustom dari jasa
                             pembuatan terpercaya kami.</p>
-                        <div class="hero-button mt-4">
+                        <div class="hero-button mt-4" onclick="heroButton()">
                             <a href="https://forms.gle/A5FzHJjabK1PNk2F9" target="_blank">Datar Bootcamp</a>
                         </div>
                     </div>
@@ -84,6 +88,12 @@
             </div>
         </div>
     </main>
+
+    <script>
+        function heroButton() {
+            window.open("https://forms.gle/A5FzHJjabK1PNk2F9", "_blank");
+        }
+    </script>
 
     <section class="about" id="about">
         <div class="container">
@@ -153,7 +163,6 @@
         </div>
     </section>
 
-    
     <script>
         function suggestButton() {
             window.location.href = "./profile.html";
@@ -314,7 +323,7 @@
             <div class="banner-header-inner flexx">
                 <h3 class="text-center">Bergabung Bersama Kami untuk Menuangkan Ide Anda dan Jadilah Anak Muda yang
                     Bertalenta</h3>
-                <div class="banner-button">
+                <div class="banner-button" onclick="bannerButton()">
                     <a href="./karya.html">Lihat Karya Kami</a>
                 </div>
             </div>
@@ -335,6 +344,12 @@
             </div>
         </div>
     </section>
+
+    <script>
+        function bannerButton() {
+            window.location.href = "./karya.html";
+        }
+    </script>
 
     <section class="testimonials" id="testimoni">
         <div class="container">
