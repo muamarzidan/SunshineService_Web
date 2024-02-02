@@ -1028,7 +1028,6 @@ a {
     color: #1E1E1E;
 }
 
-
 .contact a {
     text-decoration: none;
     color: #1E1E1E;
@@ -1072,6 +1071,9 @@ a {
     .contact {
         height: 75vh;
     }
+    .contact #contact-address {
+        padding-left: 0 !important;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -1079,21 +1081,16 @@ a {
         padding-top: 190px;
     }
 }
-@media screen and (max-width: 524px) {
+
+@media screen and (max-width: 428px) {
     .contact {
-        height: 85vh;
+        padding-top: 160px;
     }
 }
 
 @media screen and (max-width: 382px) {
     .contact p {
         font-size: 0.8rem;
-    }
-    .contact {
-        height: 70vh;
-    }
-    .contact {
-        padding-top: 100px;
     }
 }
 
